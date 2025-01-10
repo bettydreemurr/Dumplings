@@ -1,4 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: Tonec.InternetDownloadManager
-Skip: false
-RemoveLastVersion: true

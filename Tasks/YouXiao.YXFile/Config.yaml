@@ -1,4 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: YouXiao.YXFile
-Skip: false
-RemoveLastVersion: true

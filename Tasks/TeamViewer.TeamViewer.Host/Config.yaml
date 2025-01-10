@@ -1,4 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: TeamViewer.TeamViewer.Host
-Skip: false
-RemoveLastVersion: true

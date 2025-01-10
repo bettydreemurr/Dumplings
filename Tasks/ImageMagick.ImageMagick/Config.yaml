@@ -1,4 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: ImageMagick.ImageMagick
-Skip: false
-RemoveLastVersion: true

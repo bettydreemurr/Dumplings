@@ -1,3 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: EdrawSoft.EdrawProj
-Skip: true # The API returns wrong version

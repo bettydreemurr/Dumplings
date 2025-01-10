@@ -1,4 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: HelmutBuhler.8GadgetPack
-Skip: false
-RemoveLastVersion: true

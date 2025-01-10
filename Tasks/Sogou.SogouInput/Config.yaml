@@ -1,4 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: Sogou.SogouInput
-Skip: false
-CheckVersionOnly: true

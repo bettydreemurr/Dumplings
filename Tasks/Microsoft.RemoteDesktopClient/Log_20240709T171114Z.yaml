@@ -1,9 +1,0 @@
-Installer:
-- Architecture: x86
-  InstallerUrl: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW1mLqB
-- Architecture: x64
-  InstallerUrl: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW1m3bh
-- Architecture: arm64
-  InstallerUrl: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW1mSYm
-Locale: []
-Version: 1.2.5454.0

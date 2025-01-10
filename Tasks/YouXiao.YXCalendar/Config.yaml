@@ -1,4 +1,0 @@
-Type: PackageTask
-WinGetIdentifier: YouXiao.YXCalendar
-Skip: false
-RemoveLastVersion: true

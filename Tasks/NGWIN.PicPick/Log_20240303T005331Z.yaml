@@ -1,8 +1,0 @@
-Installer:
-- InstallerUrl: https://download.picpick.app/7.2.7/picpick_inst.exe
-Locale:
-- Locale: en-US
-  Key: ReleaseNotes
-  Value: '- Minor bugs are fixed.'
-Version: 7.2.7
-ReleaseTime: 2024-02-13
