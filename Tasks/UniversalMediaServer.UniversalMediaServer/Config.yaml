@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: UniversalMediaServer.UniversalMediaServer
+Skip: false

@@ -1,0 +1,40 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.05.04.232706/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/96da9525043f78aca4544d01761b13b2140e9ae6
+
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - Warn if lack of ffmpeg alters format selection (#9805) by pukkandan, seproDev
+    - windows: Improve shell quoting and tests (#9802) by Grub4K (With fixes in 7e26bd5)
+    Extractor changes
+    - Make _search_nextjs_data non fatal (#8937) by Grub4K
+    - afreecatv: live: Add cdn extractor-arg (#9666) by bashonly
+    - crunchyroll
+      - Always make metadata available (#9772) by bashonly
+      - Fix auth and remove cookies support (#9749) by bashonly
+    - facebook: Fix DASH formats extraction (#9734) by bashonly
+    - jiosaavn: Extract via API and fix playlists (#9656) by bashonly
+    - patreon
+      - Extract multiple embeds (#9850) by bashonly
+      - Fix Vimeo embed extraction (#9712) by bashonly
+    - soundcloud: Extract genres (#9821) by bashonly
+    - theatercomplextown: Fix extractors (#9754) by bashonly
+    - wrestleuniverse: Avoid partial stream formats (#9800) by bashonly
+    Networking changes
+    - Add extensions attribute to Response (#9756) by bashonly
+    Misc. changes
+    - build
+      - Migrate linux_exe to static musl builds (#9811) by bashonly, Grub4K
+      - Normalize curl_cffi group to curl-cffi (#9698) by bashonly (With fixes in 89f535e)
+      - Run macos_legacy job on macos-12 (#9804) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.05.04.232706
+Version: 2024.05.04.232706
+ReleaseTime: 2024-05-04T23:33:41.0000000Z

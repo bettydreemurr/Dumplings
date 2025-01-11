@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.05.30.232720/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/2e5a47da400b645aadbda6afd1156bd89c744f48
+
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - orf: on: Support segmented episodes (#10053) by seproDev
+    - patreoncampaign: Fix campaign_id extraction (#10070) by bashonly
+    - tubitv: Fix extractor (#9975) by chilinux
+    Misc. changes
+    - build
+      - Bump Pyinstaller to >=6.7.0 for all builds (#10069) by bashonly, seproDev
+      - Use macos-12 image for yt-dlp_macos (#10063) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.05.30.232720
+Version: 2024.05.30.232720
+ReleaseTime: 2024-05-30T23:33:19.0000000Z

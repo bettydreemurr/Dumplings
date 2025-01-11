@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp/releases/download/2024.05.27/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    A description of the various files are in the README
+
+    Changelog
+    Extractor changes
+    - Fix parsing of base URL in SMIL manifest (#9225) by seproDev
+    - peertube: Support livestreams (#10044) by bashonly, trueauracoral
+    - piksel: Update domain (#9223) by seproDev
+    - tiktok: user: Fix extraction loop (#10035) by bashonly
+    Misc. changes
+    - cleanup: Miscellaneous: 5e3e19c by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp/releases/tag/2024.05.27
+Version: 2024.05.27
+ReleaseTime: 2024-05-27T22:42:09.0000000Z

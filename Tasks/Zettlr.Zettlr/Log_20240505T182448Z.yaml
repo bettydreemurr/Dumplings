@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/Zettlr/Zettlr/releases/download/v3.1.1/Zettlr-3.1.1-x64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/Zettlr/Zettlr/releases/download/v3.1.1/Zettlr-3.1.1-x64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Hotfix for crashes on Linux
+    Sometimes, waiting to update something is a smart idea. This time, we were not that smart and bumped the underlying Electron framework to version 30, which unfortunately made running Zettlr 3.1.0 on most Linux systems impossible. With this patch, we rolled back Electron to a working version. Apologies to all Linux users, we still love you!
+    Changelog
+    GUI and Functionality
+    - Fixed a segmentation fault crash on startup across various Linux setups (#5135)
+    Under the Hood
+    - Downgrade Electron to version 29.3.2 (cf. Electron issue #41839)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Zettlr/Zettlr/releases/tag/v3.1.1
+Version: 3.1.1
+ReleaseTime: 2024-05-05T18:10:46.0000000Z

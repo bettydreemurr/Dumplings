@@ -1,0 +1,33 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.03.19.232701/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/17d248a58781e2588d18a5ebe00c441d10011fcd
+
+    A description of the various files are in the README
+
+    Changelog
+    Core changes
+    - Add new options --impersonate and --list-impersonate-targets by bashonly, coletdjnz, Grub4K, pukkandan
+    Extractor changes
+    - crunchyroll: Extract vo_adaptive_hls formats by default (#9447) by bashonly
+    - gofile: Fix extractor (#9446) by jazz1611
+    - imgur: Fix extraction (#9471) by trwstin
+    - sonylivseries: Fix season extraction (#9423) by bashonly
+    - tiktok: Update API hostname (#9444) by bashonly
+    - youtube
+      - Fix tbr calculation (#9489) by pukkandan
+      - search: Fix params for uncensored results (#9456) by alb, pukkandan
+    Networking changes
+    - Request Handler: curlcffi: Add support for curl_cffi by bashonly, coletdjnz, Grub4K, pukkandan
+    Misc. changes
+    - build: Update changelog for tarball and sdist (#9425) by bashonly
+    - docs: Update yt-dlp tagline (#9481) by bashonly, coletdjnz, Grub4K, pukkandan, seproDev
+    - test: Workaround websocket server hanging (#9467) by coletdjnz
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2024.03.19.232701
+Version: 2024.03.19.232701
+ReleaseTime: 2024-03-19T23:33:46.0000000Z
