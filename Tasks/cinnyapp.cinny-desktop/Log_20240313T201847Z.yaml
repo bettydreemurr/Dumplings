@@ -1,8 +1,0 @@
-Installer:
-- Architecture: x64
-  InstallerUrl: https://github.com/cinnyapp/cinny-desktop/releases/download/v3.2.1/Cinny_desktop-x86_64.msi
-Locale:
-- Key: ReleaseNotesUrl
-  Value: https://github.com/cinnyapp/cinny-desktop/releases/tag/v3.2.1
-Version: 3.2.1
-ReleaseTime: 2023-11-01T10:54:18.0000000Z
