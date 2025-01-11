@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: clsid2.mpc-hc
+Skip: false

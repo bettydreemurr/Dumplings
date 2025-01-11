@@ -1,0 +1,8 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.3.0/Beekeeper-Studio-Setup-4.3.0.exe
+Locale:
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.3.0
+Version: 4.3.0
+ReleaseTime: 2024-04-26T22:49:38.0000000Z

@@ -1,0 +1,8 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.2.9/Beekeeper-Studio-Setup-4.2.9.exe
+Locale:
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.2.9
+Version: 4.2.9
+ReleaseTime: 2024-04-05T20:39:27.0000000Z

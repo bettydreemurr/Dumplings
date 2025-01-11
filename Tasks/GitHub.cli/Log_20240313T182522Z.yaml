@@ -1,0 +1,28 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/cli/cli/releases/download/v2.45.0/gh_2.45.0_windows_amd64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Resolve go compiler regression by @williammartin in https://github.com/cli/cli/pull/8716
+    - bug: fixed the msg returned for patching a repo variable by @dean-tate in https://github.com/cli/cli/pull/8715
+    - Fix regression around commas in commit titles during pr create by @williammartin in https://github.com/cli/cli/pull/8768
+    - feat: Add ref option to gh cache list by @toshimaru in https://github.com/cli/cli/pull/8711
+    - Make comments in the default config file more informative by @bartekpacia in https://github.com/cli/cli/pull/8756
+    - Link Project to Repository or Team Command by @benebsiny in https://github.com/cli/cli/pull/8595
+    - Clarify helptext for search prs regarding archived repos by @stuart-leitch in https://github.com/cli/cli/pull/8738
+    - Simplify install command for Debian & Ubuntu by @hongquan in https://github.com/cli/cli/pull/8693
+    - Support project view --web with TTY by @harveysanders in https://github.com/cli/cli/pull/8773
+    - Bump cli/go-gh v2.6.0 for tenant using GH_TOKEN by @andyfeller in https://github.com/cli/cli/pull/8787
+    New Contributors
+    - @dean-tate made their first contribution in https://github.com/cli/cli/pull/8715
+    - @bartekpacia made their first contribution in https://github.com/cli/cli/pull/8756
+    - @stuart-leitch made their first contribution in https://github.com/cli/cli/pull/8738
+    - @hongquan made their first contribution in https://github.com/cli/cli/pull/8693
+    Full Changelog: https://github.com/cli/cli/compare/v2.44.1...v2.45.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cli/cli/releases/tag/v2.45.0
+Version: 2.45.0
+ReleaseTime: 2024-03-04T18:39:03.0000000Z

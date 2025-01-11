@@ -1,0 +1,8 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v4.2.8/Beekeeper-Studio-Setup-4.2.8.exe
+Locale:
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v4.2.8
+Version: 4.2.8
+ReleaseTime: 2024-04-04T22:16:58.0000000Z

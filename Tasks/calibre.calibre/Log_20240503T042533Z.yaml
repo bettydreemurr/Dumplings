@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/kovidgoyal/calibre/releases/download/v7.10.0/calibre-64bit-7.10.0.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: Release version 7.10.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/kovidgoyal/calibre/releases/tag/v7.10.0
+Version: 7.10.0
+ReleaseTime: 2024-05-03T03:30:16.0000000Z

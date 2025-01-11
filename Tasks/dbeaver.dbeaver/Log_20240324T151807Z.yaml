@@ -1,0 +1,44 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.0.1/dbeaver-ce-24.0.1-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.0.1/dbeaver-ce-24.0.1-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Connectivity:
+                    - Shared SSH sessions support was added
+                    - Connection via native proxy was fixed
+                    - Dark theme support on the Connection page was improved
+                - SQL Editor:
+                    - Highlighting, validation, and outline for INSERT, UPDATE, and DELETE were supported
+                    - Incorrect cursor position during autocomplete was fixed
+                    - QUALIFY keyword was supported (thanks to @ashu7896)
+                - Metadata editor: automatic reference column creation for a new foreign key was implemented
+                - Data Editor:
+                    - Opening of a table with empty data was fixed
+                    - SRID editing was fixed
+                - General:
+                    - SVG icons support was added
+                    - Error when checking checkboxes in the Formatting page in Preferences was fixed
+                    - Disappearance of renamed project was fixed (thanks to @saikotek)
+                - Databases
+                    - Dameng: Sequence creation was fixed
+                    - DuckDB:
+                        - Sequences, views, and table definitions were supported
+                        - Ability to add comments via UI was added
+                    - MySQL: link to the driver documentation was fixed
+                    - RisingWave: non-working functions and folders were removed
+                    - PostgreSQL: issues with scheduled jobs was resolved
+                    - SQLite: errors when creating table was fixed
+                    - SQL Server: redundant authentication types were hidden
+                    - Sybase: stored procedures support was improved
+                    - Teradata: procedures and functions DDLs reading was enhanced
+                - Localization:
+                    - Romanian language support was added (thanks to @v613)
+                    - French translation was updated (thanks to @Jean-BaptisteC)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.0.1
+Version: 24.0.1
+ReleaseTime: 2024-03-24T14:33:10.0000000Z
