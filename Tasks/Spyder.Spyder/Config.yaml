@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: Spyder.Spyder
+Skip: false

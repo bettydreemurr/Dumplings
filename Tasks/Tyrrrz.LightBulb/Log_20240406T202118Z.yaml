@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/Tyrrrz/LightBulb/releases/download/2.4.8/LightBulb-Installer.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Use screenRect.Left and screenRect.Top when checking for fullscreen boundaries by @lamrongol in https://github.com/Tyrrrz/LightBulb/pull/267
+    - Migrate to Avalonia by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/272
+    - Replace WinForms with raw WinAPI calls by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/274
+    New Contributors
+    - @lamrongol made their first contribution in https://github.com/Tyrrrz/LightBulb/pull/267
+    Full Changelog: https://github.com/Tyrrrz/LightBulb/compare/2.4.7...2.4.8
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Tyrrrz/LightBulb/releases/tag/2.4.8
+Version: 2.4.8
+ReleaseTime: 2024-04-06T19:53:09.0000000Z

@@ -1,0 +1,40 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/spyder-ide/spyder/releases/download/v5.5.4/Spyder_64bit_full.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/spyder-ide/spyder/releases/download/v5.5.4/Spyder_64bit_full.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Simple installation
+    The easiest way to start using Spyder is by downloading our own installers for Windows, macOS and Linux (experimental):
+    - Windows (Windows 10+): Spyder_64bit_full.exe
+    - macOS
+      - M1 (14.0+): Spyder_arm64.dmg
+      - Intel (11.0+): Spyder.dmg
+    - Linux (CentOS 7+): Linux-x86_64.sh (Experimental)
+    Advanced installation
+    Important Notes
+    1. If you are new to Python or the Scientific Python ecosystem, we strongly recommend you to install and use Anaconda. It comes with Spyder and all its dependencies, along with the most important Python scientific libraries (i.e. Numpy, Pandas, Matplotlib, IPython, etc) in a single, easy to use environment.
+    2. We also support pip, but please be aware that pip installations are for advanced users with good knowledge of all Spyder dependencies. Because of that, all installation problems you encounter are expected to be solved by you.
+    Anaconda
+    You can easily install this version if you use Anaconda by closing Spyder and then running the following command in a system terminal (Anaconda Prompt on Windows, xterm on Linux or Terminal.app on macOS):
+    conda install spyder=5.5.4
+    Notes:
+    - It can take several months for a new Spyder version to be part of Anaconda. Please be patient until then and do not report it as a problem because we don't have any control over that.
+    - If you installed Anaconda for the first time, you need to run the following command first:
+      conda update anaconda
+      before running the command above.
+    Pip
+    You can also use pip to update Spyder with the following command in a system terminal (cmd.exe on Windows, xterm on Linux or Terminal.app on macOS):
+    pip install -U spyder
+    Note: Do not use this command if you are using Anaconda because it will break your installation.
+    Contributors
+    A big thank you to all the contributors that made this release possible: @bnavigator @mrclary @dalthviz @ccordoba12 🎉
+    Release notes
+    For the full list of closed issues and merged pull requests in this release, please see our Changelog.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/spyder-ide/spyder/releases/tag/v5.5.4
+Version: 5.5.4
+ReleaseTime: 2024-04-09T23:08:18.0000000Z

@@ -1,0 +1,14 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/Tyrrrz/LightBulb/releases/download/2.4.10/LightBulb-Installer.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Fix crash during auto-update by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/280
+    Full Changelog: https://github.com/Tyrrrz/LightBulb/compare/2.4.9...2.4.10
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Tyrrrz/LightBulb/releases/tag/2.4.10
+Version: 2.4.10
+ReleaseTime: 2024-04-08T13:18:21.0000000Z

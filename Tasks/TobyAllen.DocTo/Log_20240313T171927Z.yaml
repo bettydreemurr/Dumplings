@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/tobya/DocTo/releases/download/v1.14/docto.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Version 1.14
+    This has been built now on a clean machine so hopefully is clean and straightforward.
+    ps. I'm not superstitious!
+    Full Changelog: https://github.com/tobya/DocTo/compare/v1.11...v1.14
+- Key: ReleaseNotesUrl
+  Value: https://github.com/tobya/DocTo/releases/tag/v1.14
+Version: "1.14"
+ReleaseTime: 2024-02-15T17:57:59.0000000Z
