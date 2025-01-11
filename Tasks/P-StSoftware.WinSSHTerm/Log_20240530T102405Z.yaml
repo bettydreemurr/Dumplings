@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.35.1/WinSSHTerm-2.35.1-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.35.1/WinSSHTerm-2.35.1-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Bug fix: Creating a backup can lead to a corrupted file in some cases. Please consider backup files generated with 2.35.0 or earlier as corrupt and recreate them with 2.35.1 or later
+    - Master password: minor improvements
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.35.1
+Version: 2.35.1
+ReleaseTime: 2024-05-30T09:32:34.0000000Z

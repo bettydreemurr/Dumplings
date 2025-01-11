@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/prefix-dev/pixi/releases/download/v0.16.1/pixi-x86_64-pc-windows-msvc.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    📃 Details
+    Fixed
+    - Parse lockfile matchspecs lenient, fixing bug introduced in 0.16.0 by @ruben-arts in #951
+    Full commit history
+- Key: ReleaseNotesUrl
+  Value: https://github.com/prefix-dev/pixi/releases/tag/v0.16.1
+Version: 0.16.1
+ReleaseTime: 2024-03-11T13:43:09.0000000Z

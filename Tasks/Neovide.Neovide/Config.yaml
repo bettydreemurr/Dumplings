@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: Neovide.Neovide
+Skip: false

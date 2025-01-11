@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.34.0/WinSSHTerm-2.34.0-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.34.0/WinSSHTerm-2.34.0-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Shortcuts: It is now possible to use CTRL+Right ALT instead the ALTGR key (useful for keyboard layouts without the ALTGR key)
+    - Bug fix: In some cases the state of modifier keys (CTRL, SHIFT, ALTGR) were not properly detected
+    - Quick-Connect: New "Persist" button to save current data to a new connection
+    - View: New option to show/hide Quick-Connect, Search, or History button in the menu bar for quicker access
+    - Preferences: Reorganized the "Misc" page
+    - Moved menu elements in menu bar closer together to save some space
+    - Bug fix: Incorrect location of the Multi-Input tool strip in some cases
+    - Info dialog: Added the current keyboard layout id
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.34.0
+Version: 2.34.0
+ReleaseTime: 2024-04-09T17:40:13.0000000Z

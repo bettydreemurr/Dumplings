@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/prefix-dev/pixi/releases/download/v0.21.1/pixi-x86_64-pc-windows-msvc.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    📃 Details
+    Fixed
+    - Use read timeout, not global timeout by @wolfv in #1329
+    - Channel priority logic by @ruben-arts in #1332
+    Full commit history
+- Key: ReleaseNotesUrl
+  Value: https://github.com/prefix-dev/pixi/releases/tag/v0.21.1
+Version: 0.21.1
+ReleaseTime: 2024-05-07T10:48:36.0000000Z
