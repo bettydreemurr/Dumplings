@@ -1,5 +1,8 @@
+# Télécharge le fichier .appinstaller
 $response = Invoke-WebRequest -Uri 'https://windbg.download.prss.microsoft.com/dbazure/prod/1-0-0/windbg.appinstaller'
-$xmlContent = [xml]$response.Content
+
+# Convertit le contenu en texte XML
+$xmlContent = [xml]([System.Text.Encoding]::UTF8.GetString($response.Content))
 
 # Gérer l'espace de noms
 $namespaceManager = New-Object System.Xml.XmlNamespaceManager($xmlContent.NameTable)
@@ -24,6 +27,7 @@ $this.CurrentState.Installer += [ordered]@{
     InstallerUrl = $mainBundleNode.Uri
 }
 
+# Check et actions
 switch -Regex ($this.Check()) {
     'New|Changed|Updated' {
         $this.Print()
