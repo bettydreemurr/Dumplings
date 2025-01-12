@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dosbox-staging/dosbox-staging/releases/download/v0.82.0/dosbox-staging-windows-x64-v0.82.0-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dosbox-staging/dosbox-staging/releases/download/v0.82.0/dosbox-staging-windows-x64-v0.82.0-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dosbox-staging/dosbox-staging/releases/download/v0.82.0/dosbox-staging-windows-x64-v0.82.0.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: dosbox-staging-v0.82.0\dosbox.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: '0.82.0 release notes: https://www.dosbox-staging.org/releases/release-notes/0.82.0/'
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dosbox-staging/dosbox-staging/releases/tag/v0.82.0
+Version: 0.82.0
+ReleaseTime: 2024-10-27T03:16:59.0000000Z

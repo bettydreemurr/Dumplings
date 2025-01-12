@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.38.0/WinSSHTerm-2.38.0-x64.msi
+- Architecture: arm64
+  InstallerUrl: https://github.com/WinSSHTerm/WinSSHTerm/releases/download/2.38.0/WinSSHTerm-2.38.0-arm64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - New option (experimental) to let the terminal change the tab title dynamically (under File->Preferences->Terminal->Tab title changes)
+    - New feature: bulk-open connections with WinSCP (Connection Folder->Copy Files)
+    - Bug fix: State signs get lost when moving a tab with a renamed title
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WinSSHTerm/WinSSHTerm/releases/tag/2.38.0
+Version: 2.38.0
+ReleaseTime: 2024-12-14T14:16:31.0000000Z

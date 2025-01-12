@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/martinrotter/rssguard/releases/download/4.8.1/rssguard-4.8.1-3dde4064f-win10.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: Fixed some untested code regression, sorry.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/martinrotter/rssguard/releases/tag/4.8.1
+Version: 4.8.1
+ReleaseTime: 2024-12-20T06:58:55.0000000Z

@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.2.0/Pinokio-3.2.0-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.2.0.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    1. Fix install issues with Linux (nodejs + playwright)
+    2. Environment Variable Fix => the envs variable value is consistent. can be accessed in template expressions everywhere
+    3. fs.link fix => undici fetch buggy. use cross-fetch instead
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.2.0
+Version: 3.2.0
+ReleaseTime: 2025-01-01T14:34:08.0000000Z

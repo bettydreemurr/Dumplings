@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/microsoft/VFSForGit/releases/download/v1.0.24302.1/SetupGVFS.1.0.24302.1.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Allow mounting on ReFS volumes by @winstliu in https://github.com/microsoft/VFSForGit/pull/1822
+    - [Release] Milestone M196 by @dscho in https://github.com/microsoft/VFSForGit/pull/1823
+    Full Changelog: https://github.com/microsoft/VFSForGit/compare/v1.0.24298.1...v1.0.24302.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/microsoft/VFSForGit/releases/tag/v1.0.24302.1
+Version: 1.0.24302.1
+ReleaseTime: 2024-10-28T17:39:34.0000000Z

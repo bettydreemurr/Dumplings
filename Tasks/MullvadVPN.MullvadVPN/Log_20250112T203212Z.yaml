@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/mullvad/mullvadvpn-app/releases/download/2025.2/MullvadVPN-2025.2.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a desktop only release.
+    Here's a list of all the changes since the last stable release 2025.1:
+    Fixed
+    - Fix crash when Wireguard tunnel setup timed out.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/mullvad/mullvadvpn-app/releases/tag/2025.2
+Version: "2025.2"
+ReleaseTime: 2025-01-08T11:52:54.0000000Z

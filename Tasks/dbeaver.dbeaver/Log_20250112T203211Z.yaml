@@ -1,0 +1,34 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.2/dbeaver-ce-24.3.2-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.2/dbeaver-ce-24.3.2-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - New autocompletion engine was enabled by default
+                    - New autocompletion was enhanced with support for USING, INSERT statements, nested queries, and fixes for multiple issues
+                    - You can now use the @ai command followed by a natural language phrase to instantly execute it as a query (requires AI extension)
+                    - Icons in SQL Editor toolbar were redesigned
+                - Data Editor:
+                    - Dark theme support was improved, selection background was changed
+                    - Row hints were redesigned: key information is now displayed, the foreign key editor can be accessed via a right-click on the icon, icon rendering was improved
+                    - Context menu for Filters was simplified: all items are now on the same menu level
+                - Data Transfer: Added an option to replace line break character when exporting to CSV
+                - Connectivity:
+                    - Title for the Test Connection details was corrected
+                    - Fixed an issue with network profile saving
+                - Miscellaneous:
+                    - Performance of theme switching was improved to enhance the user experience
+                    - Localization files were converted to UTF-8 to improve the localization process and enhance code readability
+                    - Numerous minor UI improvements related to editors and dialogs coloring and fonts
+                - Databases:
+                    - MySQL/MariaDB: Removed redundant slashes in data export to SQL format
+                    - PostgreSQL: Both Asia/Calcutta and Asia/Kolkata time zones are now supported
+                    - Teradata driver was updated to version 20.00.00.38
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.3.2
+Version: 24.3.2
+ReleaseTime: 2025-01-05T19:37:08.0000000Z

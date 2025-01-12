@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.0.9/Beekeeper-Studio-Setup-5.0.9.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: Description of the release
+- Key: ReleaseNotesUrl
+  Value: https://github.com/beekeeper-studio/beekeeper-studio/releases/tag/v5.0.9
+Version: 5.0.9
+ReleaseTime: 2024-12-20T00:58:27.0000000Z

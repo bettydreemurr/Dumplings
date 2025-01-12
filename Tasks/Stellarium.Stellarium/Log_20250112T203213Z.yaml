@@ -1,0 +1,128 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/Stellarium/stellarium/releases/download/v24.4/stellarium-24.4-qt5-win32.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/Stellarium/stellarium/releases/download/v24.4/stellarium-24.4-qt6-win64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    The installers are located in the "Assets" section at the end of these release notes!
+
+    Release notes
+    The Stellarium Team has released final version in this year - 24.4.
+    The major changes of this version:
+    - Changes in DSO rendering
+    - Improvements in Core
+    - Improvements in Telescope Control plugin
+    - Updates in sky cultures
+    Behind the scenes, many more minor issues were fixed.
+    What's Changed
+    Full list of changes:
+    - Added optional drop shadow behind InfoText
+    - Added ability of immediate-store for (hopefully) all main program properties (GH: #3987)
+    - Added designation for η Car star (GH: #633)
+    - Added code for Tachelhit language
+    - Added sidereal time in degrees to StelObject InfoMap
+    - Added test to avoid missing colors for NebCl type
+    - Added new nomenclature
+    - Added alias for Asia/Choibalsan time zone (GH: #3955, #3953)
+    - Added proper name for LDN43
+    - Fixed kerning of curved text (GH: #4006)
+    - Fixed application of text baseline shift
+    - Fixed Milky Way texture (GH: #3995)
+    - Fixed typos (GH: #3993, #4015)
+    - Fixed mistakes in Korean SC (GH: #3994)
+    - Fixed proper motion for pulsars
+    - Fixed minimum target version for macOS when Qt5 is using
+    - Fixed color for NebCl type
+    - Fixed sizes of proportional hints for DSO
+    - Fixed description of Arabic (Lunar mansions) SC (GH: #3938)
+    - Fixed description of Arabic (Arabian peninsula) SC (GH: #3944)
+    - Fixed typos in Arabic (Indigenous) skyculture (GH: #3939)
+    - Fixed BOM char in source code
+    - Fixed constellation Pleiades (HR -> HIP) in Greek (Leiden Aratea) SC (GH: #3931)
+    - Fixed translating months in AstroCalc/Graphs after changing language (GH: #3907)
+    - Fixed typos in Mongolian skyculture (GH: #3913)
+    - Fixed typos in Indian skyculture (GH: #3908)
+    - Fixed typos in Romanian skyculture (GH: #3912)
+    - Fixed few security alerts for JS code (GH: #3918, #3920, #3917)
+    - Fixed compiling planetarium in some systems (GH: #3905)
+    - Fixed missing parts of refactoring
+    - Fixed setting 2 lines in ArchaeoLines plugin (GH: #3909)
+    - Fixed saving selected object information (GH: #3910)
+    - Fixed coordinates in '20 Fun Naked-Eye Double Stars' script (GH: #3835)
+    - Changed core: keep FOV search radius in hiDPI screen consistent from user perspective (GH: #3985)
+    - Changed core: attempt to resolve HIP first (GH: #3980)
+    - Changed core: Refactoring drawing nebulae markers (GH: #3968)
+    - Changed core: Allow dimming of DSO hints and labels
+    - Changed core: Make some landscape variables static, and properties of LandscapeMgr (GH: #3951, #3574)
+    - Changed core and Solar System Editor plugin: improved size of small asteroids
+    - Changed core: Rewrite spheric mirror to make it more efficient (GH: #3535, #3954)
+    - Changed core: Remove a useless OpenGL call
+    - Changed Telescope Control plugin: Show an even more clear hint that ASCOM is disabled in Qt6 builds
+    - Changed Telescope Control plugin: INDI support is optional now
+    - Changed Telescope Control plugin: switch to INDI v2.1.1 (GH: #3269)
+    - Changed Satellites plugin: User can decide if newly added satellites are visible by default now (GH: #3986)
+    - Changed Satellites plugin: Avoid bad orbit lines (GH: #3934)
+    - Changed Satellites plug-in: small speedup
+    - Changed Calendars plugin: add drop shadow for better readability
+    - Updated Norse SC (GH: #3990, #3991)
+    - Updated default list of locations
+    - Updated default list of minor bodies
+    - Updated list of planetary features
+    - Updated discovery circumstances for comets and for minor planets
+    - Updated photometry data for satellites
+    - Updated translations
+    - Updated infrastructure: Let system-installed fast_float be found (GH: #3949)
+    - Updated WebUI in Remote Control plug-in (GH: #3929)
+    - Updated JS libraries in Remote Control plugin-in (GH: #3923)
+    - Updated default catalog of pulsars
+    - Removed texture of NGC104
+    Packages notes
+    package note
+    stellarium-24.4.tar.gz Source code of Stellarium 24.4.
+    MD5: eabf3b7357a40073245f29faa5ee5c83
+    SHA256: 433bb8a0380313e6d9e4caf62395b724f4d74262c8aae426a0fe1a5e61a29cbb
+    stellarium-24.4.tar.bz2 Source code of Stellarium 24.4.
+    MD5: cc976adc3d31831a0c2e4fa11ceb585f
+    SHA256: 103359554d41cf195d8200ea74de83515eb2f595260587783d3135ed9acf1d2c
+    stellarium-24.4.tar.xz Source code of Stellarium 24.4.
+    MD5: dc317cfd181e79043de2c38d6104908e
+    SHA256: 84386ad6261bbad7851a56febe673ec73adc7a3b49156b33af6c534e85ac8f8d
+    stellarium-24.4.zip Source code of Stellarium 24.4.
+    MD5: 7c7ddfd42a75a8216f37562c8a73f68a
+    SHA256: 7c3211a341449cadd4fe592f0ab3e0f03db06b2f86e5aa210b47cc396ce4f3c7
+    stellarium-24.4-qt5-win32.exe Stellarium 24.4 for Windows (x86_32; Windows 7+) based on Qt 5.12.6 (Visual Studio 2017).
+    MD5: be04387af333b42db8fb2c3ce81e68f8
+    SHA256: 71b620f40b330af0444791181684942df7b8bd51c73b72a32b3e2c3d0109a127
+    stellarium-24.4-qt5-win64.exe Stellarium 24.4 for Windows (x86_64; Windows 7+) based on Qt 5.12.6 (Visual Studio 2017).
+    MD5: 7a94fcaa6f4c466965128a51d67d421f
+    SHA256: e662ce010c6fb18bf7138f7209a0b0fb0f4127be30d0c053842942639975dcdd
+    stellarium-24.4-qt6-win64.exe Stellarium 24.4 for Windows (x86_64; Windows 10+) based on Qt 6.5.3 (Visual Studio 2019).
+    MD5: dabcb566eed1a97304d727737841ddb8
+    SHA256: c52a7a2da4e0639457d1c4a2010d4bdbf47594710fac179fdfa69718d83bc36b
+    stellarium-24.4-qt6-arm64.exe Stellarium 24.4 for Windows (ARM64; Windows 10+) based on Qt 6.5.3 (Visual Studio 2022).
+    MD5: 28250785a9f64e578042c997d6c2ad38
+    SHA256: 8219feea683696b2fe36ea02c68581cc02d4e5aa8b5a1593676b05888a0f5a87
+    Stellarium-24.4-qt6-macOS.zip Stellarium 24.4 for macOS (universal; macOS 11.0+) based on Qt 6.5.3 (AppleClang 16.0.0).
+    MD5: ed1e9ec3b3ff376ce2812530c2af42f2
+    SHA256: e3a8c9ac2c7e52b4eb971b84941e801affaa69f156b844f806c42dbd9f08f63c
+    Stellarium-24.4-qt5-x86_64.zip Stellarium 24.4 for macOS (x86_64; macOS 10.13+) based on Qt 5.12.12 (AppleClang 13.0.0).
+    MD5: da227cf4d3bb0168fbf519693876a431
+    SHA256: 2474235caf179cdc0d1fe0b70b6da39a13c16aaf24faf9740ced2ea3c3543ad7
+    Stellarium-24.4-qt5-x86_64.AppImage Stellarium 24.4 for Linux (amd64; glibc 2.31) based on Qt 5.12.8 (GCC 9.4.0).
+    MD5: bb6f74d11b3eee3f7c738ab4d8be4310
+    SHA256: d87bad1be41495c743b253267a79b1873f357b75589f2e976ee158f4f3cdf3a0
+    Stellarium-24.4-qt6-x86_64.AppImage Stellarium 24.4 for Linux (amd64; glibc 2.35) based on Qt 6.2.4 (GCC 11.4.0).
+    MD5: 8ba2aa3e7425d395c8de9bfa4057be37
+    SHA256: 79a5bd45375cc952587aa44ac44efcd37303684cff6d488b8f4b59a6257eefb6
+    Verify
+    GPG signature
+    1. Import Stellarium's GPG key curl -O https://stellarium.org/files/stellarium.gpg
+    2. List Stellarium's GPG key gpg --with-fingerprint --show-keys --keyid-format long stellarium.gpg id: rsa4096/BF38D4D02A328DFF 2012-04-07 fingerprint: 7915 1C2E 6351 E727 8DA1 A730 BF38 D4D0 2A32 8DFF
+    3. Verify the binary file is valid (tarball for example) gpgv --keyring ./stellarium.gpg stellarium-24.4.tar.gz.asc stellarium-24.4.tar.gz
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Stellarium/stellarium/releases/tag/v24.4
+Version: "24.4"
+ReleaseTime: 2024-12-22T11:13:49.0000000Z

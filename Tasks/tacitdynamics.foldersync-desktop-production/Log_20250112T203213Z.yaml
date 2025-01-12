@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/tacitdynamics/foldersync-desktop-production/releases/download/2.1.0/foldersync-desktop-2.1.0-windows-amd64.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/tacitdynamics/foldersync-desktop-production/releases/download/2.1.0/foldersync-desktop.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/tacitdynamics/foldersync-desktop-production/releases/download/2.1.0/foldersync-desktop-2.1.0.x64.msix
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: FolderSync Desktop v2.1.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/tacitdynamics/foldersync-desktop-production/releases/tag/2.1.0
+Version: 2.1.0
+ReleaseTime: 2025-01-03T16:17:07.0000000Z
