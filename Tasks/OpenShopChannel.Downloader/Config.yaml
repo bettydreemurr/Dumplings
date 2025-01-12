@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: OpenShopChannel.Downloader
+Skip: false
