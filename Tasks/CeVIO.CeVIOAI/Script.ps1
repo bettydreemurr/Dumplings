@@ -10,7 +10,7 @@ if ($response.StatusCode -eq 200) {
     $htmlContent = $response.Content
 
     # Rechercher le lien de téléchargement du fichier .msi
-    $downloadLink = $htmlContent -match 'href="([^"]*CeVIO_AI_Setup_.*?\.msi)"'
+    $downloadLink = $htmlContent -match "onclick=""location.href='([^']*CeVIO_AI_Setup_.*?\.msi)'"""
 
     if ($downloadLink) {
         # Extraire l'URL complète du fichier .msi
