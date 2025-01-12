@@ -1,4 +1,4 @@
-$Object1 = Invoke-RestMethod -Uri 'https://aka.ms/windbg/download'
+$Object1 = Invoke-RestMethod -Uri 'https://windbg.download.prss.microsoft.com/dbazure/prod/1-0-0/windbg.appinstaller'
 
 # Version
 $this.CurrentState.Version = $Object1.AppInstaller.MainBundle.Version
