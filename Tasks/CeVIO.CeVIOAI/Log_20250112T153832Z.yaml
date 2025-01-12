@@ -1,0 +1,5 @@
+Installer:
+- InstallerUrl: https://cevio.jp/storage/cevio_ai/CeVIO_AI_Setup_x64_(9.1.17.0).msi
+  InstallerSha256: 4FE16B11757788E4BE4B44EFA608B46648069D241C0E286C7401EA863420FD35
+Locale: []
+Version: 9.1.17
