@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/Tyrrrz/LightBulb/releases/download/2.6/LightBulb-Installer.win-arm64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Bump the nuget group with 5 updates by @dependabot in https://github.com/Tyrrrz/LightBulb/pull/320
+    - Bump the actions group with 2 updates by @dependabot in https://github.com/Tyrrrz/LightBulb/pull/319
+    - Add hotkey to open LightBulb from tray by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/323
+    - Fix hotkeys not registering properly on startup by @Tyrrrz in https://github.com/Tyrrrz/LightBulb/pull/324
+    Full Changelog: https://github.com/Tyrrrz/LightBulb/compare/2.5.3...2.6
+- Key: ReleaseNotesUrl
+  Value: https://github.com/Tyrrrz/LightBulb/releases/tag/2.6
+Version: "2.6"
+ReleaseTime: 2024-07-19T11:55:05.0000000Z

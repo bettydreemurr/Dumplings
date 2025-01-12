@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/ra3xdh/qucs_s/releases/download/24.4.1/Qucs-S-24.4.1-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Update Russian translation by @antohami in https://github.com/ra3xdh/qucs_s/pull/1038
+    - Fix hardcoded version in Cauer LC filter by @ra3xdh in https://github.com/ra3xdh/qucs_s/pull/1039
+    - Improve graph rendering performance by @wawuwo in https://github.com/ra3xdh/qucs_s/pull/1042
+    - refactor: replace non-empty QString constructors with QStringLiteral() by @Integral-Tech in https://github.com/ra3xdh/qucs_s/pull/1043
+    - Update Qt to v6.8.0 LTS by @dsm in https://github.com/ra3xdh/qucs_s/pull/1048
+    - Add MetaInfo by @NN708 in https://github.com/ra3xdh/qucs_s/pull/1056
+    - Fix #1001 by @ivandi69 in https://github.com/ra3xdh/qucs_s/pull/1057
+    - Fix build for contrib directory by @NN708 in https://github.com/ra3xdh/qucs_s/pull/1058
+    - Fix pulsed current source issues by @ra3xdh in https://github.com/ra3xdh/qucs_s/pull/1059
+    - Update NEWS, VERSION, and MetaInfo by @ra3xdh in https://github.com/ra3xdh/qucs_s/pull/1061
+    New Contributors
+    - @NN708 made their first contribution in https://github.com/ra3xdh/qucs_s/pull/1056
+    Full Changelog: https://github.com/ra3xdh/qucs_s/compare/24.4.0...24.4.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ra3xdh/qucs_s/releases/tag/24.4.1
+Version: 24.4.1
+ReleaseTime: 2024-11-14T18:00:06.0000000Z

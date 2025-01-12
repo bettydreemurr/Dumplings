@@ -1,0 +1,100 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.02.07/gamadv-xtd3-7.02.07-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Scroll to bottom of page for installation/downloads
+    Latest updates
+    7.02.07
+    Updated gam delete|update chromepolicy to display the <AppID> or <PrinterID> (if specified) in the command status messages.
+    7.02.06
+    Added option <JSONData> to gam <UserTypeEntity> create|update form that allows for creation/modification of all fields in a form. <JSONData> is a list of form update requests.
+    - See: https://developers.google.com/forms/api/reference/rest/v1/forms/batchUpdate
+    7.02.05
+    Updated gam [<UserTypeEntity>] show shareddriveacls ... formatjson to not display this line which interferes with the JSON output.
+    User: user@domain.com, Show N Shared Drives
+    7.02.04
+    Updated code to eliminate trap caused by bug introduced in 7.02.00 that occurs when an invalid domain or OU is specified.
+    7.02.03
+    Added option archive to gam <UserTypeEntity> update license <NewSKUID> from <OldSKUID> that causes GAM to archive <UserTypeEntity> after updating their license to <NewSKUID>. This will be used when you want to archive a user with a non-archivable license. The <NewSKUID> license is assigned to the user and it then converts to the equivalent Archived User license when the user is archived.
+    <NewSKUID> must be one of the following SKUs:
+    Google-Apps-Unlimited - G Suite Business
+    1010020020 - Google Workspace Enterprise Plus
+    1010020025 - Google Workspace Business Plus
+    1010020026 - Google Workspace Enterprise Standard
+    1010020027 - Google Workspace Business Starter
+    1010020028 - Google Workspace Business Standard
+    7.02.02
+    Updated gam <UserTypeEntity> archive messages <GroupItem> to retry the following unexpected error that occurs after many messages have been successfully archived. ERROR: 404: notFound - Unable to lookup group
+    7.02.01
+    Added options locked and unlocked to gam update cigroups that allow locking/unlocking groups.
+    - See: https://workspaceupdates.googleblog.com/2024/12/locked-groups-open-beta.html
+    You'll have to do a gam oauth create and enable the following scope to use these options:
+    [*] 22)  Cloud Identity Groups API Beta (Enables group locking/unlocking)
+    7.02.00
+    Improved the error message displayed for user service account access commands when:
+    - The API is not enabled
+    - The user does not exist
+    - The user exists but is in a OU where the service is disabled
+    7.01.04
+    Added options internal, internaldomains <DomainNameList> and external to these commands that expand the options for viewing group members:
+    gam info group
+    gam print groups
+    gam print|show group-members
+    gam info cigroup
+    gam print cigroups
+    gam print|show cigroup-members
+    By default, when listing group members, GAM does not take the domain of the member into account.
+    - internal internaldomains <DomainNameList> - Display members whose domain is in <DomainNameList>
+    - external internaldomains <DomainNameList> - Display members whose domain is not in <DomainNameList>
+    - internal external internaldomains <DomainNameList> - Display all members, indicate their category: internal or external
+    - internaldomains <DomainNameList> - Defaults to value of domain in gam.cfg
+    Members without an email address, e.g. customer, chrome-os-device and cbcm-browser are considered internal.
+    Updated to Python 3.13.1 where possible.
+    7.01.03
+    Fixed bug in gam update cigroups <GroupEntity> delete|sync|update where cbcm-browser and chrome-os-device addresses were not properly handled.
+    7.01.02
+    Added option positivecountsonly to gam <UserTypeEntity> print|show filecomments that causes GAM to display the number of comments and replies only for files that have comments.
+    Added my_commentable_items to <DriveFileQueryShortcut> that can be used with gam <UserTypeEntity> print|show filecomments my_commentable_items to speed up processing.
+    Updated code that uses the Domain Shared Contacts API with an HTTPS proxy to avoid a trap:
+    Traceback (most recent call last):
+    ...
+    File "atom/http.py", line 250, in _prepare_connection
+    AttributeError: module 'ssl' has no attribute 'wrap_socket'
+    7.01.01
+    Fixed bug in gam <UserTypeEntity> print|show filetree where no error message was generated if a user had Drive disabled.
+    7.01.00
+    Fixed bug in gam update chromepolicy that caused some policy updates to fail.
+    Added option showhtml to gam <UserTypeEntity> print|show messages that, when used with showbody, will display message body content of type HTML.
+    Added support for managing/displaying Chrome profiles.
+    - See: https://github.com/taers232c/GAMADV-XTD3/wiki/Chrome-Profile-Management
+    Installation
+    If you are a first time Gam user:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Install-Advanced-GAM
+    If you are updating your GAMADV-XTD3 version:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Update-Advanced-GAM
+    If you are upgrading from standard Gam
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-Standard-GAM
+    If you are upgrading from GAMADV-X or GAMADV-XTD
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-GAMADV-X-or-GAMADV-XTD
+    sha256 hashes
+    4d1c1ce9629886ed815c3d8c34c3b144ee6f4451c7b879b70f84dbfd3ad33609  gamadv-xtd3-7.02.07-linux-arm64-glibc2.23.tar.xz
+    03af2ab5ce1e265af02facd646ba592d2c21de20dd43ba31ad68243db94725bf  gamadv-xtd3-7.02.07-linux-arm64-glibc2.27.tar.xz
+    06c871111808ccbaab9326db5d1edd2151354f2a2e70227fefdb9dd2d3a393c4  gamadv-xtd3-7.02.07-linux-arm64-glibc2.31.tar.xz
+    2970dcae9b73439f5dc9b7f6eb2a17bc331358a6bb0779dfe7e8656831d686c3  gamadv-xtd3-7.02.07-linux-x86_64-glibc2.19.tar.xz
+    0601a829a236d6248ca896d4685314078acd23c50b835c3bf12f81c16d143690  gamadv-xtd3-7.02.07-linux-x86_64-glibc2.23.tar.xz
+    7f9b5fc2f450f58d1af96203d28043a8b9e907450c34f4ed0bf76687202a6154  gamadv-xtd3-7.02.07-linux-x86_64-glibc2.27.tar.xz
+    cc81671ecca4b8aac7520c2f694cb0c015f7fcddc8f3d03765db9528ca5dac82  gamadv-xtd3-7.02.07-linux-x86_64-glibc2.31.tar.xz
+    2f0e4581ab5953b75cba8e0e711fb0b3086ae1fcbcc78668fbd5b68df3b2e703  gamadv-xtd3-7.02.07-linux-x86_64-glibc2.35.tar.xz
+    c54207a36d05c4db3e91f9ab5a9e73cf7466c3f655b1a80612b2db231cccf218  gamadv-xtd3-7.02.07-linux-x86_64-glibc2.39.tar.xz
+    088e8869683f52a0f5f0b24c853d95dc3ca2a506b11238ad631444b7d6eafe5e  gamadv-xtd3-7.02.07-linux-x86_64-legacy.tar.xz
+    3c709b985d27474a7a500d106a8fa1c781f013a9d4e6afdb61ba508ccd72e05b  gamadv-xtd3-7.02.07-macos-arm64.tar.xz
+    56031f8076a03f03eda6ecd1d8a690365da2712cf95afe51446843e762b92403  gamadv-xtd3-7.02.07-macos-x86_64.tar.xz
+    037507d127dd83efc8b7e36874a32736740467acff2c0c94779883ed22d16b29  gamadv-xtd3-7.02.07-windows-x86_64.msi
+    92e2ff010504ee6d80fcacc0175f8f58c91c33d591a02a6ba74f39585ee89f9e  gamadv-xtd3-7.02.07-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.02.07
+Version: 7.02.07
+ReleaseTime: 2025-01-07T01:10:51.0000000Z
