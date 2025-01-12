@@ -1,0 +1,15 @@
+Installer:
+- InstallerUrl: https://github.com/lostindark/DriverStoreExplorer/releases/download/v0.11.111/DriverStoreExplorer.v0.11.111.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Now requires .NET Framework 4.6.2.
+    - Support text scroll in delete confirmation dialog.
+    - Update dependency packages.
+    - New language tt_RU.
+    - Bug fixes.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/lostindark/DriverStoreExplorer/releases/tag/v0.11.111
+Version: 0.11.111
+ReleaseTime: 2025-01-12T00:14:17.0000000Z
