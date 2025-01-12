@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.11.232806/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.11.232806/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/8346b549150003df988538e54c9d8bc4de568979
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Fix filename sanitization with --no-windows-filenames (#11988) by bashonly
+    - Validate retries values are non-negative (#11927) by Strkmn
+    Extractor changes
+    - plvideo: Add extractor (#10657) by Sanceilaks, seproDev
+    - xiaohongshu: Extend _VALID_URL (#11806) by HobbyistDev
+    - youtube: Fix DASH formats incorrectly skipped in some situations (#11910) by coletdjnz
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.01.11.232806
+Version: 2025.01.11.232806
+ReleaseTime: 2025-01-11T23:35:03.0000000Z
