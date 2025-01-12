@@ -1,8 +1,18 @@
 # Télécharge le fichier .appinstaller
 $response = Invoke-WebRequest -Uri 'https://windbg.download.prss.microsoft.com/dbazure/prod/1-0-0/windbg.appinstaller'
 
-# Convertit le contenu en texte XML
-$xmlContent = [xml]([System.Text.Encoding]::UTF8.GetString($response.Content))
+# Convertit le contenu en texte et nettoie le BOM
+$contentString = [System.Text.Encoding]::UTF8.GetString($response.Content)
+$contentString = $contentString.TrimStart([char]0xFEFF)
+
+# Charger le XML
+$xmlContent = [xml]$contentString
+
+# Valider le contenu XML
+if (-not $xmlContent.DocumentElement) {
+    Write-Error "Le contenu téléchargé n'est pas un XML valide."
+    return
+}
 
 # Gérer l'espace de noms
 $namespaceManager = New-Object System.Xml.XmlNamespaceManager($xmlContent.NameTable)
