@@ -1,0 +1,8 @@
+Installer:
+- InstallerUrl: https://proton.me/download/mail/windows/ProtonMail-desktop.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: ""
+Version: 1.6.1
+ReleaseTime: 2024-12-12
