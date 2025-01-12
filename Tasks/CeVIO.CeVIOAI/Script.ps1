@@ -11,10 +11,21 @@ $this.CurrentState.Version = $versionFull -replace '\.0$', ''
 
 switch -Regex ($this.Check()) {
   'New|Changed|Updated' {
-    $Object2 = Invoke-RestMethod -Uri "${InstallerUrl}.sha256"
+    try {
+        # Télécharger l'installateur MSI
+        $installerPath = "$PSScriptRoot\installer.msi"
+        Invoke-WebRequest -Uri $InstallerUrl -OutFile $installerPath
 
-    # InstallerSha256
-    $this.CurrentState.Installer[0]['InstallerSha256'] = $Object2.Split()[0].ToUpper()
+        # Calculer le hash SHA256
+        $sha256Hash = Get-FileHash -Path $installerPath -Algorithm SHA256
+        $this.CurrentState.Installer[0]['InstallerSha256'] = $sha256Hash.Hash.ToUpper()
+
+        # Supprimer le fichier après usage
+        Remove-Item -Path $installerPath -Force
+    } catch {
+        Write-Error "Erreur critique : Impossible de télécharger ou calculer le hash SHA256. Programme arrêté."
+        throw
+    }
 
     $this.Print()
     $this.Write()
