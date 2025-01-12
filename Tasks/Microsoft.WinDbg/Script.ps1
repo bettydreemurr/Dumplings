@@ -1,7 +1,7 @@
 $Object1 = Invoke-RestMethod -Uri 'https://aka.ms/windbg/download'
 
 # Version
-$this.CurrentState.Version = $Object1.AppInstaller.Version
+$this.CurrentState.Version = $Object1.AppInstaller.MainBundle.Version
 
 # Installer
 $this.CurrentState.Installer += [ordered]@{
