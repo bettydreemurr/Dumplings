@@ -12,7 +12,7 @@ $this.CurrentState.Installer += [ordered]@{
   InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.msi') -and $_.name.Contains('x86_64') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
 }
 $this.CurrentState.Installer += [ordered]@{
-  Architecture = 'x64'
+  Architecture = 'arm64'
   InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.msi') -and !($_.name.Contains('x86_64')) }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
 }
 
