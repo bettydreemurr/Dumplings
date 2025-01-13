@@ -16,7 +16,6 @@ $this.CurrentState.Installer += [ordered]@{
   InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.msi') -and !($_.name.Contains('x86_64')) }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
 }
 
-
 # ReleaseTime
 $this.CurrentState.ReleaseTime = $Object1.published_at.ToUniversalTime()
 
