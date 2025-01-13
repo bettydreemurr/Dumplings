@@ -1,0 +1,32 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.12.232754/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.12.232754/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/dade5e35c89adaad04408bfef766820dbca06ebe
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Fix filename sanitization with --no-windows-filenames (#11988) by bashonly
+    - Validate retries values are non-negative (#11927) by Strkmn
+    Extractor changes
+    - drtalks: Add extractor (#10831) by pzhlkj6612, seproDev
+    - plvideo: Add extractor (#10657) by Sanceilaks, seproDev
+    - vine: Remove extractors (#11700) by allendema
+    - xiaohongshu: Extend _VALID_URL (#11806) by HobbyistDev
+    - youtube
+      - Fix DASH formats incorrectly skipped in some situations (#11910) by coletdjnz
+      - Refactor cookie auth (#11989) by coletdjnz
+      - Use tv instead of mweb client by default (#12059) by coletdjnz
+    Misc. changes
+    - cleanup: Miscellaneous: dade5e3 by grqz, Grub4K, seproDev
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.01.12.232754
+Version: 2025.01.12.232754
+ReleaseTime: 2025-01-12T23:34:26.0000000Z
