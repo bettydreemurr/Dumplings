@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/microsoft/VFSForGit/releases/download/v1.0.24335.1/SetupGVFS.1.0.24355.1.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Avoid issues with locked machine.config (#1825)
+    - Allow install on x64-compatible machines, i.e, ARM64 (#1827)
+    - Build script fixes (#1826)
+    Full Changelog: https://github.com/microsoft/VFSForGit/compare/v1.0.24302.1...v1.0.24335.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/microsoft/VFSForGit/releases/tag/v1.0.24335.1
+Version: 1.0.24335.1
+ReleaseTime: 2024-12-20T11:56:30.0000000Z
