@@ -1,24 +1,16 @@
-$RepoOwner = 'dongle-the-gadget'
-$RepoName = 'WinverUWP'
+$RepoOwner = 'gottcode'
+$RepoName = 'focuswriter'
 
 $Object1 = Invoke-GitHubApi -Uri "https://api.github.com/repos/${RepoOwner}/${RepoName}/releases/latest"
 
+# Version
+$this.CurrentState.Version = $Object1.tag_name -creplace '^v'
+
 # Installer
 $this.CurrentState.Installer += [ordered]@{
-  Architecture = 'x86'
-  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.AppxBundle') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
-}
-$this.CurrentState.Installer += [ordered]@{
   Architecture = 'x64'
-  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.AppxBundle') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
+  InstallerUrl = "https://gottcode.org/focuswriter/FocusWriter_$($this.CurrentState.Version).exe"
 }
-$this.CurrentState.Installer += [ordered]@{
-  Architecture = 'arm64'
-  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.AppxBundle') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
-}
-
-# Version
-$this.CurrentState.Version = [regex]::Match($InstallerUrl, '_(\d+\.\d+\.\d+\.\d+)_').Groups[1].Value
 
 # ReleaseTime
 $this.CurrentState.ReleaseTime = $Object1.published_at.ToUniversalTime()
