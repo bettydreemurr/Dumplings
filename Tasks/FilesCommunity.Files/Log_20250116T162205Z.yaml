@@ -1,0 +1,29 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_3.8.0.0_Stable_Test/Files.Package_3.8.0.0_x64_arm64_Stable.msixbundle
+- Architecture: x64
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_3.8.0.0_Stable_Test/Files.Package_3.8.0.0_x64_arm64_Stable.msixbundle
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Download Files from our download page
+    What's Changed
+    - Manage tags from the sidebar.
+    - Free up space with the Storage Sense action.
+    - Create alternate data streams.
+    - Copy the path of the current tab.
+    - Close all tabs with ctrl+shift+w.
+    - Paste items from the clipboard as shortcuts.
+    - Archive creation settings are now stored across sessions.
+    - Updated the privacy policy URL.
+    - Improved responsiveness of the cards in the drives widget.
+    - Fixed an issue where a WSL prompt would sometimes display on startup.
+    - Fixed an issue where canceling drag & drop cleared the selected items.
+    - Fixed an issue where bulk rename didn’t follow the sort order.
+    - Fixed the context menu placement on the home page.
+    Full Changelog: https://github.com/files-community/Files/compare/v3.7.11...v3.8
+- Key: ReleaseNotesUrl
+  Value: https://github.com/files-community/Files/releases/tag/v3.8
+Version: 3.8.0.0
+ReleaseTime: 2024-11-23T23:28:57.0000000Z
