@@ -1,0 +1,7 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://cdn.download.comodo.com/browser/release/dragon/x86/dragonsetup.exe
+- Architecture: x64
+  InstallerUrl: https://cdn.download.comodo.com/browser/release/dragon/x64/dragonsetup.exe
+Locale: []
+Version: 131.0.6778.109
