@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/dongle-the-gadget/WinverUWP/releases/download/v2.1.0.0/2505FireCubeStudios.WinverUWP_2.1.4.0_neutral_._k45w5yt88e21j.AppxBundle
+- Architecture: x64
+  InstallerUrl: https://github.com/dongle-the-gadget/WinverUWP/releases/download/v2.1.0.0/2505FireCubeStudios.WinverUWP_2.1.4.0_neutral_._k45w5yt88e21j.AppxBundle
+- Architecture: arm64
+  InstallerUrl: https://github.com/dongle-the-gadget/WinverUWP/releases/download/v2.1.0.0/2505FireCubeStudios.WinverUWP_2.1.4.0_neutral_._k45w5yt88e21j.AppxBundle
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Added new expiration tag.
+    - Fixed language defaulting to Korean (it now defaults to English)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dongle-the-gadget/WinverUWP/releases/tag/v2.1.0.0
+Version: 2.1.4.0
+ReleaseTime: 2024-04-13T05:25:44.0000000Z
