@@ -10,8 +10,8 @@ $this.CurrentState.Installer = @(
     }
 )
 
-# Fonction pour télécharger et vérifier les versions des fichiers d'installation
-function DownloadAndVerify-Installers {
+# Fonction pour télécharger, vérifier les versions, puis supprimer les fichiers
+function DownloadVerifyAndClean-Installers {
     # Préparer les chemins locaux pour chaque fichier
     $localPaths = @{}
     foreach ($installer in $this.CurrentState.Installer) {
@@ -33,20 +33,25 @@ function DownloadAndVerify-Installers {
 
     # Vérifier si les versions sont identiques
     if ($x86Version -ne $x64Version) {
+        # Nettoyer les fichiers avant de lancer une exception
+        Remove-Item $localPaths['x86'], $localPaths['x64'] -ErrorAction SilentlyContinue
         throw "Les versions des installateurs ne correspondent pas : x86 = $x86Version, x64 = $x64Version"
     }
 
     # Mettre à jour la version dans CurrentState
     $this.CurrentState.Version = $x86Version
 
-    # Retourner les chemins des fichiers si nécessaire
-    return $localPaths
+    # Nettoyer les fichiers après la vérification
+    Write-Host "Suppression des fichiers téléchargés..."
+    Remove-Item $localPaths['x86'], $localPaths['x64'] -ErrorAction SilentlyContinue
+
+    Write-Host "Téléchargements vérifiés et fichiers nettoyés."
 }
 
 # Main
 try {
-    # Télécharger et vérifier les versions des installateurs
-    $installerPaths = DownloadAndVerify-Installers
+    # Télécharger, vérifier et nettoyer les installateurs
+    DownloadVerifyAndClean-Installers
 
     # Logique pour vérifier et mettre à jour l'état
     switch -Regex ($this.Check()) {
