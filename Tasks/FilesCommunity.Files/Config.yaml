@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: FilesCommunity.Files
+Skip: false

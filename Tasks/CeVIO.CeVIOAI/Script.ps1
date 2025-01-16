@@ -2,6 +2,7 @@ $Object1 = Invoke-WebRequest -Uri 'https://cevio.jp/guide/cevio_ai/'
 
 # Installer
 $this.CurrentState.Installer += [ordered]@{
+  Architecture = 'x64'
   InstallerUrl = $InstallerUrl = $Object1.Links.Where({ try { $_.href.EndsWith('.msi') } catch {} }, 'First')[0].href
 }
 
