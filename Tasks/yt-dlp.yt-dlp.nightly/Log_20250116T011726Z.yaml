@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.15.232837/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.15.232837/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/c8541f8b13e743fcfa06667530d13fee8686e22a
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - youtube: Do not use web_creator as a default client (#12087) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.01.15.232837
+Version: 2025.01.15.232837
+ReleaseTime: 2025-01-15T23:35:45.0000000Z
