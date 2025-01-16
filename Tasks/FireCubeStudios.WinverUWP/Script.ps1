@@ -1,20 +1,23 @@
 $RepoOwner = 'dongle-the-gadget'
 $RepoName = 'WinverUWP'
 
+# Récupérer les informations de la dernière version
 $Object1 = Invoke-GitHubApi -Uri "https://api.github.com/repos/${RepoOwner}/${RepoName}/releases/latest"
 
 # Installer
-$this.CurrentState.Installer += [ordered]@{
-  Architecture = 'x86'
-  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.AppxBundle') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
-}
-$this.CurrentState.Installer += [ordered]@{
-  Architecture = 'x64'
-  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.AppxBundle') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
-}
-$this.CurrentState.Installer += [ordered]@{
-  Architecture = 'arm64'
-  InstallerUrl = $Object1.assets.Where({ $_.name.EndsWith('.AppxBundle') }, 'First')[0].browser_download_url | ConvertTo-UnescapedUri
+foreach ($arch in @('x86', 'x64', 'arm64')) {
+    $AppxBundle = $Object1.assets | Where-Object { $_.name -like '*.AppxBundle' } | Select-Object -First 1
+    if ($null -eq $AppxBundle) {
+        Write-Error "No .AppxBundle files found for $arch in the assets for $RepoName."
+        return
+    }
+
+    $InstallerUrl = $AppxBundle.browser_download_url | ConvertTo-UnescapedUri
+
+    $this.CurrentState.Installer += [ordered]@{
+        Architecture = $arch
+        InstallerUrl = $InstallerUrl
+    }
 }
 
 # Version
@@ -23,32 +26,33 @@ $this.CurrentState.Version = [regex]::Match($InstallerUrl, '_(\d+\.\d+\.\d+\.\d+
 # ReleaseTime
 $this.CurrentState.ReleaseTime = $Object1.published_at.ToUniversalTime()
 
+# Notes de version
 if (-not [string]::IsNullOrWhiteSpace($Object1.body)) {
-  # ReleaseNotes (en-US)
-  $this.CurrentState.Locale += [ordered]@{
-    Locale = 'en-US'
-    Key    = 'ReleaseNotes'
-    Value  = ($Object1.body | ConvertFrom-Markdown).Html | ConvertFrom-Html | Get-TextContent | Format-Text
-  }
+    $this.CurrentState.Locale += [ordered]@{
+        Locale = 'en-US'
+        Key    = 'ReleaseNotes'
+        Value  = ($Object1.body | ConvertFrom-Markdown).Html | ConvertFrom-Html | Get-TextContent | Format-Text
+    }
 } else {
-  $this.Log("No ReleaseNotes (en-US) for version $($this.CurrentState.Version)", 'Warning')
+    $this.Log("No ReleaseNotes (en-US) for version $($this.CurrentState.Version)", 'Warning')
 }
 
-# ReleaseNotesUrl
+# URL des notes de version
 $this.CurrentState.Locale += [ordered]@{
-  Key   = 'ReleaseNotesUrl'
-  Value = $Object1.html_url
+    Key   = 'ReleaseNotesUrl'
+    Value = $Object1.html_url
 }
 
+# Gestion des états
 switch -Regex ($this.Check()) {
-  'New|Changed|Updated' {
-    $this.Write()
-  }
-  'Changed|Updated' {
-    $this.Print()
-    $this.Message()
-  }
-  'Updated' {
-    $this.Submit()
-  }
+    'New|Changed|Updated' {
+        $this.Write()
+    }
+    'Changed|Updated' {
+        $this.Print()
+        $this.Message()
+    }
+    'Updated' {
+        $this.Submit()
+    }
 }
