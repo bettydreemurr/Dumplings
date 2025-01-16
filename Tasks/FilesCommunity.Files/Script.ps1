@@ -1,5 +1,5 @@
-$RepoOwner = 'gottcode'
-$RepoName = 'focuswriter'
+$RepoOwner = 'files-community'
+$RepoName = 'Files'
 
 $Object1 = Invoke-GitHubApi -Uri "https://api.github.com/repos/${RepoOwner}/${RepoName}/releases/latest"
 
