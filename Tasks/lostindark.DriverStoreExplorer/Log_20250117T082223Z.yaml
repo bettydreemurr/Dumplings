@@ -1,0 +1,12 @@
+Installer:
+- InstallerUrl: https://github.com/lostindark/DriverStoreExplorer/releases/download/v0.11.114/DriverStoreExplorer.v0.11.114.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - Fixed a bug that prevent context menu delete / DEL key from working.
+    - Korean translation update.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/lostindark/DriverStoreExplorer/releases/tag/v0.11.114
+Version: 0.11.114
+ReleaseTime: 2025-01-17T07:21:43.0000000Z
