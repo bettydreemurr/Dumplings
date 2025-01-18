@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/huynhsontung/Indirect/releases/download/v2.9.0/Indirect_2.9.0.0_neutral.msixbundle
+- Architecture: x64
+  InstallerUrl: https://github.com/huynhsontung/Indirect/releases/download/v2.9.0/Indirect_2.9.0.0_neutral.msixbundle
+- Architecture: arm
+  InstallerUrl: https://github.com/huynhsontung/Indirect/releases/download/v2.9.0/Indirect_2.9.0.0_neutral.msixbundle
+- Architecture: arm64
+  InstallerUrl: https://github.com/huynhsontung/Indirect/releases/download/v2.9.0/Indirect_2.9.0.0_neutral.msixbundle
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Implement Ghost Mode by @huynhsontung in https://github.com/huynhsontung/Indirect/pull/107
+    Full Changelog: https://github.com/huynhsontung/Indirect/compare/v2.8.1...v2.9.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/huynhsontung/Indirect/releases/tag/v2.9.0
+Version: 2.9.0.0
+ReleaseTime: 2023-10-01T05:46:52.0000000Z

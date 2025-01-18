@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/JasonWei512/EnergyStarX/releases/download/v1.0.18/EnergyStarX_1.0.18.0_arm64.Msix
+- Architecture: arm64
+  InstallerUrl: https://github.com/JasonWei512/EnergyStarX/releases/download/v1.0.18/EnergyStarX_1.0.18.0_arm64.Msix
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Fix telemetry
+    - Change pause icon by @JasonWei512 in https://github.com/JasonWei512/EnergyStarX/pull/108
+    版本变更
+    - 修复遥测
+    - 更改暂停图标 by @JasonWei512 in https://github.com/JasonWei512/EnergyStarX/pull/108
+    Full Changelog: https://github.com/JasonWei512/EnergyStarX/compare/v1.0.17...v1.0.18
+- Key: ReleaseNotesUrl
+  Value: https://github.com/JasonWei512/EnergyStarX/releases/tag/v1.0.18
+Version: 1.0.18.0
+ReleaseTime: 2024-04-11T10:35:31.0000000Z
