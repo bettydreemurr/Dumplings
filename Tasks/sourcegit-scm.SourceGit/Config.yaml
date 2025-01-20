@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: sourcegit-scm.SourceGit
+Skip: false
