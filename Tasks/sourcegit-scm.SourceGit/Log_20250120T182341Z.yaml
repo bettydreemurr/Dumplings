@@ -1,0 +1,28 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.03/sourcegit_2025.03.win-x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.03/sourcegit_2025.03.win-arm64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Re-write the branch comparison function. Users now can select the target branch and do it from the context menu Compare with HEAD.
+    - Add menu item Quit and hotkeys Ctrl+Q to quit application on Windows/Linux.
+    - Fix the issue that LFS locks do not show when the name of owner contains . character.
+    - Re-write git stash supports and do NOT run git add for untracked files while stashing local changes.
+    - Supports bare repository.
+    - Fix the issue that the committer did not update after navigating to other commit by clicking the SHA link.
+    - Upgrade LiveChartsCore.SkiaSharpView.Avalonia to 2.0.0-rc5.
+    - Fix the issue that tag list did not update after deleting selected tag.
+    - Several other UI/UX changes.
+    Full Changelog: https://github.com/sourcegit-scm/sourcegit/compare/v2025.02...v2025.03
+- Key: ReleaseNotesUrl
+  Value: https://github.com/sourcegit-scm/sourcegit/releases/tag/v2025.03
+Version: "2025.03"
+ReleaseTime: 2025-01-20T02:11:18.0000000Z

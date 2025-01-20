@@ -1,0 +1,40 @@
+Installer:
+- Architecture: x64
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-Setup-windows.exe
+- Architecture: x86
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-Setup-windows.exe
+- Architecture: arm
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-Setup-windows.exe
+- Architecture: arm64
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-Setup-windows.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-windows.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+- Architecture: x86
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-windows.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+- Architecture: arm
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-windows.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.2/GitHubView-1.0.2-windows.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    修改了什么
+    - feat: 添加用户信息获取功能并更新帮助文档 by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/7
+    自动构建流：https://github.com/DuckDuckStudio/GitHubView/actions/runs/12492629401 完整修改：https://github.com/DuckDuckStudio/GitHubView/compare/1.0.1...1.0.2
+- Key: ReleaseNotesUrl
+  Value: https://github.com/DuckDuckStudio/GitHubView/releases/tag/1.0.2
+Version: 1.0.2
+ReleaseTime: 2024-12-24T05:05:03.0000000Z
