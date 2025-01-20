@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.19.232735/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.19.232735/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/68221ecc87c6a3f3515757bac2a0f9674a38e3f2
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - dropout: Fix extraction (#12102) by bashonly
+    - lbry: Support signed URLs (#12138) by seproDev
+    - nrk: Extract more formats (#12069) by hexahigh
+    - senategov: Fix extractors (#9361) by Grabien, seproDev
+    - weibo: Extend _VALID_URL (#12088) by 4ft35t
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.01.19.232735
+Version: 2025.01.19.232735
+ReleaseTime: 2025-01-19T23:33:41.0000000Z
