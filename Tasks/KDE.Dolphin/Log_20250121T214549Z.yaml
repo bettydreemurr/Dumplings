@@ -1,0 +1,7 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://cdn.kde.org/ci-builds/system/dolphin/release-24.12/windows/dolphin-release_24.12-5164-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: B7AA033E4EB472A4B18742CCF4AA8CC7F83675A41C8D66152888A34C332CE939
+Locale: []
+Version: 24.12-5164
+RealVersion: 24.12.1
