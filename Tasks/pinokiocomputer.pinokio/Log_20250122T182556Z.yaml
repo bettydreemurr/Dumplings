@@ -1,0 +1,278 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.3.0/Pinokio-3.3.0-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.3.0.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Major Fix Update
+    [STRONGLY RECOMMENDED UPDATE] The goal of 3.3.0 was to sit down and fix a lot of fundamental issues that have existed from the very beginning of Pinokio, including
+    1. Unreliable execution
+    2. Conda issues
+    3. Pip issues
+    4. Requirement install issues
+    and many more.
+    It is strongly recommended to update to this version, since this fixes a lot of the bugs that have existed from the very first version of Pinokio.
+    1. FIX
+    - homebrew install fix
+    - conda install fix
+    - do not allow installing pip packages into conda base environment
+    - do not install brew on linux
+    - playwright fix
+    - script.start fix: ignore if already running
+    - disallow fs.link on non python 3.10 venvs => implement later
+    - uvicorn fix
+    - when running sudo shell, even when there's an error, do NOT throw an error, but instead display the error message, in order to be consistent with how normal shell.run behaves
+    - set process.env.WEBKIT_DISABLE_DMABUF_RENDERER = 1 for some linux users
+    - update python module when the pinokio app itself upgrades => just to make sure the py repository is up to date and the venv is correctly set up for the current python
+    - do not allow outside click on the download page: clicking outside the modal would close the modal and throw an error previously.
+    2. New Features
+    2.1. PNPM Support
+    Now supports PNPM https://pnpm.io/ in addition to the default NPM that comes with node.js (PNPM is much faster)
+    2.2. Autolaunch
+    Now you can make apps autolaunch when pinokio starts.
+    Simply set the PINOKIO_SCRIPT_AUTOLAUNCH=<script_file_path> environment variable to autostart any app. Here's an example:
+    # ~/pinokio/api/comfyui.git/ENVIRONMENT
+    PINOKIO_SCRIPT_AUTOLAUNCH=start.js
+    2.3. Multiple Python Version Support
+    By default Pinokio uses Python 3.10 when creating venvs. Now with the venv_python attribute, you can use ANY python version when creating venvs (3.11, 3.12, etc.). Example:
+    {
+      "method": "shell.run",
+      "params": {
+        "message": "pip install -r requirements.txt",
+        "venv": "env",
+        "venv_python": "3.11"
+      }
+    }
+    2.4. "next" RPC attribute
+    a new attribute has been added to RPC calls:
+    {
+      "when": <condition>,
+      "method": <method>,
+      "params": <params>,
+      "next": <id_or_index>
+    }
+    When combined with when, you can program a script to jump to anywhere else in the script by id or index. Example:
+    module.exports = {
+      run: [
+        // windows nvidia
+        {
+          "when": "{{platform === 'win32' && gpu === 'nvidia'}}",
+          "method": "shell.run",
+          "params": {
+            "venv": "env",
+            "message": "uv pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu121"
+          },
+          "next": "end"
+        },
+        // mac
+        {
+          "when": "{{platform === 'darwin'}}",
+          "method": "shell.run",
+          "params": {
+            "venv": "env",
+            "message": "uv pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1"
+          },
+          "next": "end"
+        },
+        // linux nvidia
+        {
+          "when": "{{platform === 'linux' && gpu === 'nvidia'}}",
+          "method": "shell.run",
+          "params": {
+            "venv": "env",
+            "message": "uv pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu121"
+          },
+          "next": "end"
+        },
+        // default
+        {
+          "method": "shell.run",
+          "params": {
+            "venv": "{{args && args.venv ? args.venv : null}}",
+            "path": "{{args && args.path ? args.path : '.'}}",
+            "message": "uv pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cpu"
+          }
+        },
+        {
+          "id": "end",
+          "method": "log",
+          "params": {
+            "raw": "Finished"
+          }
+        }
+      ]
+    }
+    1. Note that the last step is marked with id: "end"
+    2. Every step checks the when condition to see if it matches, and runs the step when matched, and then jumps to id: "next"
+    3. This ensures that only one of the options is executed in the entire script, since it runs the first matched RPC call and jumps straight to the end.
+    2.5. Info API
+    http://localhost/pinokio/info provides realtime info of everything going on on Pinokio, including:
+    1. pinokio version
+    2. which scripts are running (and which step it's running right now)
+    3. which shells are running and what's displayed in the shell
+    4. installed apps (~/pinokio/api)
+    5. installed requirements (~/pinokio/bin)
+    6. local sharing endpoints (proxies)
+    Here's an example:
+    {
+      "version": {
+        "pinokiod": "3.3.0",
+        "pinokio": "3.3.0"
+      },
+      "platform": "darwin",
+      "arch": "arm64",
+      "home": "/Users/x/pinokio",
+      "scripts": [
+        {
+          "path": "test.git/playwright/launch_and_navigate/run.js",
+          "app": "test.git",
+          "script_path": "playwright/launch_and_navigate/run.js",
+          "step": {
+            "method": "script.start",
+            "params": {
+              "uri": "torch.js",
+              "params": {
+                "venv": "env"
+              }
+            },
+            "current": 0,
+            "total": 5
+          },
+          "input": {},
+          "args": {},
+          "full_path": "/Users/x/pinokio/api/test.git/playwright/launch_and_navigate/run.js"
+        },
+        {
+          "path": "test.git/playwright/launch_and_navigate/torch.js",
+          "app": "test.git",
+          "script_path": "playwright/launch_and_navigate/torch.js",
+          "step": {
+            "when": "{{platform === 'darwin'}}",
+            "method": "shell.run",
+            "params": {
+              "venv": "{{args && args.venv ? args.venv : null}}",
+              "path": "{{args && args.path ? args.path : '.'}}",
+              "message": "uv pip install torch torchvision torchaudio"
+            },
+            "current": 3,
+            "total": 7
+          },
+          "input": null,
+          "args": {
+            "venv": "env"
+          },
+          "full_path": "/Users/x/pinokio/api/test.git/playwright/launch_and_navigate/torch.js"
+        }
+      ],
+      "shells": [
+        {
+          "cols": 170,
+          "rows": 45,
+          "id": "091eddb9-5852-4398-8071-f57755e7512f",
+          "group": "/Users/x/pinokio/api/test.git/playwright/launch_and_navigate/torch.js",
+          "path": "/Users/x/pinokio/api/test.git/playwright/launch_and_navigate",
+          "index": 0,
+          "cmd": "eval \"$(conda shell.bash hook)\" ; conda deactivate ; conda deactivate ; conda deactivate ; sleep 1 ; conda activate base ; sleep 1 ; python -m venv /Users/x/pinokio/api/test.git/playwright/launch_and_navigate/env ; source /Users/x/pinokio/api/test.git/playwright/launch_and_navigate/env/bin/activate /Users/x/pinokio/api/test.git/playwright/launch_and_navigate/env ; python -m pip install --upgrade pip setuptools wheel ; deactivate ; sleep 1 ; source /Users/x/pinokio/api/test.git/playwright/launch_and_navigate/env/bin/activate /Users/x/pinokio/api/test.git/playwright/launch_and_navigate/env ; sleep 1 ; uv pip install torch torchvision torchaudio",
+          "done": false
+        }
+      ],
+      "proxies": [],
+      "api": [
+        {
+          "path": "MMAudio.git",
+          "title": "MMAudio",
+          "description": "Generate synchronized audio from video and/or text inputs https://github.com/hkchengrex/MMAudio",
+          "icon": "/api/MMAudio.git/icon.png?raw=true"
+        },
+        {
+          "path": "comfy.git",
+          "title": "Comfyui",
+          "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. https://github.com/comfyanonymous/ComfyUI",
+          "icon": "/api/comfy.git/icon.jpeg?raw=true"
+        },
+        {
+          "path": "e2-f5-tts.git",
+          "title": "e2-f5-tts",
+          "description": "F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching https://huggingface.co/spaces/mrfakename/E2-F5-TTS",
+          "icon": "/api/e2-f5-tts.git/icon.png?raw=true"
+        },
+        {
+          "path": "facefusion-pinokio.git",
+          "title": "FaceFusion 3.1.1",
+          "description": "Industry leading face manipulation platform",
+          "icon": "/api/facefusion-pinokio.git/facefusion.png?raw=true"
+        },
+        {
+          "path": "test.git",
+          "title": "Test",
+          "icon": "/api/test.git/icon.jpg?raw=true"
+        }
+      ],
+      "bin": {
+        "conda": {
+          "installed": [
+            "anaconda-anon-usage",
+            "aom",
+            "archspec",
+            "boltons",
+            "brotli-python",
+            "bzip[2](https://github.com/cocktailpeanutlabs/p2/releases?page=2)",
+            "c-ares",
+            "ca-certificates",
+            "cairo",
+            ...
+          ]
+        },
+        "brew": {
+          "installed": [
+            "cloudflared",
+            "gettext",
+            "libunistring"
+          ]
+        }
+      },
+      "procs": {},
+      "gpu": "apple",
+      "gpus": [
+        "apple"
+      ],
+      "graphics": {
+        "controllers": [...],
+        "displays": [...],
+      },
+      "system": ...,
+      "cpu": ...,
+      "osInfo": ...,
+      "shell": "/bin/zsh",
+      "audio": [...],
+      "mem": ...,
+      "battery": ...,
+      "load": ...,
+      "bluetooth": [...]
+    }
+    2.6. Reset Global Environment
+    you can now reset global environment variables from the settings page.
+    Sometimes when Pinokio updates to a new version, it adds some new attributes to the ~/pinokio/ENVIRONMENT file. But this doesn't get upgraded automatically.
+    You can easily update to the latest ENVIRONMENT file by going to the settings page and clicking "reset" from the environment section.
+    2.7. kernel.userAgent() API
+    let randomUserAgent = kernel.userAgent(browser)
+    where:
+    - browser: (optional) name of the browser. For example Firefox, AppleWebKit, Chrome, etc. If not specified, it will generate any random user agent string with random browser.
+    // random user agent with random browser
+    let ua1 = kernel.userAgent()
+
+    // random user agent with firefox
+    let ua2 = kernel.userAgent("Firefox")
+    3. Upgrade
+    1. Shell engine updated: The shell engine (node-pty) has been updated to the latest, fixing a lot of bugs
+    2. Web terminal updated: Xterm.js (which powers the web terminal) has been updated to the lates. Lots of bug fixes, including crashes and white screens.
+    4. Misc
+    1. when a script version doesn't match the current client, display the error on the app page instead of the home page, since users are redirected to the app page after downloading an app
+    2. remove pip check code => no more pip install to base environment
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.3.0
+Version: 3.3.0
+ReleaseTime: 2025-01-22T17:29:01.0000000Z

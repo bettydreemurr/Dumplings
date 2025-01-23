@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.3.8/Pinokio-3.3.8-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.3.8.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    fs.link hotfix
+    fs.link fix for installing pip from github (ex: git+https://github.com/huggingface/diffusers.git)
+    - fixes fluxgym install issue, as well as other installers that use fs.link on any pip package that installs from github
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.3.8
+Version: 3.3.8
+ReleaseTime: 2025-01-23T02:53:50.0000000Z
