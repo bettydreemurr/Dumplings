@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.3.7/Pinokio-3.3.7-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.3.7.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Linux install issue fix
+    Because on linux installing playwright with --install-deps flag requires root access, the initial requirement setup step fails for every linux user.
+    So just don't do it for now. Only install playwright itself and the browsers.
+    The dependencies can be installed manually only if needed (by the users).
+    Now Playwright is installed under ~/pinokio/bin/playwright/node_modules, and the browsers are stored at ~/pinokio/bin/playwright/browsers
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.3.7
+Version: 3.3.7
+ReleaseTime: 2025-01-23T00:43:51.0000000Z
