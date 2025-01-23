@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.8.2/AppFlowy-0.8.2-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.8.2/AppFlowy-0.8.2-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.8.2 - 23/01/2025
+    New Features
+    - Customized database view icons
+    - Support for uploading images as custom icons
+    - Enabled selecting multiple AI messages to save into a document
+    - Added the ability to scale the app's display size on mobile
+    - Support for pasting image links without file extensions
+    Bug Fixes
+    - Fixed an issue where pasting tables from other apps wasn't working
+    - Fixed homepage URL issues in Settings
+    - Fixed an issue where the 'Cancel' button was not visible on the Shortcuts page
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.8.2
+Version: 0.8.2
+ReleaseTime: 2025-01-23T11:14:33.0000000Z
