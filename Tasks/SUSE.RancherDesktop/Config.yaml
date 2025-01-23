@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: SUSE.RancherDesktop
+Skip: false
