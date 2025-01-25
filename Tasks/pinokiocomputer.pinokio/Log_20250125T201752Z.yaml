@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.3.27/Pinokio-3.3.27-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.3.27.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Visual Studio Build Tools Hotfix
+    Previous fix from 3.3.25 neglected the scenario where the user doesn't have visual studio build tools installed (which will be true for most new--non developer--users just installing pinokio).
+    Because i couldn't uninstall and reinstall visual studio every time i test the new version, neglected to check this scenario. But just replicated this by actually uninstalling build tools and starting from scratch.
+    The problem has been fixed now. New users should not have any issue getting started
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.3.27
+Version: 3.3.27
+ReleaseTime: 2025-01-25T19:18:43.0000000Z
