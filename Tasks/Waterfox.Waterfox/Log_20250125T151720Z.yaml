@@ -1,0 +1,8 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://cdn1.waterfox.net/waterfox/releases/6.5.3/WINNT_x86_64/Waterfox%20Setup%206.5.3.exe
+Locale:
+- Key: ReleaseNotesUrl
+  Value: https://github.com/BrowserWorks/Waterfox/releases/tag/6.5.3
+Version: 6.5.3
+ReleaseTime: 2025-01-07T13:08:23.0000000Z
