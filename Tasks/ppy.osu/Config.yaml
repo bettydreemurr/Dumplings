@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: ppy.osu
+Skip: false
