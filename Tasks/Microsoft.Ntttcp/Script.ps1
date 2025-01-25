@@ -22,6 +22,10 @@ function DownloadVerifyAndClean-Installers {
         $architecture = $installer.Architecture
         $url = $installer.InstallerUrl
 
+        if (-Not $url) {
+            throw "URL non valide pour $architecture"
+        }
+
         # Définir un chemin unique pour chaque fichier
         $localPath = "$PSScriptRoot\dragonsetup_$architecture.exe"
         $localPaths[$architecture] = $localPath
@@ -29,15 +33,25 @@ function DownloadVerifyAndClean-Installers {
         # Télécharger le fichier
         Write-Host "Téléchargement du fichier pour $architecture depuis $url..."
         Invoke-WebRequest -Uri $url -OutFile $localPath
+
+        if (-Not (Test-Path $localPath)) {
+            throw "Échec du téléchargement pour $architecture depuis $url"
+        }
     }
 
     # Obtenir les versions des exécutables
     $x64Version = (Get-Item $localPaths['x64']).VersionInfo.ProductVersion
     $arm64Version = (Get-Item $localPaths['arm64']).VersionInfo.ProductVersion
 
+    if (-Not $x64Version -or -Not $arm64Version) {
+        throw "Impossible de récupérer les versions des fichiers téléchargés"
+    }
+
+    Write-Host "x64 Version: $x64Version"
+    Write-Host "arm64 Version: $arm64Version"
+
     # Vérifier si les versions sont identiques
     if ($x64Version -ne $arm64Version) {
-        # Nettoyer les fichiers avant de lancer une exception
         Remove-Item $localPaths['x64'], $localPaths['arm64'] -ErrorAction SilentlyContinue
         throw "Les versions des installateurs ne correspondent pas : x64 = $x64Version, arm64 = $arm64Version"
     }
@@ -51,6 +65,7 @@ function DownloadVerifyAndClean-Installers {
 
     Write-Host "Téléchargements vérifiés et fichiers nettoyés."
 }
+
 
 switch -Regex ($this.Check()) {
   'New|Changed|Updated' {
