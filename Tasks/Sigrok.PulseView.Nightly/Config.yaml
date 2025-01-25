@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: Sigrok.PulseView.Nightly
+Skip: false
