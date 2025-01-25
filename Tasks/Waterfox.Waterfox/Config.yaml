@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: Waterfox.Waterfox
+Skip: false
