@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/ytdl-org/ytdl-nightly/releases/download/2025.01.23/youtube-dl.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a nightly build of youtube-dl.
+    Full Changelog: https://github.com/ytdl-org/ytdl-nightly/compare/2025.01.16...2025.01.23
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ytdl-org/ytdl-nightly/releases/tag/2025.01.23
+Version: 2025.01.23
+ReleaseTime: 2025-01-23T02:05:22.0000000Z

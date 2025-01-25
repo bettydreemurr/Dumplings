@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/ppy/osu/releases/download/2025.118.3/install.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Just a 'lil hotfix, with android this time!
+    Editor
+    Fix crash from new combo colour selector when there are no combo colours present (ppy/osu#31616 by @bdach)
+    Reliability
+    Fix discord error messages popping up constantly (ppy/osu#31640 by @frenzibyte)
+    Discord seems to have broken something. Until it's fixed we're just going to hide the messages as to not bother you peoples.
+    Fix potential crash when adjusting offset (ppy/osu#31644 by @peppy)
+    Gameplay
+    Make offset adjust more lenient (ppy/osu#31645 by @peppy)
+    We added new rules to disallow changing offset too far into gameplay, but it wasn't accounting for intro time correctly. Now it does, so you have a full 10 seconds to adjust.
+    (you can also always adjust during breaks)
+    Tooling
+    Fix android builds not building (ppy/osu#31633 by @bdach)
+    Full Changelog: https://github.com/ppy/osu/compare/2025.118.2...2025.118.3
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ppy/osu/releases/tag/2025.118.3
+Version: 2025.118.3
+ReleaseTime: 2025-01-24T14:43:38.0000000Z
