@@ -1,0 +1,5 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://dl.pokemmo.com/pokemmo-installer-windows.exe
+Locale: []
+Version: 0.0.0.0

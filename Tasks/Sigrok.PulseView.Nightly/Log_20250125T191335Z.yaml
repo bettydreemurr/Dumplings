@@ -1,0 +1,5 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://sigrok.org/download/binary/pulseview/pulseview-NIGHTLY-x86_64-release-installer.exe
+Locale: []
+Version: nightly
