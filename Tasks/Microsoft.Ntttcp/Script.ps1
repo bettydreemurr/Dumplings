@@ -1,5 +1,5 @@
-$RepoOwner = 'cinnyapp'
-$RepoName = 'cinny-desktop'
+$RepoOwner = 'microsoft'
+$RepoName = 'ntttcp'
 
 $Object1 = Invoke-GitHubApi -Uri "https://api.github.com/repos/${RepoOwner}/${RepoName}/releases/latest"
 
