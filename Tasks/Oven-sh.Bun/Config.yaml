@@ -1,0 +1,3 @@
+Type: PackageTask
+WinGetIdentifier: Oven-sh.Bun
+Skip: false
