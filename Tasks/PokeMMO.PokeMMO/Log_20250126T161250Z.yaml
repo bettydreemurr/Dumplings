@@ -1,0 +1,6 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://dl.pokemmo.com/pokemmo-installer-windows.exe
+  InstallerSha256: A2D14F8AF9DF606D894A157EAE8E6C90D227F0EA505853542B4669A971A81E79
+Locale: []
+Version: 0.0.0.0
