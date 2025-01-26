@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/download/8.16.1-nightly.2025-01-26/WolvenKit.NightlySetup-8.16.1-nightly.2025-01-26.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a beta release so you may encounter bugs. Please report them.
+    8.16.1-nightly.2025-01-26 (2025-01-26)
+    Bug Fixes
+    - CVM selection/duplication behaviour (#2212) (63b4c68)
+    - graph view crash (9ea351f)
+    - quest and scenes RDTDataViewModel search (10c01b5)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.16.1-nightly.2025-01-26
+Version: 8.16.1-nightly.2025-01-26
+ReleaseTime: 2025-01-26T12:12:35.0000000Z
