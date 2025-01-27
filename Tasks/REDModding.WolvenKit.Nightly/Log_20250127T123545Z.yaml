@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/download/8.16.1-nightly.2025-01-27/WolvenKit.NightlySetup-8.16.1-nightly.2025-01-27.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a beta release so you may encounter bugs. Please report them.
+    8.16.1-nightly.2025-01-27 (2025-01-27)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.16.1-nightly.2025-01-27
+Version: 8.16.1-nightly.2025-01-27
+ReleaseTime: 2025-01-27T12:13:02.0000000Z
