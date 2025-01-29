@@ -1,0 +1,22 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_3.9.0.0_Stable_Test/Files.Package_3.9.0.0_x64_arm64_Stable.msixbundle
+- Architecture: x64
+  InstallerUrl: https://cdn.files.community/files/stable/Files.Package_3.9.0.0_Stable_Test/Files.Package_3.9.0.0_x64_arm64_Stable.msixbundle
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Files v3.9 is now available! 🎉
+    Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our download page.
+    The changelog for v3.9 is available on our website https://files.community/blog/posts/v3-9-0.
+    New Contributors
+    - @Jack251970 made their first contribution in https://github.com/files-community/Files/pull/16536
+    - @viruseg made their first contribution in https://github.com/files-community/Files/pull/16523
+    - @andreistaravoitau made their first contribution in https://github.com/files-community/Files/pull/16694
+    - @Roilin-Lab made their first contribution in https://github.com/files-community/Files/pull/16745
+    Full Changelog: https://github.com/files-community/Files/compare/v3.8...v3.9
+- Key: ReleaseNotesUrl
+  Value: https://github.com/files-community/Files/releases/tag/v3.9
+Version: 3.9.0.0
+ReleaseTime: 2025-01-29T21:27:57.0000000Z
