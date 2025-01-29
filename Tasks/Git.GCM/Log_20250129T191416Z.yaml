@@ -1,0 +1,25 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcm-win-x86-2.6.1.exe
+- Architecture: x86
+  InstallerUrl: https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcmuser-win-x86-2.6.1.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Security Fixes:
+    - CVE-2024-50338
+      - Do not treat the lone carriage-return character (CR, \r) as a line terminator in the credential helper protocol
+    Changes:
+    - Fix Linux build scripts (#1752)
+    - Documentation fix for broken links (#1722)
+    - Permit use of HTTP (not-S) remotes for providers via config (#1721)
+    - Omit the client secret for GitLab (#1538)
+    - Various workflow action updates (#1725, #1738, #1751, #1750)
+    - Fix CentOS install from source workflow (#1746)
+    - Add Mariner and Arch Linux distribution validation builds (#1747)
+    - Add no-op credential storage option (#1740)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/git-ecosystem/git-credential-manager/releases/tag/v2.6.1
+Version: v2.6.1
+ReleaseTime: 2025-01-14T18:06:20.0000000Z
