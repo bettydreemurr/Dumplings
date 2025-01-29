@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.28.232803/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.28.232803/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/18a28514e306e822eab4f3a79c76d515bf076406
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - cwtv: Fix extractor (#12207) by arantius
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.01.28.232803
+Version: 2025.01.28.232803
+ReleaseTime: 2025-01-28T23:34:22.0000000Z
