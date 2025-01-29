@@ -1,0 +1,28 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/creativeprojects/resticprofile/releases/download/v0.29.0/resticprofile_0.29.0_windows_386.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/creativeprojects/resticprofile/releases/download/v0.29.0/resticprofile_0.29.0_windows_amd64.zip
+- Architecture: arm64
+  InstallerUrl: https://github.com/creativeprojects/resticprofile/releases/download/v0.29.0/resticprofile_0.29.0_windows_arm64.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    🧙🏻‍♀️ Halloween edition 🎃
+    - Finally a long standing bug was fixed in this version: use proper nice and ionice values on systemd scheduled tasks.
+    - Also the last chunk of work for the configuration v2: we can now schedule groups!
+    - Improvement on the JSON schema: a single URL can be used for v1 and v2 configuration
+    - Another long standing bug on Windows: escape configuration file path on scheduled tasks
+    Changelog
+    - fb6c7a2fbb0d3a955a0cdb53e87c58a32a532022 Escape config file name in schedule parameters (#420)
+    - 1d3ec32e293c9d3c4918df7ea7bd6a62a3eb2168 Fix scheduling arguments (#423)
+    - 62c5c6472f4ef5462bbafc02d6e75d7684a40abf Global json schema (auto versioning) (#412)
+    - 2a34ea77e5d4c8367436e2ebb2c7cf82973f39a5 Group schedule (#418)
+    - 830d0fd4f8313a0de7a04ffd48d2b44cc797929a Setup systemd priority (#409)
+    - 62f311814f0f1e034942f3bf6a95dff3590597e3 doc: upgrade hugo theme
+    - da03de768a30c8d6656be5cce39d35a9e42e0817 fix deprecated option in goreleaser config
+- Key: ReleaseNotesUrl
+  Value: https://github.com/creativeprojects/resticprofile/releases/tag/v0.29.0
+Version: v0.29.0
+ReleaseTime: 2024-10-28T16:22:23.0000000Z
