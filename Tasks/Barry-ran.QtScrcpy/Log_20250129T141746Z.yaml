@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/barry-ran/QtScrcpy/releases/download/v3.1.0/QtScrcpy-win-x64-v3.1.0.zip
+- Architecture: x86
+  InstallerUrl: https://github.com/barry-ran/QtScrcpy/releases/download/v3.1.0/QtScrcpy-win-x86-v3.1.0.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: 'feat: update scrcpy-server v3.1 feat: add configurable drag speed and delay feat: mac arm64 fix: record&screenshot failed on wireless device'
+- Key: ReleaseNotesUrl
+  Value: https://github.com/barry-ran/QtScrcpy/releases/tag/v3.1.0
+Version: 3.1.0
+ReleaseTime: 2025-01-10T18:57:49.0000000Z
