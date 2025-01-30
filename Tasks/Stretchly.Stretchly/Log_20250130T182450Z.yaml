@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/hovancik/stretchly/releases/download/v1.17.2/Stretchly-Setup-1.17.2.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/hovancik/stretchly/releases/download/v1.17.2/Stretchly-Setup-1.17.2.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    [1.17.2] - 2025-1-19
+    Fixed
+    - Linux DND detection
+    - improve macOS DND detection
+    - debug info when from Windows Store
+- Key: ReleaseNotesUrl
+  Value: https://github.com/hovancik/stretchly/releases/tag/v1.17.2
+Version: v1.17.2
+ReleaseTime: 2025-01-19T10:07:20.0000000Z
