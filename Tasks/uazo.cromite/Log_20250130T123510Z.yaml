@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/uazo/cromite/releases/download/v132.0.6834.163-ae296a42b9b1412a54aca8635affabd26ea8ce1e/chrome-win.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: https://github.com/uazo/cromite/issues/1778#issuecomment-2621050140
+- Key: ReleaseNotesUrl
+  Value: https://github.com/uazo/cromite/releases/tag/v132.0.6834.163-ae296a42b9b1412a54aca8635affabd26ea8ce1e
+Version: 132.0.6834.163
+ReleaseTime: 2025-01-30T12:12:30.0000000Z
