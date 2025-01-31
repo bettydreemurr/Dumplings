@@ -1,0 +1,28 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.30.232843/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.01.30.232843/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/03c3d705778c07739e0034b51490877cffdc0983
+
+    A description of the various files is in the README
+
+    Changelog
+    Extractor changes
+    - acast: Support shows.acast.com URLs (#12223) by barsnick
+    - cwtv
+      - Fix extractor (#12207) by arantius
+      - movie: Add extractor (#12227) by bashonly
+    - dropbox: Fix extraction (#12228) by bashonly
+    - francetv: site: Fix extractor (#12236) by bashonly
+    - globo: Fix extractor (#11795) by slipinthedove, YoshiTabletopGamer
+    - goplay: Fix extractor (#12237) by alard
+    - pbs: Support www.thirteen.org URLs (#11191) by rohieb
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.01.30.232843
+Version: 2025.01.30.232843
+ReleaseTime: 2025-01-30T23:35:06.0000000Z
