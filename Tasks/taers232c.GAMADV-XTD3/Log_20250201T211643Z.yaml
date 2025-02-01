@@ -1,0 +1,95 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.03.02/gamadv-xtd3-7.03.02-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Scroll to bottom of page for installation/downloads
+    Latest updates
+    7.03.02
+    Updated gam <UserTypeEntity> show labels nested to properly display label nesting when labels have embedded / characters in their names.
+    7.03.01
+    Updated gam create project to retry the following unexpected error:
+    ERROR: 400 - invalidArgument - Service account gam-project-a1b2c@gam-project-a1b2c.iam.gserviceaccount.com does not exist.
+    7.03.00
+    Updated gam create|use project to discontinue use of the Identity-Aware Proxy (IAP) OAuth Admin APIs that are being deprecated by Google. You will see a set of instructions detailing how to configure the Oauth Consent screen and create the Oauth client.
+    Added options copypermissionroles <DriveFileACLRoleList> and copypermissiontypes <DriveFileACLTypeList> to gam <UserTypeEntity> copy drivefile that provide more control over what permissions are copied from the source files/folders to the destination files/folders.
+    7.02.11
+    Updated gam report <ActivityApplicationName> to display id:<actor.profileId> in the emailAddress column when actor.email is empty. This typically occurs when the actor is not in your workspace.
+    Updated gam <UserTypeEntity> copy drivefile to ignore ACLs referencing deleted user/groups.
+    7.02.10
+    Added option bydate to gam report <ActivityApplicationName> ... countsonly that provides an additional display option.
+    - countsonly - Display a row per user across all dates with all event counts on one row
+    - countsonly bydate - Display a row per user per date for all dates with any events with all events counts on the row
+    - countsonly summary - Display a row per event with counts for each event summarized across users and dates
+    7.02.09
+    Added option clearresources to <EventUpdateAttribute> for use in gam <UserTypeEntity> update events that allows clearing all resources from a user's calendar events. For example, to clear all resources from a user's future events:
+    gam user user@domain.com update events primary matchfield attendeespattern @resource.calendar.google.com after now clearresources
+    Added option resource <ResourceID> to <EventAttribute> for use in gam <UserTypeEntity> create|update events that adds a resource to an event.
+    Added option removeresource <ResourceID> to <EventUpdateAttribute> for use in gam <UserTypeEntity> update events that removes a resource from an event.
+    7.02.08
+    Fixed bug in gam print|show chromepolicies that caused a trap when neither ou|orgunit <OrgUnitItem> nor group <GroupItem> was specified.
+    7.02.07
+    Updated gam delete|update chromepolicy to display the <AppID> or <PrinterID> (if specified) in the command status messages.
+    7.02.06
+    Added option <JSONData> to gam <UserTypeEntity> create|update form that allows for creation/modification of all fields in a form. <JSONData> is a list of form update requests.
+    - See: https://developers.google.com/forms/api/reference/rest/v1/forms/batchUpdate
+    7.02.05
+    Updated gam [<UserTypeEntity>] show shareddriveacls ... formatjson to not display this line which interferes with the JSON output.
+    User: user@domain.com, Show N Shared Drives
+    7.02.04
+    Updated code to eliminate trap caused by bug introduced in 7.02.00 that occurs when an invalid domain or OU is specified.
+    7.02.03
+    Added option archive to gam <UserTypeEntity> update license <NewSKUID> from <OldSKUID> that causes GAM to archive <UserTypeEntity> after updating their license to <NewSKUID>. This will be used when you want to archive a user with a non-archivable license. The <NewSKUID> license is assigned to the user and it then converts to the equivalent Archived User license when the user is archived.
+    <NewSKUID> must be one of the following SKUs:
+    Google-Apps-Unlimited - G Suite Business
+    1010020020 - Google Workspace Enterprise Plus
+    1010020025 - Google Workspace Business Plus
+    1010020026 - Google Workspace Enterprise Standard
+    1010020027 - Google Workspace Business Starter
+    1010020028 - Google Workspace Business Standard
+    7.02.02
+    Updated gam <UserTypeEntity> archive messages <GroupItem> to retry the following unexpected error that occurs after many messages have been successfully archived. ERROR: 404: notFound - Unable to lookup group
+    7.02.01
+    Added options locked and unlocked to gam update cigroups that allow locking/unlocking groups.
+    - See: https://workspaceupdates.googleblog.com/2024/12/locked-groups-open-beta.html
+    You'll have to do a gam oauth create and enable the following scope to use these options:
+    [*] 22)  Cloud Identity Groups API Beta (Enables group locking/unlocking)
+    7.02.00
+    Improved the error message displayed for user service account access commands when:
+    - The API is not enabled
+    - The user does not exist
+    - The user exists but is in a OU where the service is disabled
+    - See: https://github.com/taers232c/GAMADV-XTD3/wiki/Chrome-Profile-Management
+    Installation
+    If you are a first time Gam user:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Install-Advanced-GAM
+    If you are updating your GAMADV-XTD3 version:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Update-Advanced-GAM
+    If you are upgrading from standard Gam
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-Standard-GAM
+    If you are upgrading from GAMADV-X or GAMADV-XTD
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-GAMADV-X-or-GAMADV-XTD
+    sha256 hashes
+    856b38b71c510596955fe7f5dc3cf8edfee2cd398173fca6eba4e7b3372b3ff2  gamadv-xtd3-7.03.02-linux-arm64-glibc2.23.tar.xz
+    c580de0828dbae4cb3d11f760de78bed1f5a44830790a27d5f05b706d9292ef9  gamadv-xtd3-7.03.02-linux-arm64-glibc2.27.tar.xz
+    4c4b26db0f595fa0622f95cec1e4d3c85334a692dbf4065866c237c16b246c86  gamadv-xtd3-7.03.02-linux-arm64-glibc2.31.tar.xz
+    2e3302b435573166f2745ada74fc3b4b3fc36509b8837a55ae5ed1eae2784f9d  gamadv-xtd3-7.03.02-linux-arm64-glibc2.35.tar.xz
+    1b4fd07f2805c9af7ca4f502ded78341f7919b46d12197238851c3834765d001  gamadv-xtd3-7.03.02-linux-arm64-glibc2.39.tar.xz
+    75c1b5df1748b35016221981a9ecf428ac1bdb17c1c9044ceeeeab912dc4224c  gamadv-xtd3-7.03.02-linux-arm64-legacy.tar.xz
+    d7e861c52ad70254bdeebdf04f027ceb430827a6c6cea223d2313c5b0cf3bbce  gamadv-xtd3-7.03.02-linux-x86_64-glibc2.19.tar.xz
+    29672db18802cc5b8a66fa42df9f0ddb8db3aa8bbd53b136ad976605061f4c7b  gamadv-xtd3-7.03.02-linux-x86_64-glibc2.23.tar.xz
+    a5bb718583cb46941a5ac61a7330607b404c98f70386232ded5c168da7fb2ff9  gamadv-xtd3-7.03.02-linux-x86_64-glibc2.27.tar.xz
+    4f94909245eedaf0eff9ee3eb6f231d8d554466d9e779541022ab4bf118883d7  gamadv-xtd3-7.03.02-linux-x86_64-glibc2.31.tar.xz
+    0d843630a30a1c5416c84cb035b9091d9307823bee43b78045072da51003144b  gamadv-xtd3-7.03.02-linux-x86_64-glibc2.35.tar.xz
+    64db59d315e103216e78c897f299bce2a09d969c5895ffc3b9e6ee1e3700095d  gamadv-xtd3-7.03.02-linux-x86_64-glibc2.39.tar.xz
+    97c2efcae3110596cc5b417fdca4280d842c7611ca1371d4de71c846b7913229  gamadv-xtd3-7.03.02-linux-x86_64-legacy.tar.xz
+    9ce55d374cb86f1efd63cd9a2524db50167c6e8553a676e957dea59a3ea1961e  gamadv-xtd3-7.03.02-macos-arm64.tar.xz
+    9becbcc3a3e34d7c3b66d9104c5c6edc777c8c4fce5440174e293ac4316ef40e  gamadv-xtd3-7.03.02-macos-x86_64.tar.xz
+    05818254f4708a9f7edf0ce43594a88388c4b172e927458d69e15f3beb102003  gamadv-xtd3-7.03.02-windows-x86_64.msi
+    69d7a5152b910ff2d4e2be809a3232304266a6458735fd724d520b6b3d7e1d72  gamadv-xtd3-7.03.02-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.03.02
+Version: 7.03.02
+ReleaseTime: 2025-02-01T21:00:58.0000000Z
