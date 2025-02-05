@@ -1,0 +1,20 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.8.3/AppFlowy-0.8.3-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.8.3/AppFlowy-0.8.3-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.8.3 - 05/02/2025
+    New Features
+    - Support OpenAI o3-mini model
+    Bug Fixes
+    - Fixed an issue where users were unable to upload images in row pages
+    - Fixed an issue where users were unable to upload files on Android devices
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.8.3
+Version: 0.8.3
+ReleaseTime: 2025-02-05T08:42:37.0000000Z
