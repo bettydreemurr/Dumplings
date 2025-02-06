@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v8.3.0/DesktopEditors_x64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v8.3.0/DesktopEditors_x64.msi
+- Architecture: x86
+  InstallerUrl: https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v8.3.0/DesktopEditors_x86.exe
+- Architecture: x86
+  InstallerUrl: https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v8.3.0/DesktopEditors_x86.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: See changes at CHANGELOG.md
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ONLYOFFICE/DesktopEditors/releases/tag/v8.3.0
+Version: 8.3.0
+ReleaseTime: 2025-02-06T14:02:38.0000000Z
