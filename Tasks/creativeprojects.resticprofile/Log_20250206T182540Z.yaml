@@ -1,0 +1,23 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/creativeprojects/resticprofile/releases/download/v0.29.1/resticprofile_0.29.1_windows_386.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/creativeprojects/resticprofile/releases/download/v0.29.1/resticprofile_0.29.1_windows_amd64.zip
+- Architecture: arm64
+  InstallerUrl: https://github.com/creativeprojects/resticprofile/releases/download/v0.29.1/resticprofile_0.29.1_windows_arm64.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    ❄️ Small maintenance release ☃️
+    Not much going on in this maintenance release while I'm still working on a big refactoring of the scheduling for the next release.
+    - logrotate package added to the Docker image
+    - upgrade dependencies to fix security vulnerabilities
+    Changelog
+    - e2297a6f4f0f03a1733177db1dc950c6e05ddd88 add logrotate to docker image #440
+    - 37c9aef3032005a88ed006059432a2baddc97ab6 upgrade package - CVE-2024-45337
+    - 467b82ee1eade497c9d23c0dfe69a889143dc807 upgrade packages
+- Key: ReleaseNotesUrl
+  Value: https://github.com/creativeprojects/resticprofile/releases/tag/v0.29.1
+Version: v0.29.1
+ReleaseTime: 2025-02-06T17:24:22.0000000Z
