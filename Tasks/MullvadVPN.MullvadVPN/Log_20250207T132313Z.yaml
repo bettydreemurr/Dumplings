@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/mullvad/mullvadvpn-app/releases/download/2025.3/MullvadVPN-2025.3.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a desktop only release.
+    Here's a list of all the changes since the last stable release 2025.2:
+    Added
+    Windows
+    - Add support for Windows ARM64.
+    Changed
+    - (Linux and macOS only) Update to DAITA v2. The main difference is that many different machines are provided by relays instead of a bundled list. The bundled maybenot_machines file was removed.
+    - Move changelog from a dialog to a separate view.
+    - Reduce the setup time of PQ tunnels by pre-computing McEliece keys.
+    - Change order of items in settings view to show DAITA and multihop at the top.
+    - Update Electron from 30.0.4 to 33.4.0.
+    Fixed
+    - (macOS and Windows only) Add the correct route when using obfuscation with Wireguard.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/mullvad/mullvadvpn-app/releases/tag/2025.3
+Version: "2025.3"
+ReleaseTime: 2025-02-07T12:52:01.0000000Z
