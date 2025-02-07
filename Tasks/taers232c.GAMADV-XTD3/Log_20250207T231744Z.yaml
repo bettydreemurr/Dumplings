@@ -1,0 +1,75 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.03.06/gamadv-xtd3-7.03.06-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Scroll to bottom of page for installation/downloads
+    Latest updates
+    7.03.06
+    Added option rawfields <BrowserFieldNameList> to gam info|print|show browsers that allows specification of complex field lists with selected subfields.
+    7.03.05
+    Only used in GAM Team version
+    7.03.04
+    Added option security to gam create cigroup that allows creation of a security group in a single command.
+    Updated to Python 3.13.2 where possible.
+    7.03.03
+    Fixed bug in gam update resoldcustomer that caused the following error:
+    ERROR: Got an unexpected keyword argument customerAuthToken
+    7.03.02
+    Updated gam <UserTypeEntity> show labels nested to properly display label nesting when labels have embedded / characters in their names.
+    7.03.01
+    Updated gam create project to retry the following unexpected error:
+    ERROR: 400 - invalidArgument - Service account gam-project-a1b2c@gam-project-a1b2c.iam.gserviceaccount.com does not exist.
+    7.03.00
+    Updated gam create|use project to discontinue use of the Identity-Aware Proxy (IAP) OAuth Admin APIs that are being deprecated by Google. You will see a set of instructions detailing how to configure the Oauth Consent screen and create the Oauth client.
+    Added options copypermissionroles <DriveFileACLRoleList> and copypermissiontypes <DriveFileACLTypeList> to gam <UserTypeEntity> copy drivefile that provide more control over what permissions are copied from the source files/folders to the destination files/folders.
+    7.02.11
+    Updated gam report <ActivityApplicationName> to display id:<actor.profileId> in the emailAddress column when actor.email is empty. This typically occurs when the actor is not in your workspace.
+    Updated gam <UserTypeEntity> copy drivefile to ignore ACLs referencing deleted user/groups.
+    7.02.10
+    Added option bydate to gam report <ActivityApplicationName> ... countsonly that provides an additional display option.
+    - countsonly - Display a row per user across all dates with all event counts on one row
+    - countsonly bydate - Display a row per user per date for all dates with any events with all events counts on the row
+    - countsonly summary - Display a row per event with counts for each event summarized across users and dates
+    7.02.09
+    Added option clearresources to <EventUpdateAttribute> for use in gam <UserTypeEntity> update events that allows clearing all resources from a user's calendar events. For example, to clear all resources from a user's future events:
+    gam user user@domain.com update events primary matchfield attendeespattern @resource.calendar.google.com after now clearresources
+    Added option resource <ResourceID> to <EventAttribute> for use in gam <UserTypeEntity> create|update events that adds a resource to an event.
+    Added option removeresource <ResourceID> to <EventUpdateAttribute> for use in gam <UserTypeEntity> update events that removes a resource from an event.
+    7.02.08
+    Fixed bug in gam print|show chromepolicies that caused a trap when neither ou|orgunit <OrgUnitItem> nor group <GroupItem> was specified.
+    7.02.07
+    Updated gam delete|update chromepolicy to display the <AppID> or <PrinterID> (if specified) in the command status messages.
+    Installation
+    If you are a first time Gam user:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Install-Advanced-GAM
+    If you are updating your GAMADV-XTD3 version:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Update-Advanced-GAM
+    If you are upgrading from standard Gam
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-Standard-GAM
+    If you are upgrading from GAMADV-X or GAMADV-XTD
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-GAMADV-X-or-GAMADV-XTD
+    sha256 hashes
+    84e32bac8168c19c49a896d5dbfa75084e974f0c7a431bd7d43de6aa880f243b  gamadv-xtd3-7.03.06-linux-arm64-glibc2.23.tar.xz
+    4baa43ac4a47011d49ed0002e64e202302a4aca31ffba5831b680b49d958da12  gamadv-xtd3-7.03.06-linux-arm64-glibc2.27.tar.xz
+    e9fa1a45779cfea9bdc0e13d999f0cb9f784d2b8ffb43889af817703efcae0cb  gamadv-xtd3-7.03.06-linux-arm64-glibc2.31.tar.xz
+    56d4984c63cf24f45cbfe2b699b506746781e768ca0ae5870b6d2cb0fa9d9451  gamadv-xtd3-7.03.06-linux-arm64-glibc2.35.tar.xz
+    45897b2c69e83c51ba06e244d468c0e50d2e9d8f9fdeaa198896b97a8c82a840  gamadv-xtd3-7.03.06-linux-arm64-glibc2.39.tar.xz
+    fcd5f12c36a861d792ad1621ce6281fce2095e5baaea825cfe4fa398c610bf4e  gamadv-xtd3-7.03.06-linux-arm64-legacy.tar.xz
+    0f5aa1a140255ad98027bab34d1aa6679a03f046224556caa24516c8824f7eb2  gamadv-xtd3-7.03.06-linux-x86_64-glibc2.19.tar.xz
+    dfbf83a7a72598ff509968946709cb37a15e7563affa17d849d9eafbc9519115  gamadv-xtd3-7.03.06-linux-x86_64-glibc2.23.tar.xz
+    dbdf2442cc6ae7e8df58387a8ef2ed5729b6c228565c0eece0e7a0577f689f5f  gamadv-xtd3-7.03.06-linux-x86_64-glibc2.27.tar.xz
+    e539d9ba05806853189bf7b5c2070e92e64d8ab2197de7117913f35ad0a46bd5  gamadv-xtd3-7.03.06-linux-x86_64-glibc2.31.tar.xz
+    fae8cb21584811f2cb96526c58515ae5983253ea8793e095a323be6ba94a96b9  gamadv-xtd3-7.03.06-linux-x86_64-glibc2.35.tar.xz
+    e484135b6c380e5458789a326c2bf775584b63e6faeedbce65e30158927f6fa3  gamadv-xtd3-7.03.06-linux-x86_64-glibc2.39.tar.xz
+    5e2537e944dc25c39e56153cca136b72aeab0da79bd0a38ef3e527b3fb54c223  gamadv-xtd3-7.03.06-linux-x86_64-legacy.tar.xz
+    3a30aebd0e2bb867c5aee5e278a52546c91a296ed647e2b13ffa3811ae519334  gamadv-xtd3-7.03.06-macos-arm64.tar.xz
+    9be6ec64e7e8366697631485ca60ac9339a190ee861c6c9ba171421f3e79286f  gamadv-xtd3-7.03.06-macos-x86_64.tar.xz
+    126daa72c91099e1c6c9913d1640534089e6e9514bcedf572efe65ed22bb624e  gamadv-xtd3-7.03.06-windows-x86_64.msi
+    9634fbddf08309655d5bb1e7a12b703d19de326c64c2dd0a2266cc2fcca468be  gamadv-xtd3-7.03.06-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.03.06
+Version: 7.03.06
+ReleaseTime: 2025-02-07T22:37:13.0000000Z
