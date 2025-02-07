@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/kovidgoyal/calibre/releases/download/v7.25.0/calibre-64bit-7.25.0.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: Release version 7.25.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/kovidgoyal/calibre/releases/tag/v7.25.0
+Version: 7.25.0
+ReleaseTime: 2025-02-07T05:41:13.0000000Z
