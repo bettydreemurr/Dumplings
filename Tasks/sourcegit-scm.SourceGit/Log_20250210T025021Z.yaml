@@ -1,0 +1,45 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.04/sourcegit_2025.04.win-x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.04/sourcegit_2025.04.win-arm64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Fix the issue that the new worktree's HEAD does not point to the target branch HEAD
+    - Fix the issue that ${files_num} does not work in commit template.
+    - Discarding local changes with selected files/dirs should never be traited as Discard all changes.
+    - Upgrade LiveChartsCore.SkiaSharpView.Avalonia to 2.0.0-rc5.1
+    - Fix the issue that searching commits by Author & Committer does not include those commit that its committer is different with its author.
+    - Exclude indicators and empty blocks while copying selected text in text diff view.
+    - Allows using spaces in branch name while creating new branch and auto replace those spaces with dashes.
+    - Move Enable --signoff for commit from repository configuration to commit option bar.
+    - Fix the issue that triple click on commit message does not select the cursor line.
+    - Use global fetch.prune instead of custom Enable --prune on fetch setting, and support to modify it through Preference dialog.
+    - macOS: Add Ghostty terminal.
+    - Fix the issue that failed to stash with untracked files.
+    - Fix the issue that rebase-merge/stopped-sha may not exist.
+    - Update submodules individually to avoid failures
+    - Supports encoded remote url.
+    - Supports auto-restore after stashing.
+    - Supoorts --index option in git stash apply command.
+    - COMMIT & PUSH button is available for branch without upstream.
+    - Rewrite OpenAI integration.
+    - Supports filtering/searching unstaged changes.
+    - Several other UI/UX changes.
+    BREAKING CHANGES
+    - The Server of AI service has been changed to the base URL, which means the sub-route /chat/completions is not required any more. See README.md
+    New Contributors
+    - @snarkyerica made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/928
+    - @MedaiP90 made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/932
+    Full Changelog: https://github.com/sourcegit-scm/sourcegit/compare/v2025.03...v2025.04
+- Key: ReleaseNotesUrl
+  Value: https://github.com/sourcegit-scm/sourcegit/releases/tag/v2025.04
+Version: "2025.04"
+ReleaseTime: 2025-02-10T02:13:12.0000000Z
