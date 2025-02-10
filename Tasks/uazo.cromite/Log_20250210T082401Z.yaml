@@ -1,0 +1,11 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/uazo/cromite/releases/download/v133.0.6943.60-3fc3e3c23494d21b4bb997d1e408b25014ce973d/chrome-win.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: https://github.com/uazo/cromite/issues/1802#issuecomment-2642858364
+- Key: ReleaseNotesUrl
+  Value: https://github.com/uazo/cromite/releases/tag/v133.0.6943.60-3fc3e3c23494d21b4bb997d1e408b25014ce973d
+Version: 133.0.6943.60
+ReleaseTime: 2025-02-10T07:35:28.0000000Z
