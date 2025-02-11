@@ -1,0 +1,16 @@
+Installer:
+- InstallerUrl: https://github.com/cinnyapp/cinny-desktop/releases/download/v4.3.0/Cinny_desktop-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - https://github.com/ajbura/cinny/releases/tag/v4.3.0
+    - Add ability to restore Cinny's window size and position by @Neved4 in https://github.com/cinnyapp/cinny-desktop/pull/327
+    New Contributors
+    - @Neved4 made their first contribution in https://github.com/cinnyapp/cinny-desktop/pull/327
+    Full Changelog: https://github.com/cinnyapp/cinny-desktop/compare/v4.2.3...v4.3.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cinnyapp/cinny-desktop/releases/tag/v4.3.0
+Version: 4.3.0
+ReleaseTime: 2025-02-11T06:13:00.0000000Z
