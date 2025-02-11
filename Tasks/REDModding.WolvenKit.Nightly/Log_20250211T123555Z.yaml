@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/download/8.16.1-nightly.2025-02-11/WolvenKit.NightlySetup-8.16.1-nightly.2025-02-11.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a beta release so you may encounter bugs. Please report them.
+    8.16.1-nightly.2025-02-11 (2025-02-11)
+    Features
+    - hair mesh conversion to the dynamic ccxl structure (#2254) (b03476f)
+    Code Refactoring
+    - GeometryCache: Moved from App to Common (60ae62a)
+    - Pools: Refactored all (CName, NodeRef, ResourcePath, TweakDBID) pools (5c94489)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.16.1-nightly.2025-02-11
+Version: 8.16.1-nightly.2025-02-11
+ReleaseTime: 2025-02-11T12:11:55.0000000Z
