@@ -1,0 +1,45 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.10.232934/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.10.232934/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/208163447408c78673b08c172beafe5c310fb167
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - jsinterp
+      - Add js_number_to_string (#12110) by Grub4K
+      - Improve zeroise (#12313) by seproDev
+    Extractor changes
+    - acast: Support shows.acast.com URLs (#12223) by barsnick
+    - cwtv
+      - Fix extractor (#12207) by arantius
+      - movie: Add extractor (#12227) by bashonly
+    - dropbox: Fix extraction (#12228) by bashonly
+    - francetv
+      - site
+        - Fix extractor (#12236) by bashonly
+        - Fix livestream extraction (#12316) by bashonly
+    - generic: Extract live_status for DASH manifest URLs (#12256) by mp3butcher
+    - globo: Fix extractor (#11795) by slipinthedove, YoshiTabletopGamer
+    - goplay: Fix extractor (#12237) by alard
+    - pbs: Support www.thirteen.org URLs (#11191) by rohieb
+    - twitter: Fix syndication token generation (#12107) by Grub4K, pjrobertson
+    - zdf: Extract more metadata (#9565) by StefanLobbenmeier
+    Downloader changes
+    - hls
+      - Fix BYTERANGE logic (#11972) by entourage8
+      - Support hls_media_playlist_data format field (#12322) by bashonly
+    Misc. changes
+    - Improve Issue/PR templates (#11499) by seproDev
+    - test: download: Validate and sort info dict fields (#12299) by bashonly, pzhlkj6612
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.02.10.232934
+Version: 2025.02.10.232934
+ReleaseTime: 2025-02-10T23:35:46.0000000Z
