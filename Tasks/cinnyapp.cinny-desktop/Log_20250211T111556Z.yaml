@@ -1,0 +1,13 @@
+Installer:
+- InstallerUrl: https://github.com/cinnyapp/cinny-desktop/releases/download/v4.3.1/Cinny_desktop-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Fix cargo lock by @kfiven in https://github.com/cinnyapp/cinny-desktop/pull/417
+    Full Changelog: https://github.com/cinnyapp/cinny-desktop/compare/v4.3.0...v4.3.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cinnyapp/cinny-desktop/releases/tag/v4.3.1
+Version: 4.3.1
+ReleaseTime: 2025-02-11T11:04:01.0000000Z
