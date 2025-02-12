@@ -1,0 +1,47 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.11.232920/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.11.232920/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/6ca23ffaa4663cb552f937f0b1e9769b66db11bd
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - jsinterp
+      - Add js_number_to_string (#12110) by Grub4K
+      - Improve zeroise (#12313) by seproDev
+    Extractor changes
+    - acast: Support shows.acast.com URLs (#12223) by barsnick
+    - cwtv
+      - Fix extractor (#12207) by arantius
+      - movie: Add extractor (#12227) by bashonly
+    - digiview: Add extractor (#9902) by lfavole
+    - dropbox: Fix extraction (#12228) by bashonly
+    - francetv
+      - site
+        - Fix extractor (#12236) by bashonly
+        - Fix livestream extraction (#12316) by bashonly
+    - generic: Extract live_status for DASH manifest URLs (#12256) by mp3butcher
+    - globo: Fix extractor (#11795) by slipinthedove, YoshiTabletopGamer
+    - goplay: Fix extractor (#12237) by alard
+    - pbs: Support www.thirteen.org URLs (#11191) by rohieb
+    - reddit: Bypass gated subreddit warning (#12335) by bashonly
+    - twitter: Fix syndication token generation (#12107) by Grub4K, pjrobertson
+    - zdf: Extract more metadata (#9565) by StefanLobbenmeier
+    Downloader changes
+    - hls
+      - Fix BYTERANGE logic (#11972) by entourage8
+      - Support hls_media_playlist_data format field (#12322) by bashonly
+    Misc. changes
+    - Improve Issue/PR templates (#11499) by seproDev (With fixes in 4ecb833 by bashonly)
+    - test: download: Validate and sort info dict fields (#12299) by bashonly, pzhlkj6612
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.02.11.232920
+Version: 2025.02.11.232920
+ReleaseTime: 2025-02-11T23:36:00.0000000Z
