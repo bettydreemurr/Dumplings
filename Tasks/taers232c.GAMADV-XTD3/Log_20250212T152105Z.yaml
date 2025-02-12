@@ -1,0 +1,77 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.03.09/gamadv-xtd3-7.03.09-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Scroll to bottom of page for installation/downloads
+    Latest updates
+    7.03.09
+    Added option maxmessagesperthread <Number> to gam <UserTypeEntity> print|show threads that limits the number of messages displayed per thread. The default is 0, there is no limit. For, example this can be used if you anly want to see the first message of each thread.
+    gam user user@domain.com print|show threads maxmessagesperthread 1
+    Fixed bug in gam <UserTypeEntity> print filelist countsonly where extraneous columns were displayed.
+    Fixed bug in gam <UserTypeEntity> print filelist countsonly showsize where sizes were all shown as 0 unlesssizefield size was specified.
+    7.03.08
+    Only used in GAM Team version
+    7.03.07
+    Updated gam create vaultexport to include corpus gemini.
+    - See: https://workspaceupdates.googleblog.com/2025/02/google-vault-now-supports-gemini.html
+    7.03.06
+    Added option rawfields <BrowserFieldNameList> to gam info|print|show browsers that allows specification of complex field lists with selected subfields.
+    - See: https://github.com/taers232c/GAMADV-XTD3/wiki/Chrome-Browser-Cloud-Management#raw-fields
+    7.03.05
+    Only used in GAM Team version
+    7.03.04
+    Added option security to gam create cigroup that allows creation of a security group in a single command.
+    Updated to Python 3.13.2 where possible.
+    7.03.03
+    Fixed bug in gam update resoldcustomer that caused the following error:
+    ERROR: Got an unexpected keyword argument customerAuthToken
+    7.03.02
+    Updated gam <UserTypeEntity> show labels nested to properly display label nesting when labels have embedded / characters in their names.
+    7.03.01
+    Updated gam create project to retry the following unexpected error:
+    ERROR: 400 - invalidArgument - Service account gam-project-a1b2c@gam-project-a1b2c.iam.gserviceaccount.com does not exist.
+    7.03.00
+    Updated gam create|use project to discontinue use of the Identity-Aware Proxy (IAP) OAuth Admin APIs that are being deprecated by Google. You will see a set of instructions detailing how to configure the Oauth Consent screen and create the Oauth client.
+    Added options copypermissionroles <DriveFileACLRoleList> and copypermissiontypes <DriveFileACLTypeList> to gam <UserTypeEntity> copy drivefile that provide more control over what permissions are copied from the source files/folders to the destination files/folders.
+    7.02.11
+    Updated gam report <ActivityApplicationName> to display id:<actor.profileId> in the emailAddress column when actor.email is empty. This typically occurs when the actor is not in your workspace.
+    Updated gam <UserTypeEntity> copy drivefile to ignore ACLs referencing deleted user/groups.
+    7.02.10
+    Added option bydate to gam report <ActivityApplicationName> ... countsonly that provides an additional display option.
+    - countsonly - Display a row per user across all dates with all event counts on one row
+    - countsonly bydate - Display a row per user per date for all dates with any events with all events counts on the row
+    - countsonly summary - Display a row per event with counts for each event summarized across users and dates
+    Installation
+    If you are a first time Gam user:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Install-Advanced-GAM
+    If you are updating your GAMADV-XTD3 version:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Update-Advanced-GAM
+    If you are upgrading from standard Gam
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-Standard-GAM
+    If you are upgrading from GAMADV-X or GAMADV-XTD
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-GAMADV-X-or-GAMADV-XTD
+    sha256 hashes
+    063da8dd90a2761e35db8c528a83bd14354e40003a1e8a551d2a82305662e4d3  gamadv-xtd3-7.03.09-linux-arm64-glibc2.23.tar.xz
+    b402911f0e39cf316b2f798afbdde0f3cdef1de11d6062922437d98a41103c5f  gamadv-xtd3-7.03.09-linux-arm64-glibc2.27.tar.xz
+    d7cccb1c8d373b100e9c0c7e3a2b9e55e9fc282eb7d8e1afbfd8857aea34e306  gamadv-xtd3-7.03.09-linux-arm64-glibc2.31.tar.xz
+    360271e821a2634144b163c2003a5aba9c94a46be729f33a83e5d379594e3aae  gamadv-xtd3-7.03.09-linux-arm64-glibc2.35.tar.xz
+    c6dd42482cf8971a1d129c234e8fca4e600b46c599ee1708f6d3121652451aca  gamadv-xtd3-7.03.09-linux-arm64-glibc2.39.tar.xz
+    54deabc96e4750696bb17fc31d53035c6824e3894355c11e6eb89edc1a11dcde  gamadv-xtd3-7.03.09-linux-arm64-legacy.tar.xz
+    44caf61b1be6e9ca090ebb54881ff39b124a40a0b9ed5746ad22a0eba113e010  gamadv-xtd3-7.03.09-linux-x86_64-glibc2.19.tar.xz
+    2f88605d88085283f63eef43585219df3e08ca8d28e858e8b21bd250058fb3df  gamadv-xtd3-7.03.09-linux-x86_64-glibc2.23.tar.xz
+    7def4a6d2da232314a81364e952811a406d18cbe90f543b96f92ca083d8eca19  gamadv-xtd3-7.03.09-linux-x86_64-glibc2.27.tar.xz
+    795cb5bf93cb219df659f2d24dff9d62ac94f7c66325f6269016ce50c3185be2  gamadv-xtd3-7.03.09-linux-x86_64-glibc2.31.tar.xz
+    9693db5abc93dfaf22228bd6eab4b9c3720d72fdb553343d3cddeb08cbdfe708  gamadv-xtd3-7.03.09-linux-x86_64-glibc2.35.tar.xz
+    d434b98c22abca45fadbc735fa61185d1e968e17c2c635dc1d02250609283640  gamadv-xtd3-7.03.09-linux-x86_64-glibc2.39.tar.xz
+    881889dacede306080d8b94ffbee2b719d19ff90eca20f6aa6f8ac6253bd8d04  gamadv-xtd3-7.03.09-linux-x86_64-legacy.tar.xz
+    14528326723c9b0aa623166812f11bf02c497ea6d66aa3dda472f020c9a9e757  gamadv-xtd3-7.03.09-macos-arm64.tar.xz
+    f663cd23ebc6737d724d74d0ff873b3ac3cc565384c84d4a49bfe503a705ad8c  gamadv-xtd3-7.03.09-macos-x86_64.tar.xz
+    73fdb16a98c3891be1d81c3e95006b2ada89cc3d338c24e4115e3d6cce39d1e7  gamadv-xtd3-7.03.09-windows-x86_64.msi
+    f9ddd7669321a8ddfd84d9341def44ba8743b665d63f692a27b7e38f5977e8ba  gamadv-xtd3-7.03.09-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.03.09
+Version: 7.03.09
+ReleaseTime: 2025-02-12T06:00:27.0000000Z
