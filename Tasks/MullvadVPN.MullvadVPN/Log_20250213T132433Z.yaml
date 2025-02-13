@@ -1,0 +1,17 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/mullvad/mullvadvpn-app/releases/download/2025.4/MullvadVPN-2025.4.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This release is for desktop only.
+    This release is identical to 2025.4-beta1.
+    Here is a list of all changes since last stable release 2025.3.
+    Fixed
+    Windows
+    - Fix GUI crashing at launch on some systems.
+- Key: ReleaseNotesUrl
+  Value: https://github.com/mullvad/mullvadvpn-app/releases/tag/2025.4
+Version: "2025.4"
+ReleaseTime: 2025-02-13T13:15:29.0000000Z
