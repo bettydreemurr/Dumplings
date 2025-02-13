@@ -1,0 +1,87 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.04.01/gamadv-xtd3-7.04.01-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Scroll to bottom of page for installation/downloads
+    Latest updates
+    7.04.01
+    Fixed bug where multiple querytime<String> values in a query were not properly processed; only the last querytime<String> was processed.
+    Command line: query "sync:#querytime1#..#querytime2# status:provisioned" querytime1 -2y querytime2 -40w
+    Query: (sync:#querytime1#..2024-05-09T00:00:00 status:provisioned) Invalid
+    7.04.00
+    The Classic Sites API no longer functions, the following commands are deprecated:
+    gam [<UserTypeEntity>] create site
+    gam [<UserTypeEntity>] update site
+    gam [<UserTypeEntity>] info site
+    gam [<UserTypeEntity>] print sites
+    gam [<UserTypeEntity>] show sites
+    gam [<UserTypeEntity>] create siteacls
+    gam [<UserTypeEntity>] update siteacls
+    gam [<UserTypeEntity>] delete siteacls
+    gam [<UserTypeEntity>] info siteacls
+    gam [<UserTypeEntity>] show siteacls
+    gam [<UserTypeEntity>] print siteacls
+    gam [<UserTypeEntity>] print siteactivity
+    7.03.09
+    Added option maxmessagesperthread <Number> to gam <UserTypeEntity> print|show threads that limits the number of messages displayed per thread. The default is 0, there is no limit. For, example this can be used if you only want to see the first message of each thread.
+    gam user user@domain.com print|show threads maxmessagesperthread 1
+    Fixed bug in gam <UserTypeEntity> print filelist countsonly where extraneous columns were displayed.
+    Fixed bug in gam <UserTypeEntity> print filelist countsonly showsize where sizes were all shown as 0 unlesssizefield size was specified.
+    7.03.08
+    Only used in GAM Team version
+    7.03.07
+    Updated gam create vaultexport to include corpus gemini.
+    - See: https://workspaceupdates.googleblog.com/2025/02/google-vault-now-supports-gemini.html
+    7.03.06
+    Added option rawfields <BrowserFieldNameList> to gam info|print|show browsers that allows specification of complex field lists with selected subfields.
+    - See: https://github.com/taers232c/GAMADV-XTD3/wiki/Chrome-Browser-Cloud-Management#raw-fields
+    7.03.05
+    Only used in GAM Team version
+    7.03.04
+    Added option security to gam create cigroup that allows creation of a security group in a single command.
+    Updated to Python 3.13.2 where possible.
+    7.03.03
+    Fixed bug in gam update resoldcustomer that caused the following error:
+    ERROR: Got an unexpected keyword argument customerAuthToken
+    7.03.02
+    Updated gam <UserTypeEntity> show labels nested to properly display label nesting when labels have embedded / characters in their names.
+    7.03.01
+    Updated gam create project to retry the following unexpected error:
+    ERROR: 400 - invalidArgument - Service account gam-project-a1b2c@gam-project-a1b2c.iam.gserviceaccount.com does not exist.
+    7.03.00
+    Updated gam create|use project to discontinue use of the Identity-Aware Proxy (IAP) OAuth Admin APIs that are being deprecated by Google. You will see a set of instructions detailing how to configure the Oauth Consent screen and create the Oauth client.
+    Added options copypermissionroles <DriveFileACLRoleList> and copypermissiontypes <DriveFileACLTypeList> to gam <UserTypeEntity> copy drivefile that provide more control over what permissions are copied from the source files/folders to the destination files/folders.
+    Installation
+    If you are a first time Gam user:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Install-Advanced-GAM
+    If you are updating your GAMADV-XTD3 version:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Update-Advanced-GAM
+    If you are upgrading from standard Gam
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-Standard-GAM
+    If you are upgrading from GAMADV-X or GAMADV-XTD
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-GAMADV-X-or-GAMADV-XTD
+    sha256 hashes
+    41114629028b15cab0f127c4b7692d9663b590b4ad5a185ff42d88601aa456a4  gamadv-xtd3-7.04.01-linux-arm64-glibc2.23.tar.xz
+    00e41f6f6a43e020985a6266652295c5646164e10d93d506b636a71eabf57c91  gamadv-xtd3-7.04.01-linux-arm64-glibc2.27.tar.xz
+    5101672194bf8c200e02d8aaf84cc7acd447811f60e46c4872ff2da2e1a71237  gamadv-xtd3-7.04.01-linux-arm64-glibc2.31.tar.xz
+    0873970be122d0163db065c10b716d136069481e98572bbab66565f3d7f21443  gamadv-xtd3-7.04.01-linux-arm64-glibc2.35.tar.xz
+    665610b9fcef646262cc58f3d77d6720c7f01bed2210395f4c433e9774d601ea  gamadv-xtd3-7.04.01-linux-arm64-glibc2.39.tar.xz
+    1edee69576438ef2abca74d0ac4c4e2bf7f5cef76cd0239dfb8fbfcc778a31e4  gamadv-xtd3-7.04.01-linux-arm64-legacy.tar.xz
+    1e6abbee69ab148c504b825b070520ae19474eda937ffbade6cb379f29d05bb7  gamadv-xtd3-7.04.01-linux-x86_64-glibc2.19.tar.xz
+    e85d63cb40c5493c19f3cdc9a8a6cae7b87a8d61ed2bd16130bc7cabbe35192c  gamadv-xtd3-7.04.01-linux-x86_64-glibc2.23.tar.xz
+    eb9b86c94769200aac7250c22b2fa65087d6b0c17cc932bff0d58c28afd546d9  gamadv-xtd3-7.04.01-linux-x86_64-glibc2.27.tar.xz
+    39d2bd96af410fe45b6ec307e492e4f909a0c6cf7a078a1f9027ffa56bc36d4d  gamadv-xtd3-7.04.01-linux-x86_64-glibc2.31.tar.xz
+    aa0865ed925ac39ebfdaaef93503e5533d2d8de64b6ec813caecb626a0197ebd  gamadv-xtd3-7.04.01-linux-x86_64-glibc2.35.tar.xz
+    75ce2ee8e0cd56b98691d9cb7bd2964f97ce30930f2b6f2cb56236c4f08ca402  gamadv-xtd3-7.04.01-linux-x86_64-glibc2.39.tar.xz
+    48d46ebab8c76e8084cdc8c02af476673f48b2171b694420c2ddc6eafff9e813  gamadv-xtd3-7.04.01-linux-x86_64-legacy.tar.xz
+    a9793aadc0466df919c6cabfc070dd3a422c59cf2dffd9bc87bc4f6485301c35  gamadv-xtd3-7.04.01-macos-arm64.tar.xz
+    79288843d4f3d3e42ab6d8c320c911096305a13bcd42e5a27c92cf537f02fd60  gamadv-xtd3-7.04.01-macos-x86_64.tar.xz
+    84d74604801f7a12f16d93e0e0d1093374f375b2e4bdf89b14aa988e04edeb51  gamadv-xtd3-7.04.01-windows-x86_64.msi
+    7da07c6673811845ad05a99a4616bda5f62985fe854d37722ae744ceb9b67051  gamadv-xtd3-7.04.01-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.04.01
+Version: 7.04.01
+ReleaseTime: 2025-02-13T16:08:31.0000000Z
