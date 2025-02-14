@@ -1,0 +1,19 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://gottcode.org/focuswriter/FocusWriter_1.8.10.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    General
+    - Added support for DICPATH to find dictionaries
+    - Improved code for building translations
+    - Updated Unicode symbols database
+    - Updated Windows dictionaries
+    Translation Updates
+    Slovenian
+    Full Changelog: https://github.com/gottcode/focuswriter/compare/v1.8.9...v1.8.10
+- Key: ReleaseNotesUrl
+  Value: https://github.com/gottcode/focuswriter/releases/tag/v1.8.10
+Version: 1.8.10
+ReleaseTime: 2025-02-14T16:33:45.0000000Z
