@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/download/8.16.1-nightly.2025-02-15/WolvenKit.NightlySetup-8.16.1-nightly.2025-02-15.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    This is a beta release so you may encounter bugs. Please report them.
+    8.16.1-nightly.2025-02-15 (2025-02-15)
+    Bug Fixes
+    - MeshExport: Fixed GS not exporting if only garmentMeshParamGarment was present, ignoring garmentMeshParamGarment (c0af946)
+    - MeshImport: Added an option to ignore the GS UV param on import. Fixes a seam cause by the game engine. (9ad2c23)
+    - MeshImport: Flipped V (Y) of the uv param on import. (112a2e2)
+    - hair ccxl button hides for .mesh files with no appearances (#2271) (2ba0987)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.16.1-nightly.2025-02-15
+Version: 8.16.1-nightly.2025-02-15
+ReleaseTime: 2025-02-15T12:12:55.0000000Z
