@@ -1,0 +1,105 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.04.03/gamadv-xtd3-7.04.03-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Scroll to bottom of page for installation/downloads
+    Latest updates
+    7.04.03
+    Added option minimal|basic|full to gam print cigroup-members:
+    - minimal - Fields displayed: group, id, role, email
+    - basic - Fields displayed: group, type, id, role, email
+    - full - Fields displayed: group, type, id, role, email, createTime, updateTime; this is the default
+    Added option minimal|basic|full to gam show cigroup-members:
+    - minimal - Fields displayed: role, email
+    - basic - Fields displayed: type, role, email
+    - full - Fields displayed: type, role, email, createTime, updateTime; this is the default
+    7.04.02
+    Improved output formatting for the following commands:
+    gam info peoplecontact
+    gam show peoplecontacts
+    gam info peopleprofile
+    gam show peopleprofile
+    gam <UserTypeEntity> info contacts
+    gam <UserTypeEntity> show contacts
+    gam <UserTypeEntity> show peopleprofile
+    7.04.01
+    Fixed bug where multiple querytime<String> values in a query were not properly processed; only the last querytime<String> was processed.
+    Command line: query "sync:#querytime1#..#querytime2# status:provisioned" querytime1 -2y querytime2 -40w
+    Query: (sync:#querytime1#..2024-05-09T00:00:00 status:provisioned) Invalid
+    7.04.00
+    The Classic Sites API no longer functions, the following commands are deprecated:
+    gam [<UserTypeEntity>] create site
+    gam [<UserTypeEntity>] update site
+    gam [<UserTypeEntity>] info site
+    gam [<UserTypeEntity>] print sites
+    gam [<UserTypeEntity>] show sites
+    gam [<UserTypeEntity>] create siteacls
+    gam [<UserTypeEntity>] update siteacls
+    gam [<UserTypeEntity>] delete siteacls
+    gam [<UserTypeEntity>] info siteacls
+    gam [<UserTypeEntity>] show siteacls
+    gam [<UserTypeEntity>] print siteacls
+    gam [<UserTypeEntity>] print siteactivity
+    7.03.09
+    Added option maxmessagesperthread <Number> to gam <UserTypeEntity> print|show threads that limits the number of messages displayed per thread. The default is 0, there is no limit. For, example this can be used if you only want to see the first message of each thread.
+    gam user user@domain.com print|show threads maxmessagesperthread 1
+    Fixed bug in gam <UserTypeEntity> print filelist countsonly where extraneous columns were displayed.
+    Fixed bug in gam <UserTypeEntity> print filelist countsonly showsize where sizes were all shown as 0 unlesssizefield size was specified.
+    7.03.08
+    Only used in GAM Team version
+    7.03.07
+    Updated gam create vaultexport to include corpus gemini.
+    - See: https://workspaceupdates.googleblog.com/2025/02/google-vault-now-supports-gemini.html
+    7.03.06
+    Added option rawfields <BrowserFieldNameList> to gam info|print|show browsers that allows specification of complex field lists with selected subfields.
+    - See: https://github.com/taers232c/GAMADV-XTD3/wiki/Chrome-Browser-Cloud-Management#raw-fields
+    7.03.05
+    Only used in GAM Team version
+    7.03.04
+    Added option security to gam create cigroup that allows creation of a security group in a single command.
+    Updated to Python 3.13.2 where possible.
+    7.03.03
+    Fixed bug in gam update resoldcustomer that caused the following error:
+    ERROR: Got an unexpected keyword argument customerAuthToken
+    7.03.02
+    Updated gam <UserTypeEntity> show labels nested to properly display label nesting when labels have embedded / characters in their names.
+    7.03.01
+    Updated gam create project to retry the following unexpected error:
+    ERROR: 400 - invalidArgument - Service account gam-project-a1b2c@gam-project-a1b2c.iam.gserviceaccount.com does not exist.
+    7.03.00
+    Updated gam create|use project to discontinue use of the Identity-Aware Proxy (IAP) OAuth Admin APIs that are being deprecated by Google. You will see a set of instructions detailing how to configure the Oauth Consent screen and create the Oauth client.
+    Added options copypermissionroles <DriveFileACLRoleList> and copypermissiontypes <DriveFileACLTypeList> to gam <UserTypeEntity> copy drivefile that provide more control over what permissions are copied from the source files/folders to the destination files/folders.
+    Installation
+    If you are a first time Gam user:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Install-Advanced-GAM
+    If you are updating your GAMADV-XTD3 version:
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Update-Advanced-GAM
+    If you are upgrading from standard Gam
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-Standard-GAM
+    If you are upgrading from GAMADV-X or GAMADV-XTD
+    - https://github.com/taers232c/GAMADV-XTD3/wiki/How-to-Upgrade-from-GAMADV-X-or-GAMADV-XTD
+    sha256 hashes
+    936fb749853047b0f91b7ddf29df1662c24803ba4cd5431ff38a714b95b17f48  gamadv-xtd3-7.04.03-linux-arm64-glibc2.23.tar.xz
+    22404ddb5b803420a9f5dbd9b9a16ffc1a0da7b36ef08f39ce3ef5b766ad2b61  gamadv-xtd3-7.04.03-linux-arm64-glibc2.27.tar.xz
+    1dc0070f61cb62bb7ba9f69394104aa58692c5421e3bc88f5717e2b47319298c  gamadv-xtd3-7.04.03-linux-arm64-glibc2.31.tar.xz
+    907fad4ca48c0cd693ccacb55395edd3559cb00e9d14de4df5d10a458ea29339  gamadv-xtd3-7.04.03-linux-arm64-glibc2.35.tar.xz
+    e50b8da52427ea63afee8019974c75503420ad4a03094afbc27cfb665acee179  gamadv-xtd3-7.04.03-linux-arm64-glibc2.39.tar.xz
+    62a74a00a3b3fe97cbc6b20f07cb75c0a91db942be626e648947eed0697503e0  gamadv-xtd3-7.04.03-linux-arm64-legacy.tar.xz
+    e0a28ccf205d917eb3a645a566391f487cffefd4b3040d8a01a23becb261bdcf  gamadv-xtd3-7.04.03-linux-x86_64-glibc2.19.tar.xz
+    bc92f997eb25f284642b7058c35c17c27b483ff77d4d4cb03ba8de0cd9c15d09  gamadv-xtd3-7.04.03-linux-x86_64-glibc2.23.tar.xz
+    d2812eb99dd1db996c27bd940028acfa804d43f5ea6577e3104a24c85d7b65fb  gamadv-xtd3-7.04.03-linux-x86_64-glibc2.27.tar.xz
+    1da96f353a849d7d52c9b46369ee1f68e9f0ce9a48d7a63f444b72476afcec0c  gamadv-xtd3-7.04.03-linux-x86_64-glibc2.31.tar.xz
+    1f67dc61c6bd4912e7424eb5b185c746c212429e1f465dd1672e7d4d6209d719  gamadv-xtd3-7.04.03-linux-x86_64-glibc2.35.tar.xz
+    538fbe3e774ecf9725142b2ee9749d9714973e4eefa119f3628517d2a5f2bf56  gamadv-xtd3-7.04.03-linux-x86_64-glibc2.39.tar.xz
+    2ebc36c7710c79491cecca240d06daaf50545a1cdeabf032cab8d3180fe31602  gamadv-xtd3-7.04.03-linux-x86_64-legacy.tar.xz
+    360b9c941bd84596c8348817d2dd6df10e53e00b0088a6dd2de92215d4f97303  gamadv-xtd3-7.04.03-macos-arm64.tar.xz
+    cba6eb371599f706150bac33a2b1a1698353a86e10a80938f00ca11a827c8fbb  gamadv-xtd3-7.04.03-macos-x86_64.tar.xz
+    cdd4deb749ef338149021861cf229ed7514b678c731a645c17c7e1104436c6d5  gamadv-xtd3-7.04.03-windows-x86_64.msi
+    4bfea5601cce9dcc2d7f0a9b317104b6dec319a9d7f77440670b4b85ee2c4705  gamadv-xtd3-7.04.03-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.04.03
+Version: 7.04.03
+ReleaseTime: 2025-02-15T19:42:20.0000000Z
