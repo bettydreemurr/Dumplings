@@ -1,0 +1,33 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.04.04/gamadv-xtd3-7.04.04-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    See Upgrade GAMADV-XTD3 to GAM7
+    7.04.04
+    Updated gam print group-members|cigroup-members to include the email column when fields <MembersFieldNameList> did not include email.
+    See Update History
+    sha256 hashes
+    e57253e3e2fed9d7a2db1c382b691bd1f8a51f10b6fd2e7b55c1cf12f7cdad13  gamadv-xtd3-7.04.04-linux-arm64-glibc2.23.tar.xz
+    7341d3091c1365bc3784982723c1b5db26f113c2dd1b1ce8d8c782455caab500  gamadv-xtd3-7.04.04-linux-arm64-glibc2.27.tar.xz
+    b8dd04878c7046c25f0540fac0b5463bf7b7a214e686637ac2b719ed8631bfca  gamadv-xtd3-7.04.04-linux-arm64-glibc2.31.tar.xz
+    74e82086fedd42f545863be6275a01170bd317d04e7b18276f5cf3a0a85a3d75  gamadv-xtd3-7.04.04-linux-arm64-glibc2.35.tar.xz
+    b288d3c18ad4085445c3917c1c7aa14460a82d10f4108d5bf68dbd3a15870906  gamadv-xtd3-7.04.04-linux-arm64-glibc2.39.tar.xz
+    6f8745acc0daddc004b6c3a58bdb4475c4ad3ac40100eb39a53891bbe6370386  gamadv-xtd3-7.04.04-linux-arm64-legacy.tar.xz
+    b4202368e60d0e414608cab032d3e71bc3ec768bd4ad12aafccf383b8c1e12ff  gamadv-xtd3-7.04.04-linux-x86_64-glibc2.19.tar.xz
+    41c3fcdca1c3435a5786cc97ea070d8f8df268979998b499fd403034de4a6e4b  gamadv-xtd3-7.04.04-linux-x86_64-glibc2.23.tar.xz
+    1da356e8122ceca745990a3b216ae2a69c4ab6e7b8e349721cdccd1c2f1554d9  gamadv-xtd3-7.04.04-linux-x86_64-glibc2.27.tar.xz
+    d2f88d05473bb893cbb418954a6cb8c22176620da78a4ec56f6d9b954f264f74  gamadv-xtd3-7.04.04-linux-x86_64-glibc2.31.tar.xz
+    0ded504a73825e62fe3dc66a7aeed7936993505e096dac9c6b1d4b1cc2b6edb2  gamadv-xtd3-7.04.04-linux-x86_64-glibc2.35.tar.xz
+    a362b19fd74ab549bf13990c00834134b6a4927b22a8420373d22316494decda  gamadv-xtd3-7.04.04-linux-x86_64-glibc2.39.tar.xz
+    6812ea0e4920569caf8678ece7e28a073e55cbc8637884d7a4cb05113a10e586  gamadv-xtd3-7.04.04-linux-x86_64-legacy.tar.xz
+    fa306d87e4995a984487dd8584810406abcd7fea12994ad81702af6f8aa10255  gamadv-xtd3-7.04.04-macos-arm64.tar.xz
+    a1f28bf0b87e170ffa2cc49032c969c6da6fd21a1db309f77ecdc9efd1d5d59a  gamadv-xtd3-7.04.04-macos-x86_64.tar.xz
+    79c78db5c9e9205821b242ad340549491c6e895eb0e16307ae81a51939acf255  gamadv-xtd3-7.04.04-windows-x86_64.msi
+    f5ca7fabe50a60fc3da3f37cc29b415d393c972df70f668d8096ec8199c60035  gamadv-xtd3-7.04.04-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.04.04
+Version: 7.04.04
+ReleaseTime: 2025-02-16T19:02:41.0000000Z
