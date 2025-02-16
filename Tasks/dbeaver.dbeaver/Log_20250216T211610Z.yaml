@@ -1,0 +1,52 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.5/dbeaver-ce-24.3.5-x86_64-setup.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/dbeaver/dbeaver/releases/download/24.3.5/dbeaver-ce-24.3.5-x86_64-setup.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    - SQL Editor:
+                    - Client-side commands color highlighted was improved
+                    - Added menu options for refresh current schema and all schemas
+                    - Code completions options were renamed to "Semantic" (the default) and Legacy
+                    - Semantic autocompletion:
+                        - Added support for the function names
+                        - Fixed incorrect proposals for trees with missing nodes
+                        - Improved support for DESC, ORDER, LIMIT and other keywords
+                        - Alphabetic proposals ordering was disabled by default
+                        - Fixed duplicates in Combined autocompletion mode
+                    - Script execute statistics rendering was improved (most valuable fields got first)
+                - Data Editor:
+                    - Fixed the context menu for column names copy
+                    - Saving data in JSON format was fixed
+                    - Find/Replace dialog was fixed
+                - Data Transfer:
+                    - Added the ability to format arrays during the Data Export (thanks to @dheeru12)
+                    - Using ${scriptFilename} during the export in file was fixed
+                - Miscellaneous:
+                    - Editor breadcrumbs were redesigned and moved to the bottom toolbar
+                    - Database Navigator filters were fixed
+                    - Several icons were updated
+                    - Opening of the Git panel in Git extension was fixed
+                    - Sample database create popup was fixed
+                    - Fixed the search of SQL files thru editors menu
+                - Databases:
+                    - Azure Databricks:
+                        - Driver version was updated 2.7.1.1004 due to the update to Java 21
+                        - Schemas are now displayed in Database Navigator
+                    - Cloudberry: site URL was updated
+                    - CUBRID: Fixed deletion of comments and default values from columns via UI (thanks to @longhaseng52)
+                    - Kognito and Data Virtuality drivers were removed as these databases are no longer available
+                    - PostgreSQL:
+                        - Added an option to hide idle sessions (thanks to @f-m-t-t-m)
+                        - Fixed deleting comment in Metadata editor (thanks to @eusebe-cda)
+                        - Exception appeared when using F5 was fixed
+                        - PostgreSQL: fixed keywords formatting
+                    - Snowflake driver was updated to the latest version to address issues related to the migration to Java 21
+                    - SQLite driver was updated to version 3.48.0.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/dbeaver/dbeaver/releases/tag/24.3.5
+Version: 24.3.5
+ReleaseTime: 2025-02-16T20:28:57.0000000Z
