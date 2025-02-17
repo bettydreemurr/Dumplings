@@ -1,0 +1,13 @@
+Installer:
+- InstallerUrl: https://github.com/cinnyapp/cinny-desktop/releases/download/v4.3.2/Cinny_desktop-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - https://github.com/ajbura/cinny/releases/tag/v4.3.2
+    Full Changelog: https://github.com/cinnyapp/cinny-desktop/compare/v4.3.1...v4.3.2
+- Key: ReleaseNotesUrl
+  Value: https://github.com/cinnyapp/cinny-desktop/releases/tag/v4.3.2
+Version: 4.3.2
+ReleaseTime: 2025-02-17T01:11:31.0000000Z
