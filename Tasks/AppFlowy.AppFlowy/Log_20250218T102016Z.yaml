@@ -1,0 +1,24 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.8.4/AppFlowy-0.8.4-windows-x86_64.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.8.4/AppFlowy-0.8.4-windows-x86_64.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Release Notes
+    Version 0.8.4 - 18/02/2025
+    New Features
+    - Switch AI mode on mobile
+    - Support locking page
+    - Support uploading svg file as icon
+    - Support the slash, at, and plus menus on mobile
+    Bug Fixes
+    - Gallery not rendering in row page
+    - Save image should not copy the image (mobile)
+    - Support exporting more content to markdown
+- Key: ReleaseNotesUrl
+  Value: https://github.com/AppFlowy-IO/AppFlowy/releases/tag/0.8.4
+Version: 0.8.4
+ReleaseTime: 2025-02-18T08:51:18.0000000Z
