@@ -1,0 +1,15 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.6.5/Pinokio-3.6.5-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.6.5.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    1. FFMPEG FIX: the latest version of ffmpeg conda package is broken because of some conflict, pin it to the previous version that works
+    2. Mac sudo shell fix: use the new applet code that supports all archs
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.6.5
+Version: 3.6.5
+ReleaseTime: 2025-02-18T22:57:02.0000000Z

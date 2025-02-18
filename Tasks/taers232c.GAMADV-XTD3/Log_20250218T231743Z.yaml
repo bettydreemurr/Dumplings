@@ -1,0 +1,45 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.04.05/gamadv-xtd3-7.04.05-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    See Upgrade GAMADV-XTD3 to GAM7
+    7.04.05
+    Added initial support for Meet API v2beta; you must be in the Developer Preview program for this to be effective.
+    - https://developers.google.com/meet/api/guides/beta/configuration-beta#auto-artifacts
+    Added meet_v2_beta Boolean variable to gam.cfg. When this variable is true, the following options are added to <MeetSpaceOptions> used in gam <UserTypeEntity> create|update meetspace.
+    moderation <Boolean> |
+            chatrestriction hostsonly|norestriction |
+            reactionrestriction hostsonly|norestriction |
+            presentrestriction hostsonly|norestriction |
+            defaultjoinasviewer <Boolean> |
+            firstjoiner hostsonly|anyone |
+            recording <Boolean> |
+            transcription <Boolean> |
+            smartnotes <Boolean>
+    This isn't called beta for nothing, I have found problems and reported them.
+    See Update History
+    sha256 hashes
+    fae5a35b3252175844052a0dccb4996da4d6008144a0c17e9adaa209f6154fa6  gamadv-xtd3-7.04.05-linux-arm64-glibc2.23.tar.xz
+    86e4399b4f0db48018a40140def43aeb5dacae60cad2fd0441d5ced71fc5da11  gamadv-xtd3-7.04.05-linux-arm64-glibc2.27.tar.xz
+    5b842f9a1340d5a160b5ca69f1b6d98ee62ad0859fbd15a05162f95b6862a569  gamadv-xtd3-7.04.05-linux-arm64-glibc2.31.tar.xz
+    4c1907830d623ad238eb1ffb4ab30565f515a7bf79b4dfc7e5442c4bb94f2f56  gamadv-xtd3-7.04.05-linux-arm64-glibc2.35.tar.xz
+    45d45a2c7abd988b5aaa78873ff0d65f0b83951d745a2e91e0722254d1d37178  gamadv-xtd3-7.04.05-linux-arm64-glibc2.39.tar.xz
+    31e1a060402d21bf8a900c9bfb32c00a8e1d7177dbcedd14cbf6f59e809c1f92  gamadv-xtd3-7.04.05-linux-arm64-legacy.tar.xz
+    b7c591152f78a6685d26e5e93432dc9474f9b26693ca0d38380149ec3f104696  gamadv-xtd3-7.04.05-linux-x86_64-glibc2.19.tar.xz
+    63331d4bc1badfacf1ea1302ba67b1d862343bd3afc43a361ae52c7064264577  gamadv-xtd3-7.04.05-linux-x86_64-glibc2.23.tar.xz
+    0f27d17fe16b23c2a5dc07c33130f3b0f4f84d6e1e4dab4f6753bdc503308733  gamadv-xtd3-7.04.05-linux-x86_64-glibc2.27.tar.xz
+    a804c961de52d7503a4ca9c5065fa2a225d9a3a2fb5ddeb8e6c3fa652a317bf9  gamadv-xtd3-7.04.05-linux-x86_64-glibc2.31.tar.xz
+    0a7754c8d83c9fae31acb3db42e3279e0351a13fe484c685bf3b48b50b643deb  gamadv-xtd3-7.04.05-linux-x86_64-glibc2.35.tar.xz
+    492c75cab323d5aed1462665982a2de91ab0d9e63ad0eae555d6838fa0d0ef7d  gamadv-xtd3-7.04.05-linux-x86_64-glibc2.39.tar.xz
+    e8da86f1d4072d8b332117b6d947d1e0b04476d33238b43813c10ec88cf3c12d  gamadv-xtd3-7.04.05-linux-x86_64-legacy.tar.xz
+    de1dd4a3d35c4dc54a3ce89d78e22f82ef4e93b7b44aea5eaa28a59b9421bff1  gamadv-xtd3-7.04.05-macos-arm64.tar.xz
+    249a126a50e84ed811d907918e4a361ec08ee801de2225610fef3408c57db855  gamadv-xtd3-7.04.05-macos-x86_64.tar.xz
+    92457dadcfd8a1330a11fec402cb5296ee072ccd007fda1a5b0031b0641de00d  gamadv-xtd3-7.04.05-windows-x86_64.msi
+    b97ee56e7892e19c4b39cb17c7a026e7fcdca5e17efa227817f04ea19d4d103f  gamadv-xtd3-7.04.05-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.04.05
+Version: 7.04.05
+ReleaseTime: 2025-02-18T22:57:40.0000000Z
