@@ -1,0 +1,33 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.05/sourcegit_2025.05.win-x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.05/sourcegit_2025.05.win-arm64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Add a dropdown button to select page when the scroller buttons appears in main tab bar.
+    - Enable filesystem watcher while merge tool is opening.
+    - Fix the issue that failed to copy text that selected from end to start in text diff view.
+    - Add Wait for action done option to control whether or not to wait for the custom action execution to complete.
+    - Add a button CLEAR NOTIFICATIONS to clear all notifications.
+    - Upgrade TextMateSharp to 1.0.66.
+    - Upgrade AvaloniaUI to 11.2.4.
+    - Fix the issue that typing @ via Alt Gr + Q with German keyboard will exit this application.
+    - Support to add custom actions for selected branch.
+    - Add a Close button to remove histories filter individually.
+    - Several other UI/UX changes.
+    New Contributors
+    - @Doodeletion made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/967
+    - @ChrisGoettfert made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/973
+    Full Changelog: https://github.com/sourcegit-scm/sourcegit/compare/v2025.04...v2025.05
+- Key: ReleaseNotesUrl
+  Value: https://github.com/sourcegit-scm/sourcegit/releases/tag/v2025.05
+Version: "2025.05"
+ReleaseTime: 2025-02-18T03:04:24.0000000Z
