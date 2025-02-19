@@ -1,0 +1,55 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.19.023542/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.19.023542/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/4985a4041770eaa0016271809a1fd950dc809a55
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - jsinterp
+      - Add js_number_to_string (#12110) by Grub4K
+      - Improve zeroise (#12313) by seproDev
+    Extractor changes
+    - acast: Support shows.acast.com URLs (#12223) by barsnick
+    - cwtv
+      - Fix extractor (#12207) by arantius
+      - movie: Add extractor (#12227) by bashonly
+    - digiview: Add extractor (#9902) by lfavole
+    - dropbox: Fix extraction (#12228) by bashonly
+    - francetv
+      - site
+        - Fix extractor (#12236) by bashonly
+        - Fix livestream extraction (#12316) by bashonly
+    - francetvinfo.fr: Fix extractor (#12402) by bashonly
+    - gem.cbc.ca: Fix extractors (#12404) by bashonly, dirkf
+    - generic: Extract live_status for DASH manifest URLs (#12256) by mp3butcher
+    - globo: Fix extractor (#11795) by slipinthedove, YoshiTabletopGamer
+    - goplay: Fix extractor (#12237) by alard
+    - pbs: Support www.thirteen.org URLs (#11191) by rohieb
+    - reddit: Bypass gated subreddit warning (#12335) by bashonly
+    - twitter: Fix syndication token generation (#12107) by Grub4K, pjrobertson
+    - youtube
+      - Retry on more critical requests (#12339) by coletdjnz
+      - nsig workaround for tce player JS (#12401) by bashonly
+    - zdf: Extract more metadata (#9565) by StefanLobbenmeier (With fixes in e7882b6 by bashonly)
+    Downloader changes
+    - hls
+      - Fix BYTERANGE logic (#11972) by entourage8
+      - Support --write-pages for m3u8 media playlists (#12333) by bashonly
+      - Support hls_media_playlist_data format field (#12322) by bashonly
+    Misc. changes
+    - Improve Issue/PR templates (#11499) by seproDev (With fixes in 4ecb833 by bashonly)
+    - cleanup: Miscellaneous: 4985a40 by dirkf, Grub4K, StefanLobbenmeier
+    - docs: Add note to supportedsites.md (#12382) by seproDev
+    - test: download: Validate and sort info dict fields (#12299) by bashonly, pzhlkj6612
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.02.19.023542
+Version: 2025.02.19.023542
+ReleaseTime: 2025-02-19T02:42:10.0000000Z
