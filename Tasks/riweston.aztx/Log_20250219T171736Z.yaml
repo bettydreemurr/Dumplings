@@ -1,0 +1,17 @@
+Installer:
+- Architecture: arm64
+  InstallerUrl: https://github.com/riweston/aztx/releases/download/1.6.2/aztx_1.6.2_windows_arm64.zip
+- Architecture: x86
+  InstallerUrl: https://github.com/riweston/aztx/releases/download/1.6.2/aztx_1.6.2_windows_386.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/riweston/aztx/releases/download/1.6.2/aztx_1.6.2_windows_amd64.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Changelog
+    - ff183ad69dda922c723426766a2fdd075bc773d1 refactor: Clean up old refs to master branch (#48)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/riweston/aztx/releases/tag/1.6.2
+Version: 1.6.2
+ReleaseTime: 2025-02-19T17:06:44.0000000Z
