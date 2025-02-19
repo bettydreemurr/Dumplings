@@ -1,0 +1,16 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.6.7/Pinokio-3.6.7-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.6.7.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Yet another FFMPEG fix
+    Problem: 3.6.5 Bugfix fixed the install issue (it wasn't even installing because a conda issue), but when actually trying to use after successfully installing (for example to extract frames) it was failing with DLL issues.
+    Solution: Pin FFMPEG=5.1.2
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.6.7
+Version: 3.6.7
+ReleaseTime: 2025-02-19T15:23:55.0000000Z
