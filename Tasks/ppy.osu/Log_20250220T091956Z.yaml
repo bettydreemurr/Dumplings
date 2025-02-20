@@ -1,0 +1,131 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/ppy/osu/releases/download/2025.220.0/install.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    New release!
+    Importantly, if you're one of those reading release notes here on github, we're changing up the format a bit. Now, all merged PRs will be listed here, rather than the edited version. If you prefer to read my curated changelog, head over to the usual place on the osu! website.
+    The curated changelog will now have anything not interesting to end users removed. I'm opting to keep the full list here on github to give everyone involved in making the release happened the credit they deserve, while making the actual user facing changelog a lot more relevant.
+    What's Changed
+    - Don't highlight friends' scores under beatmap's friend score leaderboard by @CloneWith in https://github.com/ppy/osu/pull/31576
+    - Seek in replay scaled by replay speed by @Rudicito in https://github.com/ppy/osu/pull/31539
+    - Remove redundant ToArray() calls in Osu/ManiaHitObjectComposer by @turbedi in https://github.com/ppy/osu/pull/31583
+    - add warning text on team acronym conflict by @ILW8 in https://github.com/ppy/osu/pull/31553
+    - Add precise movement tool to osu! editor by @bdach in https://github.com/ppy/osu/pull/31547
+    - Add completion marker to daily challenge profile counter by @bdach in https://github.com/ppy/osu/pull/31543
+    - Fix player settings in replay hiding when dragging a slider by @Rudicito in https://github.com/ppy/osu/pull/31593
+    - Fix beat snap grid being lines not being corectly centered to time by @peppy in https://github.com/ppy/osu/pull/31602
+    - Display up to 2 decimal places for bpm in timing screen metronome by @minetoblend in https://github.com/ppy/osu/pull/31586
+    - Add special handling for file import button on iOS by @frenzibyte in https://github.com/ppy/osu/pull/31026
+    - Show spectating users during gameplay by @bdach in https://github.com/ppy/osu/pull/31527
+    - Make friend notifications less prominent by @peppy in https://github.com/ppy/osu/pull/31613
+    - Fix song select right click handling by @peppy in https://github.com/ppy/osu/pull/31604
+    - Tidy up various input handling anomalies by @peppy in https://github.com/ppy/osu/pull/31603
+    - Snap to beat divisor when pasting hitobjects in editor by @minetoblend in https://github.com/ppy/osu/pull/31588
+    - Fix crash from new combo colour selector when there are no combo colours present by @bdach in https://github.com/ppy/osu/pull/31616
+    - Refetch local metadata cache if corruption is detected by @bdach in https://github.com/ppy/osu/pull/31509
+    - Initial carousel additions in preparation for selection logic by @peppy in https://github.com/ppy/osu/pull/31632
+    - Roll back windows build image to 2019 on android build job by @bdach in https://github.com/ppy/osu/pull/31633
+    - Hide Discord RPC error messages away from user attention by @frenzibyte in https://github.com/ppy/osu/pull/31640
+    - Fix potential crash when adjusting offset by @peppy in https://github.com/ppy/osu/pull/31644
+    - Add selection support to beatmap carousel v2 by @peppy in https://github.com/ppy/osu/pull/31634
+    - Add view in browser context menu functionality to multiplayer/playlist rooms by @Layendan in https://github.com/ppy/osu/pull/31623
+    - Make offset adjust more lenient by @peppy in https://github.com/ppy/osu/pull/31645
+    - Split out beatmap and set panels in beatmap carousel v2 by @peppy in https://github.com/ppy/osu/pull/31652
+    - 🔧 Specify we're not using non-exempt encryption by @ThePooN in https://github.com/ppy/osu/pull/31664
+    - Work around rare sharpcompress failure to extract certain archives by @bdach in https://github.com/ppy/osu/pull/31698
+    - Catch and display user-friendly errors regarding corrupted audio files by @bdach in https://github.com/ppy/osu/pull/31697
+    - Do not bundle explicit beatmaps by @bdach in https://github.com/ppy/osu/pull/31696
+    - Remove "Accuracy" from osu!catch editor setup by @peppy in https://github.com/ppy/osu/pull/31709
+    - Change friend online notifications' icon and colours by @peppy in https://github.com/ppy/osu/pull/31711
+    - Enable sentry caching to avoid sentry writing outside of game directory by @peppy in https://github.com/ppy/osu/pull/31417
+    - Fix recent editor textbox regressions by @frenzibyte in https://github.com/ppy/osu/pull/31590
+    - Fix incremental unstable rate calculation not matching expectations by @peppy in https://github.com/ppy/osu/pull/31723
+    - Make multiplayer change room settings more obvious as to what it does by @peppy in https://github.com/ppy/osu/pull/31726
+    - Refactor editor object snapping to remove bad abstractions by @bdach in https://github.com/ppy/osu/pull/31655
+    - Do not display autocorrect suggestions in two factor verification code text box by @frenzibyte in https://github.com/ppy/osu/pull/31685
+    - Add unique samples for friend online/offline notifications by @nekodex in https://github.com/ppy/osu/pull/31663
+    - Change mirror mod direction setting description & tooltip to hopefully be less confusing by @bdach in https://github.com/ppy/osu/pull/31731
+    - Fix stacked objects selection order on editor timeline by @KareVulli in https://github.com/ppy/osu/pull/31732
+    - Abstract out WizardOverlay for multi-step wizard type screens by @bdach in https://github.com/ppy/osu/pull/31733
+    - Improve osu!mania playability on mobile devices by @frenzibyte in https://github.com/ppy/osu/pull/31368
+    - Do not reset online information when saving beatmap by @bdach in https://github.com/ppy/osu/pull/31747
+    - Fix results screen sounds persisting after exit by @smoogipoo in https://github.com/ppy/osu/pull/31742
+    - Fix distance snap time part ceasing to work when grid snap is also active by @bdach in https://github.com/ppy/osu/pull/31737
+    - Avoid moving already placed objects temporally when "limit distance snap to current time" is active by @bdach in https://github.com/ppy/osu/pull/31743
+    - Make distance snap settings mutually exclusive by @peppy in https://github.com/ppy/osu/pull/31778
+    - Avoid accessing WorkingBeatmap.Beatmap every update call by @peppy in https://github.com/ppy/osu/pull/31775
+    - Fix depth ordering in new carousel not being relative to selected item by @frenzibyte in https://github.com/ppy/osu/pull/31776
+    - Fix multi-segment-type sliders getting mangled on legacy export by @bdach in https://github.com/ppy/osu/pull/31734
+    - Add group support to beatmap carousel v2 by @peppy in https://github.com/ppy/osu/pull/31764
+    - Fix carousel tests failing due to dependency on depth ordering by @peppy in https://github.com/ppy/osu/pull/31785
+    - Add expanded state tracking to beatmap carousel v2 by @peppy in https://github.com/ppy/osu/pull/31787
+    - Implement "form button" control by @bdach in https://github.com/ppy/osu/pull/31783
+    - Always select the closest control point group regardless of whether it has a timing point on entering timing screen by @bdach in https://github.com/ppy/osu/pull/31791
+    - Add support for "freestyle" in multiplayer by @smoogipoo in https://github.com/ppy/osu/pull/31260
+    - Update framework by @peppy in https://github.com/ppy/osu/pull/31795
+    - Added warning before bookmark reset by @necocat0918 in https://github.com/ppy/osu/pull/31780
+    - Change menus to fade out with a slight delay so settings changes are visible by @peppy in https://github.com/ppy/osu/pull/31779
+    - Implement visual appearance of beatmap submission wizard by @bdach in https://github.com/ppy/osu/pull/31784
+    - Fix distance snap grid not properly working due to multiple issues by @bdach in https://github.com/ppy/osu/pull/31789
+    - Display up-to-date online status in user panels by @smoogipoo in https://github.com/ppy/osu/pull/31524
+    - Fix Carousel.FilterAsync not working when called from a non-update thread by @peppy in https://github.com/ppy/osu/pull/31798
+    - Implement visual component for displaying submission progress by @bdach in https://github.com/ppy/osu/pull/31803
+    - Improve bookmark controls by @bdach in https://github.com/ppy/osu/pull/31806
+    - Allow ordering certain carousel panels behind others by @frenzibyte in https://github.com/ppy/osu/pull/31802
+    - Add invalidation on draw size change in beatmap carousel v2 by @peppy in https://github.com/ppy/osu/pull/31817
+    - Add support for grouping by artist to beatmap carousel v2 by @peppy in https://github.com/ppy/osu/pull/31801
+    - Add ruleset icon to expanded score panel by @smoogipoo in https://github.com/ppy/osu/pull/31815
+    - Support variable spacing between beatmap carousel panels by @frenzibyte in https://github.com/ppy/osu/pull/31799
+    - Don't attempt to submit zero scores by @peppy in https://github.com/ppy/osu/pull/31822
+    - Add API request & response structures for beatmap submission by @bdach in https://github.com/ppy/osu/pull/31804
+    - Always transfer keyboard selection on activation by @peppy in https://github.com/ppy/osu/pull/31824
+    - Refactor grouping to be much more efficient by @peppy in https://github.com/ppy/osu/pull/31823
+    - Changed the Currently Playing Text when no track is selected by @SebastianPeP in https://github.com/ppy/osu/pull/31835
+    - Fix slider ball rotation not being updated when rewinding to a slider by @peppy in https://github.com/ppy/osu/pull/31825
+    - Add percent progress display to editor footer by @peppy in https://github.com/ppy/osu/pull/31841
+    - Fix incorrect thread access in recent iOS orientation changes by @frenzibyte in https://github.com/ppy/osu/pull/31845
+    - Fix spectator list showing other users in multiplayer room even if they're not spectating by @bdach in https://github.com/ppy/osu/pull/31844
+    - Add menu items to open beatmap info & discussion pages in browser from editor by @bdach in https://github.com/ppy/osu/pull/31848
+    - Disable scale animation when holding editor "test" button by @peppy in https://github.com/ppy/osu/pull/31854
+    - Fix score position not being displayed in solo results screen by @bdach in https://github.com/ppy/osu/pull/31846
+    - Fix osu!mania judgement position not shifted on flipped scroll direction by @frenzibyte in https://github.com/ppy/osu/pull/31682
+    - Show count of beatmaps in collections in manage dialog by @peppy in https://github.com/ppy/osu/pull/22932
+    - Add comment warning about enum entry order in GlobalAction by @minetoblend in https://github.com/ppy/osu/pull/31861
+    - Add legacy taiko swell (spinner) by @mcendu in https://github.com/ppy/osu/pull/31746
+    - Allow user mods in multiplayer freestyle by @smoogipoo in https://github.com/ppy/osu/pull/31850
+    - Fix weird follow circle display when rewinding through sliders in editor by @peppy in https://github.com/ppy/osu/pull/31864
+    - Attempt to fix intermittent collections test by @smoogipoo in https://github.com/ppy/osu/pull/31868
+    - Add initial beatmap submission support by @bdach in https://github.com/ppy/osu/pull/31805
+    - Disallow focus on difficulty range slider by @peppy in https://github.com/ppy/osu/pull/31876
+    - Fix toolbox settings hiding when dragging a slider by @Rudicito in https://github.com/ppy/osu/pull/31596
+    - Add playlist to new collection button present on playlist room by @Layendan in https://github.com/ppy/osu/pull/31821
+    - Improve default UI scale on iOS by @frenzibyte in https://github.com/ppy/osu/pull/31371
+    - Add basic display support for team logos by @peppy in https://github.com/ppy/osu/pull/31880
+    - Use fixed width for digital clock display by @peppy in https://github.com/ppy/osu/pull/31885
+    - Fix team flag layout on user profile by @Joehuu in https://github.com/ppy/osu/pull/31904
+    - Update framework (and minor package bumps) by @peppy in https://github.com/ppy/osu/pull/31911
+    - Stop beat divisor "slider" from accepting focus by @peppy in https://github.com/ppy/osu/pull/31910
+    - Fix some more visual issues with osu! distance snap grid by @bdach in https://github.com/ppy/osu/pull/31912
+    - Fix nudge operations incurring FP error from coordinate space conversions by @bdach in https://github.com/ppy/osu/pull/31917
+    - Add "Also fail when missing a slider tail" option in Sudden Death mod by @Plextora in https://github.com/ppy/osu/pull/31232
+    - Fix selected sliders sometimes not being clickable in editor by @peppy in https://github.com/ppy/osu/pull/31923
+    - Stop "hold for HUD" key binding from blocking other key presses by @peppy in https://github.com/ppy/osu/pull/31922
+    - Fix kiai fountains sometimes not displaying when they should by @peppy in https://github.com/ppy/osu/pull/31924
+    - Fix beatmap export failure not aborting submission process by @bdach in https://github.com/ppy/osu/pull/31926
+    - Fix nudging objects in catch editor not changing their hyperdash state by @bdach in https://github.com/ppy/osu/pull/31928
+    - Fix several issues with API login flow which manifest on second factor authentication by @bdach in https://github.com/ppy/osu/pull/31925
+    - Send "notify on discussion replies" setting value in beatmap creation request by @bdach in https://github.com/ppy/osu/pull/31940
+    - Update framework by @peppy in https://github.com/ppy/osu/pull/31945
+    - Fix multiplayer spectator not working with freestyle by @bdach in https://github.com/ppy/osu/pull/31941
+    New Contributors
+    - @KareVulli made their first contribution in https://github.com/ppy/osu/pull/31732
+    - @necocat0918 made their first contribution in https://github.com/ppy/osu/pull/31780
+    - @SebastianPeP made their first contribution in https://github.com/ppy/osu/pull/31835
+    Full Changelog: https://github.com/ppy/osu/compare/2025.118.3...2025.220.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ppy/osu/releases/tag/2025.220.0
+Version: 2025.220.0
+ReleaseTime: 2025-02-20T08:33:21.0000000Z
