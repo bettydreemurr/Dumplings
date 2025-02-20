@@ -1,0 +1,19 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/ppy/osu/releases/download/2025.221.0/install.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    First hotfix for last major release
+    What's Changed
+    - Implement designs for beatmap carousel v2 by @frenzibyte in https://github.com/ppy/osu/pull/31774
+    - Adjust handling of team flags with non-matching aspect ratio to match web by @bdach in https://github.com/ppy/osu/pull/31969
+    - Fix results screen applause playing too loud during multiplayer spectating by @peppy in https://github.com/ppy/osu/pull/31967
+    - Update framework by @bdach in https://github.com/ppy/osu/pull/31965
+    - Fix osu!taiko and osu!catch being oversized on mobile platforms by @frenzibyte in https://github.com/ppy/osu/pull/31968
+    Full Changelog: https://github.com/ppy/osu/compare/2025.220.0...2025.221.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ppy/osu/releases/tag/2025.221.0
+Version: 2025.221.0
+ReleaseTime: 2025-02-20T18:13:44.0000000Z
