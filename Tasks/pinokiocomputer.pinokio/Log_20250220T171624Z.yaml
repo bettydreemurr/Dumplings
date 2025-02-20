@@ -1,0 +1,18 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/pinokiocomputer/pinokio/releases/download/3.6.23/Pinokio-3.6.23-win32.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: Pinokio Setup 3.6.23.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    libsqlite fix
+    libsqlite 3.49.0 has made a breaking change that breaks apps like stable-diffusion-webui or forge https://github.com/conda-forge/sqlite-feedstock/issues/130
+    This is not a Pinokio bug, but anyone using a conda package that relies no libsqlite would have this issue (even if you manually install stuff without even using pinokio). As seen here https://github.com/lllyasviel/stable-diffusion-webui-forge/issues/2669 and many other places.
+    The fundamental fix should be for the conda sqlite maintainers to actually fix this broken release but since we can't wait, going to fix this so it works even when they don't fix it anytime soon.
+    Fixed it by pinning sqlite at 3.47.2
+- Key: ReleaseNotesUrl
+  Value: https://github.com/pinokiocomputer/pinokio/releases/tag/3.6.23
+Version: 3.6.23
+ReleaseTime: 2025-02-20T13:29:22.0000000Z
