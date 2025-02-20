@@ -1,0 +1,17 @@
+Installer:
+- Architecture: arm64
+  InstallerUrl: https://github.com/riweston/aztx/releases/download/1.6.5/aztx_1.6.5_windows_arm64.zip
+- Architecture: x86
+  InstallerUrl: https://github.com/riweston/aztx/releases/download/1.6.5/aztx_1.6.5_windows_386.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/riweston/aztx/releases/download/1.6.5/aztx_1.6.5_windows_amd64.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Changelog
+    - 1ef97b216ac236a6f89dc5662f13d38e41019913 chore(deps): bump actions/setup-go from 3 to 5 in /.github/workflows (#22)
+- Key: ReleaseNotesUrl
+  Value: https://github.com/riweston/aztx/releases/tag/1.6.5
+Version: 1.6.5
+ReleaseTime: 2025-02-20T12:16:57.0000000Z
