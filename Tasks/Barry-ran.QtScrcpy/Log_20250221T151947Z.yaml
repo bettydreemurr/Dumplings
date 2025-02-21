@@ -1,0 +1,13 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/barry-ran/QtScrcpy/releases/download/v3.1.2/QtScrcpy-win-x64-v3.1.2.zip
+- Architecture: x86
+  InstallerUrl: https://github.com/barry-ran/QtScrcpy/releases/download/v3.1.2/QtScrcpy-win-x86-v3.1.2.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: 'feat: ad for my professional screen casting control software QuickMirror feat: join the QtScrcpy Telegram group and communicate with me'
+- Key: ReleaseNotesUrl
+  Value: https://github.com/barry-ran/QtScrcpy/releases/tag/v3.1.2
+Version: 3.1.2
+ReleaseTime: 2025-02-21T14:35:18.0000000Z
