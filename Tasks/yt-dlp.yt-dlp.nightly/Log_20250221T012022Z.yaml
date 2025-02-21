@@ -1,0 +1,23 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.20.232914/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.20.232914/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/f7a1f2d8132967a62b0f6d5665c6d2dde2d42c09
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Support emitting ConEmu progress codes (#10649) by Grub4K
+    Extractor changes
+    - niconico: live: Fix thumbnail extraction (#12419) by bashonly
+    - soundcloud: Extract tags (#12420) by bashonly
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.02.20.232914
+Version: 2025.02.20.232914
+ReleaseTime: 2025-02-20T23:35:27.0000000Z
