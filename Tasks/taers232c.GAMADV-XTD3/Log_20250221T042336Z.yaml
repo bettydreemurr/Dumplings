@@ -1,0 +1,45 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.05.00/gamadv-xtd3-7.05.00-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    See Upgrade GAMADV-XTD3 to GAM7
+    7.05.00
+    Enabled support for Limited Access as described here:
+    - https://workspaceupdates.googleblog.com/2025/02/updating-access-experience-in-google-drive.html
+    Note that the rollout may take 15 days.
+    Added option inheritedpermissionsdisabled [<Boolean>] to <DriveFileAttribute>; this attribute can be set on folders.
+    Added inheritedpermissionsdisabled to <DriveFieldName>.
+    Added capabilities.candisableinheritedpermissions and capabilities.canenableinheritedpermissions to <DriveCapabilitiesSubfieldName>.
+    Added option enforceexpansiveaccess [<Boolean>] to all commands that delete or update drive file ACLs/permissions.
+    gam <UserTypeEntity> delete permissions
+    gam <UserTypeEntity> delete drivefileacl
+    gam <UserTypeEntity> update drivefileacl
+    gam <UserTypeEntity> copy drivefile
+    gam <UserTypeEntity> move drivefile
+    gam <UserTypeEntity> transfer ownership
+    gam <UserTypeEntity> claim ownership
+    gam <UserTypeEntity> transfer drive
+    See Update History
+    sha256 hashes
+    1795b4a20eaad2278e4449d0d849e3ac01c01c86a98eac2371dcfb8b36fc0f21  gamadv-xtd3-7.05.00-linux-arm64-glibc2.23.tar.xz
+    ded01ac5cf07999457f4a57d2e50c2f7a75d5a92cc29014598b4bbcf83cf244e  gamadv-xtd3-7.05.00-linux-arm64-glibc2.27.tar.xz
+    2a6921b1f8a6b3f0d353f3de6a410d1b295281d36d86d729db2fc81f92e64729  gamadv-xtd3-7.05.00-linux-arm64-glibc2.31.tar.xz
+    3f712d80da84c7e4996debcaff7bb46d601655aa4b21d0da332d7381ce8ab20a  gamadv-xtd3-7.05.00-linux-arm64-glibc2.35.tar.xz
+    9ecf136f54d61b9abd60bf9ec2a41f961a340245e80006a4beab42080b5ce92a  gamadv-xtd3-7.05.00-linux-arm64-glibc2.39.tar.xz
+    f6fccf2f3b3be6d69abbc0ab17935e2cc01f293315fdb60cb90b2b680897f3d6  gamadv-xtd3-7.05.00-linux-arm64-legacy.tar.xz
+    6b09efbb4ca782a24f9a325603fbf50a4b860c0836c9605c5194592b727a3355  gamadv-xtd3-7.05.00-linux-x86_64-glibc2.27.tar.xz
+    85f5dc6304376da3cb0aa4e03c312394a3e60964023e9aa3cd949fd87ca78761  gamadv-xtd3-7.05.00-linux-x86_64-glibc2.31.tar.xz
+    d5243772a0402b8d9eddefd426232215a1e4b0bd53fef360ebfc3268a70a53ac  gamadv-xtd3-7.05.00-linux-x86_64-glibc2.35.tar.xz
+    34f9f1263a5ff622182a5904d6563a6071e2f59ae764407f9833d7e8a0ee9ea9  gamadv-xtd3-7.05.00-linux-x86_64-glibc2.39.tar.xz
+    c2587865ac471f5ed12e597c1dd094ff5d591abcb768d93fae6c174f4ec13cb1  gamadv-xtd3-7.05.00-linux-x86_64-legacy.tar.xz
+    e998b4455d563c08ad2c5a1165810e927e22e1735613847028f7a909bab732b4  gamadv-xtd3-7.05.00-macos-arm64.tar.xz
+    a0bf6e032b62951d47bbf7f9f828ec660dfd1610fd5713a9f1c14f88adb34fd8  gamadv-xtd3-7.05.00-macos-x86_64.tar.xz
+    efb764c25700757f241c882b771c9e52c292aa6b4ffc9ce377273a62156bdd35  gamadv-xtd3-7.05.00-windows-x86_64.msi
+    ac8ce4dbdbbdf943b0f42f0dd3eac43cea04ed53f16b7792cca690f8b74e72c6  gamadv-xtd3-7.05.00-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.05.00
+Version: 7.05.00
+ReleaseTime: 2025-02-21T04:06:59.0000000Z
