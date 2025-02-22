@@ -1,0 +1,44 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/oven-sh/bun/releases/download/bun-v1.2.3/bun-windows-x64.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    To install Bun v1.2.3
+    curl -fsSL https://bun.sh/install | bash
+    # or you can use npm
+    # npm install -g bun
+    Windows:
+    powershell -c "irm bun.sh/install.ps1|iex"
+    To upgrade to Bun v1.2.3:
+    bun upgrade
+    Read Bun v1.2.3's release notes on Bun's blog
+    Thanks to 23 contributors!
+    - @190n
+    - @carlaiau
+    - @cirospaciari
+    - @donisaac
+    - @dylan-conway
+    - @fel1x-developer
+    - @gbbelloponce
+    - @heimskr
+    - @jarred-sumner
+    - @khajimatov
+    - @nektro
+    - @okineadev
+    - @paperclover
+    - @pfgithub
+    - @pikdum
+    - @pjeweb
+    - @probably-neb
+    - @riskymh
+    - @sculpt0r
+    - @shlomocode
+    - @snoepnfts
+    - @viniciuspjardim
+    - @zackradisic
+- Key: ReleaseNotesUrl
+  Value: https://github.com/oven-sh/bun/releases/tag/bun-v1.2.3
+Version: 1.2.3
+ReleaseTime: 2025-02-22T07:11:06.0000000Z
