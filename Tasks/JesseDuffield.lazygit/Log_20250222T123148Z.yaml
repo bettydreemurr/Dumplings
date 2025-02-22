@@ -1,0 +1,21 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.47.1/lazygit_0.47.1_Windows_32-bit.zip
+- Architecture: x64
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.47.1/lazygit_0.47.1_Windows_x86_64.zip
+- Architecture: arm64
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.47.1/lazygit_0.47.1_Windows_arm64.zip
+- Architecture: neutral
+  InstallerUrl: https://github.com/jesseduffield/lazygit/releases/download/v0.47.1/lazygit_0.47.1_Windows_armv6.zip
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    Maintenance ⚙️
+    - Fix race condition with reselecting the focused branch and rendering by @stefanhaller in https://github.com/jesseduffield/lazygit/pull/4268
+    Full Changelog: https://github.com/jesseduffield/lazygit/compare/v0.47.0...v0.47.1
+- Key: ReleaseNotesUrl
+  Value: https://github.com/jesseduffield/lazygit/releases/tag/v0.47.1
+Version: 0.47.1
+ReleaseTime: 2025-02-22T11:37:50.0000000Z
