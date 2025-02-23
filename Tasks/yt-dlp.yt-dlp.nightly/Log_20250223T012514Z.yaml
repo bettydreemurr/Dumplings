@@ -1,0 +1,27 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.22.232738/yt-dlp_x86.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2025.02.22.232738/yt-dlp.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    Generated from: https://github.com/yt-dlp/yt-dlp/commit/4445f37a7a66b248dbd8376c43137e6e441f138e
+
+    A description of the various files is in the README
+
+    Changelog
+    Core changes
+    - Load plugins on demand (#11305) by coletdjnz, Grub4K, pukkandan
+    - Support emitting ConEmu progress codes (#10649) by Grub4K
+    Extractor changes
+    - bunnycdn: Add extractor (#11586) by Grub4K, seproDev
+    - niconico: live: Fix thumbnail extraction (#12419) by bashonly
+    - soundcloud: Extract tags (#12420) by bashonly
+    Misc. changes
+    - test: Show all differences for expect_value and expect_dict (#12334) by Grub4K
+- Key: ReleaseNotesUrl
+  Value: https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/tag/2025.02.22.232738
+Version: 2025.02.22.232738
+ReleaseTime: 2025-02-22T23:33:50.0000000Z
