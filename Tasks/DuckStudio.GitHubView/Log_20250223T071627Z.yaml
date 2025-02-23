@@ -1,0 +1,51 @@
+Installer:
+- Architecture: x64
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest-Setup-SingleFile.exe
+- Architecture: x86
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest-Setup-SingleFile.exe
+- Architecture: arm
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest-Setup-SingleFile.exe
+- Architecture: arm64
+  InstallerType: inno
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest-Setup-SingleFile.exe
+- Architecture: x64
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+- Architecture: x86
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+- Architecture: arm
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/DuckDuckStudio/GitHubView/releases/download/1.0.3/GitHubView-1.0.3-windows-latest.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: ghv.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    修改了什么
+    - feat: 优化原先的构建流并新增 Nightly 构建流 by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/8
+    - GitHubView 1.0.3 by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/10
+      - fix(user): 首选 “TryGetValue” 调用，而不是由 “ContainsKey” 检查保护的字典索引器访问，以避免双重查找
+      - fix(null): 修复一大堆 null 警告
+      - fix(labels): 分页获取 (#9)
+      - chore(git): 不跟踪调试配置文件
+      - fix(ctb&label): 有关速率限制的修复
+    - docs: 更新开发文档 by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/12
+    - fix(var): 用显式类型代替 "var" (IDE0008) by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/13
+    - refactor(build): 重构构建发布流 by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/18
+    - fix(build): 改为 Any CPU 发布 by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/20
+    - chore(deps): 将更新频率从每周改至每日 by @DuckDuckStudio in https://github.com/DuckDuckStudio/GitHubView/pull/21
+    Full Changelog: https://github.com/DuckDuckStudio/GitHubView/compare/1.0.2...1.0.3
+- Key: ReleaseNotesUrl
+  Value: https://github.com/DuckDuckStudio/GitHubView/releases/tag/1.0.3
+Version: 1.0.3
+ReleaseTime: 2025-02-23T06:54:15.0000000Z
