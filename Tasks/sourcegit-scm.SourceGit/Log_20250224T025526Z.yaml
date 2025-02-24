@@ -1,0 +1,38 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.06/sourcegit_2025.06.win-x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.06/sourcegit_2025.06.win-arm64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Upgrade LiveChartsCore.SkiaSharpView.Avalonia to 2.0.0-rc5.4.
+    - Change the default state of Delete from remote repository in Delete Tag popup, and remember the last state of it.
+    - Remember the last state of Push to all remotes after created in Create Tag popup.
+    - Upgrade OpenAI and Azure.AI.OpenAI to 2.2.0-beta.2.
+    - Rewrite the OpenAI integration and add an option to turn off streaming chat.
+    - Submodule's bookmark color will inhert from parent repository by default.
+    - Fix the issue that unstaged file counter did not update after unstaging or staging files.
+    - Add a warning icon when the tracking upstream of a local branch is gone.
+    - Linux: Add Ptyxis support.
+    - Prefer to use the Default Remote (in repository configuration) while fetching remote changes.
+    - Pre-fill the commit message to the commit that rebasing stopped at while rebasing is in-progress.
+    - Support to configure per-repository fetch.prune from Repository Configure dialog.
+    - Fix the issue that resolving conflict with deleted files did not work.
+    - Re-write Block navigation in text diff view.
+    - Several other UI/UX changes.
+    New Contributors
+    - @kosmakoff made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/1007
+    - @eltociear made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/1014
+    - @jjesus-dev made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/1017
+    Full Changelog: https://github.com/sourcegit-scm/sourcegit/compare/v2025.05...v2025.06
+- Key: ReleaseNotesUrl
+  Value: https://github.com/sourcegit-scm/sourcegit/releases/tag/v2025.06
+Version: "2025.06"
+ReleaseTime: 2025-02-24T01:55:30.0000000Z
