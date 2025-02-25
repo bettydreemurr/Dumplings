@@ -1,0 +1,26 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/ppy/osu/releases/download/2025.225.0/install.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Fix wrong beatmap attributes in multiplayer spectate by @smoogipoo in https://github.com/ppy/osu/pull/32004
+    - Fix terminology and capitalisation on high precision mouse tooltip by @ziv-vy in https://github.com/ppy/osu/pull/32050
+    - Adjust rounding tolerance in distance snap grid ring colour logic by @bdach in https://github.com/ppy/osu/pull/32011
+    - Fix "use current distance snap" button incorrectly factoring in last object with velocity by @bdach in https://github.com/ppy/osu/pull/32014
+    - Fix host change sounds playing when exiting multiplayer rooms by @smoogipoo in https://github.com/ppy/osu/pull/32005
+    - Add support for team chat channels by @bdach in https://github.com/ppy/osu/pull/32079
+    - Fix taiko swell ending samples playing at results sometimes by @bdach in https://github.com/ppy/osu/pull/32085
+    - Do not give swell ticks any visual representation by @bdach in https://github.com/ppy/osu/pull/32084
+    - Fix hash comparison being case sensitive when choosing files for partial beatmap submission by @bdach in https://github.com/ppy/osu/pull/32081
+    - Update framework by @bdach in https://github.com/ppy/osu/pull/32096
+    - Fix double-clicking difficulty adjust sliders not resetting the value to default correctly by @bdach in https://github.com/ppy/osu/pull/32077
+    New Contributors
+    - @ziv-vy made their first contribution in https://github.com/ppy/osu/pull/32050
+    Full Changelog: https://github.com/ppy/osu/compare/2025.221.0...2025.225.0
+- Key: ReleaseNotesUrl
+  Value: https://github.com/ppy/osu/releases/tag/2025.225.0
+Version: 2025.225.0
+ReleaseTime: 2025-02-25T13:50:38.0000000Z
