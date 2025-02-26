@@ -1,0 +1,9 @@
+Installer:
+- Architecture: x86
+  InstallerUrl: https://windbg.download.prss.microsoft.com/dbazure/prod/1-2502-25002-0/windbg.msixbundle
+- Architecture: x64
+  InstallerUrl: https://windbg.download.prss.microsoft.com/dbazure/prod/1-2502-25002-0/windbg.msixbundle
+- Architecture: arm64
+  InstallerUrl: https://windbg.download.prss.microsoft.com/dbazure/prod/1-2502-25002-0/windbg.msixbundle
+Locale: []
+Version: 1.2502.25002.0
