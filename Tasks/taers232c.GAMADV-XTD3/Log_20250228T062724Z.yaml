@@ -1,0 +1,31 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/taers232c/GAMADV-XTD3/releases/download/v7.05.05/gamadv-xtd3-7.05.05-windows-x86_64.msi
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    See Upgrade GAMADV-XTD3 to GAM7
+    7.05.05
+    Added options password prompt and password uniqueprompt to gam create user <EmailAddress> and gam update users <UserTypeEntity> that prompt you to enter a password from stdin.
+    See User Passwords
+    See Update History
+    sha256 hashes
+    e9437509fd769af7906bebf1a0abc8d381a9e16f82c0e9549867f5c0262df155  gamadv-xtd3-7.05.05-linux-arm64-glibc2.27.tar.xz
+    a04cca712af067bc655db92fc6a58bc21459fa0d0f22ed4d65f81f1e734755f6  gamadv-xtd3-7.05.05-linux-arm64-glibc2.31.tar.xz
+    cb982408ef51c32199a187e30aa397743fe428ca0fe4bca5ce6d8f663abdaba4  gamadv-xtd3-7.05.05-linux-arm64-glibc2.35.tar.xz
+    becae47b077c29d0b8e0fc44197a44b2650cc3353db2ffe627508e4bf9928332  gamadv-xtd3-7.05.05-linux-arm64-glibc2.39.tar.xz
+    94d79fa3f0013d3af06c19a9041ce0762df83471a3242f30fb73f1b0234a8637  gamadv-xtd3-7.05.05-linux-arm64-legacy.tar.xz
+    753b979f5298d5c0d9d018a761046c7e05c372ccd0d85c64ed160bab151dc901  gamadv-xtd3-7.05.05-linux-x86_64-glibc2.27.tar.xz
+    9f719359e513cd00f2daa7c17a12ef785fe19d8caff56bd9e7d060cbe4808886  gamadv-xtd3-7.05.05-linux-x86_64-glibc2.31.tar.xz
+    a907bf3d2a023477e893c1d09b460adb0828c75c2894d99ce716d1ddc2174f83  gamadv-xtd3-7.05.05-linux-x86_64-glibc2.35.tar.xz
+    2cc6f8b02765c91df3af82fed20d88ddfbe4c4b7d4047f9ce9ae2bb99c821a66  gamadv-xtd3-7.05.05-linux-x86_64-glibc2.39.tar.xz
+    2642fb68f0d9b837276315e62e6ac1af7ff901c1ce755e02902cd51f9f41d362  gamadv-xtd3-7.05.05-linux-x86_64-legacy.tar.xz
+    19c8202592daae9c9a09adceec3069f8e040f684177e546105c5334f490e497c  gamadv-xtd3-7.05.05-macos-arm64.tar.xz
+    6902483edee114cf99f3e2c84ff56847d58f0b50053d789f79a45a9ccc3a1643  gamadv-xtd3-7.05.05-macos-x86_64.tar.xz
+    c585da9630e6a0cb63260227eb3a0e4b0189f43813ddbf2fbe9cefa3847446ee  gamadv-xtd3-7.05.05-windows-x86_64.msi
+    74570705417146b946d1a88b28afd1ee0c4395eb127c258d370788ab3eefe4a1  gamadv-xtd3-7.05.05-windows-x86_64.zip
+- Key: ReleaseNotesUrl
+  Value: https://github.com/taers232c/GAMADV-XTD3/releases/tag/v7.05.05
+Version: 7.05.05
+ReleaseTime: 2025-02-28T06:10:42.0000000Z
