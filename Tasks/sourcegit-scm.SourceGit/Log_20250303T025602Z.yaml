@@ -1,0 +1,36 @@
+Installer:
+- Architecture: x64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.07/sourcegit_2025.07.win-x64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+- Architecture: arm64
+  InstallerUrl: https://github.com/sourcegit-scm/sourcegit/releases/download/v2025.07/sourcegit_2025.07.win-arm64.zip
+  NestedInstallerFiles:
+  - RelativeFilePath: SourceGit\SourceGit.exe
+Locale:
+- Locale: en-US
+  Key: ReleaseNotes
+  Value: |-
+    What's Changed
+    - Add context menu item Save As Patch... to selected stash
+    - Auto-select the first change in commit details panel/branch compare panel/revision compare panel.
+    - Auto-select the first change after a stash was selected.
+    - Remember the last active tab in commit details panel.
+    - Fix the issue that pulling with empty repository (no local branch) crashes this app.
+    - Fix the issue that Ptyxis does not start with given working directory.
+    - Do not show error message of custom action if it is empty.
+    - Fix the issue that double-clicking the COMMIT/COMMIT & PUSH button triggers the binded command twice.
+    - Enable interactive rebase on anthor branch or unmerged commit.
+    - Fix the issue that pressing Enter while the current popup is in-progress will crash this app.
+    - Do not remember the last selected handling method of uncommitted local changes while pulling/creating branch/checkout branch.
+    - Upgrade AvaloniaUI to 11.2.5
+    - Upgrade CommunityToolkit.Mvvm to 8.4.0
+    - Better regex for remote URL.
+    - Several other UI/UX changes.
+    New Contributors
+    - @ZaLiTHkA made their first contribution in https://github.com/sourcegit-scm/sourcegit/pull/1033
+    Full Changelog: https://github.com/sourcegit-scm/sourcegit/compare/v2025.06...v2025.07
+- Key: ReleaseNotesUrl
+  Value: https://github.com/sourcegit-scm/sourcegit/releases/tag/v2025.07
+Version: "2025.07"
+ReleaseTime: 2025-03-03T01:32:54.0000000Z
